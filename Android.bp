@@ -66,286 +66,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.audio.common-util",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.common-util.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.common-util.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.common@5.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.common@5.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.common@5.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.common@6.0-util",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.common@6.0-util.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.common@6.0-util.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.common@6.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.common@6.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.common@6.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.common@7.0-enums",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.common@7.0-enums.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.common@7.0-util",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.common@7.0-util.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.common@7.0-util.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.common@7.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.common@7.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.common@7.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.effect@6.0-util",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.effect@6.0-util.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.effect@6.0-util.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.effect@6.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.effect@6.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.effect@6.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.effect@7.0-util",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.effect@7.0-util.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.effect@7.0-util.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio.effect@7.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio.effect@7.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio.effect@7.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio@6.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio@6.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio@6.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio@7.0-util",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio@7.0-util.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio@7.0-util.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.audio@7.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/android.hardware.audio@7.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.audio@7.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "com.fingerprints.extension@1.0",
 	owner: "motorola",
 	strip: {
@@ -637,27 +357,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.health@2.0-impl-2.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/android.hardware.health@2.0-impl-2.1.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "android.hardware.thermal@2.0-impl",
 	owner: "motorola",
 	strip: {
@@ -742,27 +441,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "audio_policy.stub",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/audio_policy.stub.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/audio_policy.stub.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "displaypanel.default",
 	owner: "motorola",
 	strip: {
@@ -837,27 +515,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/gps.default.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "gralloc.default",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/gralloc.default.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/gralloc.default.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -1257,27 +914,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vibrator.default",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/vibrator.default.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/vibrator.default.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -9188,26 +8824,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudioclient_aidl_conversion",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudioclient_aidl_conversion.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libaudioclient_aidl_conversion.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libaudiocompensationfilter_vendor",
 	owner: "motorola",
 	strip: {
@@ -9888,26 +9504,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcodec2_vndk",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcodec2_vndk.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcodec2_vndk.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libcodec2_vpp_qt_plugin",
 	owner: "motorola",
 	strip: {
@@ -10059,26 +9655,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libdre.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdrm",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libdrm.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdrm.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -11468,26 +11044,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libnxp_extamp_intf",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libnxp_extamp_intf.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libnxp_extamp_intf.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "liboem_specific",
 	owner: "motorola",
 	strip: {
@@ -11519,26 +11075,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/liboemcrypto.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libpcap",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libpcap.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libpcap.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -11779,26 +11315,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/librt_extamp_intf.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libruy",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libruy.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libruy.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -12059,26 +11575,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libviagpsrpc.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvibrator",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvibrator.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvibrator.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -13868,26 +13364,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "nfc_nci.nqx.default.hw",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/nfc_nci.nqx.default.hw.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/nfc_nci.nqx.default.hw.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "nfc_nci_sec",
 	owner: "motorola",
 	strip: {
@@ -15014,46 +14490,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.nxp.hardware.nxpese@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.nxp.hardware.nxpese@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.nxp.hardware.nxpese@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.nxp.nxpnfc@2.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.nxp.nxpnfc@2.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.nxp.nxpnfc@2.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libHEVCdec_sa.ca7.android",
 	owner: "motorola",
 	strip: {
@@ -15173,23 +14609,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "lib_android_keymaster_keymint_utils",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/lib_android_keymaster_keymint_utils.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libadpcmdec_mtk",
 	owner: "motorola",
 	strip: {
@@ -15198,23 +14617,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libadpcmdec_mtk.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcppcose_rkp",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcppcose_rkp.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -15309,57 +14711,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libkeymaster_messages",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libkeymaster_messages.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libkeymaster_portable",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libkeymaster_portable.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libkeymint",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libkeymint.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmp3dec_mtk",
 	owner: "motorola",
 	strip: {
@@ -15411,23 +14762,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libopus",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libopus.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libpkip",
 	owner: "motorola",
 	strip: {
@@ -15436,23 +14770,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libpkip.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libpuresoftkeymasterdevice",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libpuresoftkeymasterdevice.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -15487,23 +14804,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/librcs_volte_core.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsoft_attestation_cert",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsoft_attestation_cert.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -15598,23 +14898,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libvorbisidec",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvorbisidec.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libvp8dec_sa.ca7",
 	owner: "motorola",
 	strip: {
@@ -15674,23 +14957,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libvpud_vcodec.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvpx",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvpx.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -15841,24 +15107,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libtinyalsa",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vndk/libtinyalsa.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	relative_install_path: "vndk",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "APUWareApusysServer",
 	owner: "motorola",
 	strip: {
@@ -15910,40 +15158,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "android.hardware.biometrics.fingerprint@2.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.hardware.camera.common@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.hardware.camera.common@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "android.hardware.power-service-mediatek",
 	owner: "motorola",
 	strip: {
@@ -15952,23 +15166,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/android.hardware.power-service-mediatek.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "android.system.wifi.keystore@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/android.system.wifi.keystore@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -16063,40 +15260,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "ese_spi_nxp",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/ese_spi_nxp.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "ese_spi_nxp_snxxx",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/ese_spi_nxp_snxxx.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "android.hardware.gnss-impl-mediatek",
 	owner: "motorola",
 	strip: {
@@ -16141,60 +15304,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "audio.primary.default",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/audio.primary.default.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "audio.r_submix.default",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/audio.r_submix.default.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "audio.usb.default",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/audio.usb.default.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -16679,40 +15788,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libarcsoft_super_night_se_raw.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libavservices_minijail",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libavservices_minijail.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbinderdebug",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbinderdebug.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -17920,23 +16995,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwpfa.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libz_stable",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libz_stable.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -21367,40 +20425,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.nxp.nxpese@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.nxp.nxpnfclegacy@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.trustonic.alps.alps_device@1.0",
 	owner: "motorola",
 	strip: {
@@ -21519,12 +20543,6 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.nxp.nfc",
-	owner: "motorola",
-	jars: ["proprietary/framework/com.nxp.nfc.jar"],
 }
 
 dex_import {
@@ -21653,15 +20671,6 @@ prebuilt_etc_xml {
 	name: "vendor.dolby.hardware.dms",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vibrator-mtk-default",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -22084,19 +21093,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.secure_element_snxxx@1.2-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.secure_element_snxxx@1.2-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.security.keymint-service.trustonic",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.security.keymint-service.trustonic"],
@@ -22139,19 +21135,6 @@ cc_prebuilt_binary {
 	name: "android.hardware.usb@1.2-service-mediatekv2",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.vibrator-service.mediatek",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -22487,19 +21470,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "vendor.nxp.hardware.nfc@1.2-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.trustonic.alps.alps_device@1.1-service",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/vendor.trustonic.alps.alps_device@1.1-service"],
@@ -22765,18 +21735,6 @@ cc_prebuilt_binary {
 	name: "nvram_daemon",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/nvram_daemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "nxpnfcinfo",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/nxpnfcinfo"],
 	check_elf_files: false,
 	strip: {
 		none: true,

@@ -8,8 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
     vendor/motorola/cancunf/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
-    vendor/motorola/cancunf/proprietary/etc/permissions/com.nxp.nfc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.nxp.nfc.xml \
-    vendor/motorola/cancunf/proprietary/system_ext/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nfcee_access.xml \
     vendor/motorola/cancunf/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/motorola/cancunf/proprietary/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
@@ -244,7 +242,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.sec.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.secure_element_snxxx@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element_snxxx@1.2-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
@@ -323,7 +320,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.trustonic.alps.alps_device@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.alps.alps_device@1.1-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
@@ -361,10 +357,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/nfc_calibration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nfc_calibration.txt \
     vendor/motorola/cancunf/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
-    vendor/motorola/cancunf/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml \
-    vendor/motorola/cancunf/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
-    vendor/motorola/cancunf/proprietary/vendor/etc/permissions/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
-    vendor/motorola/cancunf/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/permissions/motorola-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/motorola-hardware-sensorscalibrate.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/permissions/unavail.android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.barometer.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
@@ -472,20 +464,6 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
-    android.hardware.audio.common-util \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@6.0-util \
-    android.hardware.audio.common@6.0 \
-    android.hardware.audio.common@7.0-enums \
-    android.hardware.audio.common@7.0-util \
-    android.hardware.audio.common@7.0 \
-    android.hardware.audio.effect@6.0-util \
-    android.hardware.audio.effect@6.0 \
-    android.hardware.audio.effect@7.0-util \
-    android.hardware.audio.effect@7.0 \
-    android.hardware.audio@6.0 \
-    android.hardware.audio@7.0-util \
-    android.hardware.audio@7.0 \
     com.fingerprints.extension@1.0 \
     com.motorola.hardware.biometric.fingerprint@1.0 \
     com.motorola.hardware.display.panel@1.0 \
@@ -500,17 +478,14 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio@7.0-impl-mediatek \
     android.hardware.bluetooth@1.1-impl-mediatek \
-    android.hardware.health@2.0-impl-2.1 \
     android.hardware.thermal@2.0-impl \
     audio.bluetooth.default \
     audio.primary.mediatek \
     audio.r_submix.mediatek \
-    audio_policy.stub \
     displaypanel.default \
     fingerprint.goodix.default \
     fpsensor_fingerprint.default \
     gps.default \
-    gralloc.default \
     kmsetkey.trustonic \
     libMcGatekeeper \
     libSoftGatekeeper \
@@ -530,7 +505,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
-    vibrator.default \
     libAVCSecureVencCA \
     libCamera_motcancunfhi1634qmipiraw_ArcSoft_Raw_NV_Capture \
     libCamera_motcancunfhi1634qmipiraw_ArcSoft_Raw_NV_Capture_flash \
@@ -926,7 +900,6 @@ PRODUCT_PACKAGES += \
     libaualgo_foundation \
     libaualgo_sst_component \
     libaudio_param_parser-vnd \
-    libaudioclient_aidl_conversion \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
     libaudiocomponentengine_vendor \
@@ -961,7 +934,6 @@ PRODUCT_PACKAGES += \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
-    libcodec2_vndk \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libconnfem \
@@ -970,7 +942,6 @@ PRODUCT_PACKAGES += \
     libdapparamstorage \
     libdlbpreg \
     libdre \
-    libdrm \
     libdynamiclog \
     libfgauge_gm30 \
     libfile_op \
@@ -1040,10 +1011,8 @@ PRODUCT_PACKAGES += \
     libnpagent \
     libnvram \
     libnvram_sec \
-    libnxp_extamp_intf \
     liboem_specific \
     liboemcrypto \
-    libpcap \
     libperfctl_vendor \
     libpixelflinger \
     libpn557_fw \
@@ -1056,7 +1025,6 @@ PRODUCT_PACKAGES += \
     librgbwlightsensor \
     librpc \
     librt_extamp_intf \
-    libruy \
     libscltm \
     libsn100u_fw \
     libsn220u_fw \
@@ -1070,7 +1038,6 @@ PRODUCT_PACKAGES += \
     libvcodec_oal \
     libvcodecdrv_header_stub \
     libviagpsrpc \
-    libvibrator \
     libvpu5 \
     libwvhidl \
     libmockdrmcryptoplugin \
@@ -1156,7 +1123,6 @@ PRODUCT_PACKAGES += \
     mot_cancunf_sc202_mipi_raw_tuning \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
-    nfc_nci.nqx.default.hw \
     nfc_nci_sec \
     sensors.moto \
     libaudiopreprocessing \
@@ -1213,8 +1179,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.videotelephony@1.0 \
-    vendor.nxp.hardware.nxpese@1.0 \
-    vendor.nxp.nxpnfc@2.0 \
     libHEVCdec_sa.ca7.android \
     libMcRegistry \
     libMtkOmxAdpcmDec \
@@ -1222,37 +1186,27 @@ PRODUCT_PACKAGES += \
     libMtkOmxApeDec \
     libMtkOmxGsmDec \
     libMtkOmxMp3Dec \
-    lib_android_keymaster_keymint_utils \
     libadpcmdec_mtk \
-    libcppcose_rkp \
     libh264dec_customize \
     libh264dec_sa.ca7 \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
     libh264enc_sa.ca7 \
-    libkeymaster_messages \
-    libkeymaster_portable \
-    libkeymint \
     libmp3dec_mtk \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
-    libopus \
     libpkip \
-    libpuresoftkeymasterdevice \
     librcs_interface \
     librcs_volte_core \
-    libsoft_attestation_cert \
     libthha \
     libtpa \
     libvcodec_utility_plat.mt6789 \
     libvcodec_utility_plat.mt6855 \
     libvcodec_utility_plat.mt6879 \
-    libvorbisidec \
     libvp8dec_sa.ca7 \
     libvp8enc_sa.ca7 \
     libvp9dec_sa.ca7 \
     libvpud_vcodec \
-    libvpx \
     motorola.hardware.tcmd@1.0 \
     libvcodec_utility \
     libvcodec_utility_v3a \
@@ -1261,27 +1215,18 @@ PRODUCT_PACKAGES += \
     libvpudv3a_vcodec \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.rcs@2.0 \
-    libtinyalsa \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.camera.common@1.0 \
     android.hardware.power-service-mediatek \
-    android.system.wifi.keystore@1.0 \
     com.motorola.hardware.display.panel@1.1 \
     com.motorola.hardware.display.panel@1.2 \
     com.motorola.hardware.display.touch@1.0 \
     com.motorola.hardware.display.touch@1.1 \
     com.motorola.hardware.display.touch@1.2 \
-    ese_spi_nxp \
-    ese_spi_nxp_snxxx \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
-    audio.primary.default \
-    audio.r_submix.default \
-    audio.usb.default \
     hwcomposer.mtk_common \
     android.hardware.camera.provider@2.6-impl-mediatek \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
@@ -1310,8 +1255,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_super_night_raw \
     libarcsoft_super_night_raw_bin \
     libarcsoft_super_night_se_raw \
-    libavservices_minijail \
-    libbinderdebug \
     libcam.seninfn3d \
     libcamalgo.3dnr \
     libcamalgo.WarpMapResizer \
@@ -1383,7 +1326,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-mtk \
     libwifitest \
     libwpfa \
-    libz_stable \
     ls_client \
     ls_nq_client \
     motorola.hardware.fdrcontrol@1.0 \
@@ -1576,8 +1518,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.radio_op@3.0 \
-    vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfclegacy@1.0 \
     vendor.trustonic.alps.alps_device@1.0 \
     vendor.trustonic.alps.alps_device@1.1 \
     vendor.trustonic.tee.tui@1.0 \
@@ -1586,7 +1526,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     daxService \
-    com.nxp.nfc \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks-shim-service-mtk \
@@ -1602,7 +1541,6 @@ PRODUCT_PACKAGES += \
     motorola.hardware.mtk.fm.service \
     power-default \
     vendor.dolby.hardware.dms \
-    vibrator-mtk-default \
     SN1X0__RF-On.txt \
     atcid \
     audiocmdservice_atci \
@@ -1637,12 +1575,10 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.nfc@1.2-service.sec \
     android.hardware.secure_element@1.2-service-mediatek \
-    android.hardware.secure_element_snxxx@1.2-service \
     android.hardware.security.keymint-service.trustonic \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
-    android.hardware.vibrator-service.mediatek \
     chipone_ident \
     com.motorola.hardware.display.panel@1.2-service \
     com.motorola.hardware.display.touch@1.2-service \
@@ -1668,7 +1604,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
-    vendor.nxp.hardware.nfc@1.2-service \
     vendor.trustonic.alps.alps_device@1.1-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
@@ -1696,7 +1631,6 @@ PRODUCT_PACKAGES += \
     netdagent \
     netdc \
     nvram_daemon \
-    nxpnfcinfo \
     pnscr \
     pnscr_cal \
     rsudaemon_proxy \
