@@ -240,8 +240,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.sec.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
@@ -279,7 +277,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.gf_ident.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gf_ident.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.nfc.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.sec.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
@@ -317,22 +314,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.mmi.carrier.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.carrier.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.mmi.cxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.cxp.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.trustonic.alps.alps_device@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.alps.alps_device@1.1-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci_100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_100.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci_220.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_220.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci_220e.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_220e.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci_557.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_557.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nci_560.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_560.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-nxp_220.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_220.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-sec-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-nci.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/motorola/cancunf/proprietary/vendor/etc/mot_spn_table:$(TARGET_COPY_OUT_VENDOR)/etc/mot_spn_table \
@@ -355,7 +340,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
-    vendor/motorola/cancunf/proprietary/vendor/etc/nfc_calibration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nfc_calibration.txt \
     vendor/motorola/cancunf/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/motorola/cancunf/proprietary/vendor/etc/permissions/motorola-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/motorola-hardware-sensorscalibrate.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/permissions/unavail.android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.barometer.xml \
@@ -372,8 +356,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
     vendor/motorola/cancunf/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
-    vendor/motorola/cancunf/proprietary/vendor/etc/sn100u_nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_nfcon.pnscr \
-    vendor/motorola/cancunf/proprietary/vendor/etc/sn100u_pnx_ese_cplc.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_cplc.pnscr \
     vendor/motorola/cancunf/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/tetras/portrait_repair_composite.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite.model \
     vendor/motorola/cancunf/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
@@ -448,17 +430,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
     vendor/motorola/cancunf/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/motorola/cancunf/proprietary/vendor/lib64/arcsoft_portrait_super_night_se_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/arcsoft_portrait_super_night_se_raw.bin \
-    vendor/motorola/cancunf/proprietary/vendor/lib64/super_night_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/super_night_raw.bin \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_b/unavail.android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_b/unavail.android.hardware.nfc.hce.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_b/unavail.android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_b/unavail.android.hardware.nfc.hcef.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_b/unavail.android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_b/unavail.android.hardware.nfc.uicc.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_b/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_b/unavail.android.hardware.nfc.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.hce.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.hcef.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.uicc.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_d/unavail.android.hardware.nfc.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_de/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_de/android.hardware.nfc.ese.xml \
-    vendor/motorola/cancunf/proprietary/vendor/odm/etc/permissions/sku_e/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/permissions/sku_e/android.hardware.nfc.ese.xml
+    vendor/motorola/cancunf/proprietary/vendor/lib64/super_night_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/super_night_raw.bin
 
 PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
@@ -1015,8 +987,6 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libperfctl_vendor \
     libpixelflinger \
-    libpn557_fw \
-    libpn560_fw \
     libportrait_repair_ppl3_ocl \
     libpower_timer \
     libpowerhal \
@@ -1026,8 +996,6 @@ PRODUCT_PACKAGES += \
     librpc \
     librt_extamp_intf \
     libscltm \
-    libsn100u_fw \
-    libsn220u_fw \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstagefrighthw \
@@ -1123,7 +1091,6 @@ PRODUCT_PACKAGES += \
     mot_cancunf_sc202_mipi_raw_tuning \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
-    nfc_nci_sec \
     sensors.moto \
     libaudiopreprocessing \
     libdlbvol \
@@ -1326,7 +1293,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-mtk \
     libwifitest \
     libwpfa \
-    ls_client \
     ls_nq_client \
     motorola.hardware.fdrcontrol@1.0 \
     motorola.hardware.fdrcontrol@1.1 \
@@ -1573,8 +1539,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
-    android.hardware.nfc@1.2-service.sec \
-    android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustonic \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
@@ -1631,11 +1595,8 @@ PRODUCT_PACKAGES += \
     netdagent \
     netdc \
     nvram_daemon \
-    pnscr \
-    pnscr_cal \
     rsudaemon_proxy \
     rt5512_calibration \
-    sec_nfc_test \
     sns_mot_client \
     stp_dump3 \
     thermal_core \
