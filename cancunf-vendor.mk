@@ -1499,7 +1499,7 @@ PRODUCT_PACKAGES += \
     memtrack-mediatek \
     motorola.hardware.input@1.0-service \
     motorola.hardware.mtk.fm.service \
-    power-default \
+    power-mtk-default \
     vendor.dolby.hardware.dms \
     SN1X0__RF-On.txt \
     atcid \
