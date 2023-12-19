@@ -262,7 +262,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/hw/init.mmi.chipset.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.chipset.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/hw/init.mmi.overlay.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.overlay.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/hw/init.mmi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/hw/init.mmi.tcmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.tcmd.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/hw/init.mmi.usb.configfs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.usb.configfs.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.alpslegacy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.alpslegacy.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
@@ -328,15 +327,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/12m/focaltech-csot_ft8725-primary-cancunf.ini:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/focaltech-csot_ft8725-primary-cancunf.ini \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/12m/focaltech-csot_ft8726-primary-cancunf.ini:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/focaltech-csot_ft8726-primary-cancunf.ini \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/12m/key_code_map.txt:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/key_code_map.txt \
-    vendor/motorola/cancunf/proprietary/vendor/etc/motorola/12m/tcmd_leds.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/tcmd_leds.cfg \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/props/sku.n.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.n.prop \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/props/sku.nc.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.nc.prop \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/props/sku.nq.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.nq.prop \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/props/sku.q.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.q.prop \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/sensors/mot_sensor_settings.json:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/sensors/mot_sensor_settings.json \
-    vendor/motorola/cancunf/proprietary/vendor/etc/motorola/tcmd/cid_template.dat:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/tcmd/cid_template.dat \
-    vendor/motorola/cancunf/proprietary/vendor/etc/motorola/tcmd/cid_template.locked:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/tcmd/cid_template.locked \
-    vendor/motorola/cancunf/proprietary/vendor/etc/motorola/tcmd/cid_template.unlocked:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/tcmd/cid_template.unlocked \
     vendor/motorola/cancunf/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
@@ -1174,7 +1169,6 @@ PRODUCT_PACKAGES += \
     libvp8enc_sa.ca7 \
     libvp9dec_sa.ca7 \
     libvpud_vcodec \
-    motorola.hardware.tcmd@1.0 \
     libvcodec_utility \
     libvcodec_utility_v3a \
     libvcodecdrv \
