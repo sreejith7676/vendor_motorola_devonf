@@ -1,5 +1,5 @@
 
-s24005spn_3d_teliaÙø‘ù"£(
+s24005spn_3d_telia¿·‘ù"£(
 $carrier_default_wfc_ims_enabled_bool("
 carrier_wfc_ims_available_bool(
 maxImageHeightò

@@ -1,5 +1,5 @@
 
-s71204gid1_3d_414c54414eÙø‘ù
+s71204gid1_3d_414c54414e¿·‘ù
 Altaninternet.altan"«,
 (allow_emergency_numbers_in_call_log_bool( 
 hide_lte_plus_data_icon_bool(

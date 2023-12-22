@@ -1,5 +1,5 @@
 
-s20826Ùø‘ù"X
+s20826¿·‘ù"X
 maxImageHeightò
 maxImageWidth†
 recipientLimit

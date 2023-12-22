@@ -751,6 +751,8 @@ PRODUCT_PACKAGES += \
     libCamera_motcancunfs5k4h7mipirawrow_Zoom_Preview_2X \
     libCamera_motcancunfs5k4h7mipirawrow_Zoom_Preview_4X \
     libCamera_motcancunfs5k4h7mipirawrow_Zoom_Preview_8X \
+    libCamera_motcancunfs5kjnsmipiraw_Night_Vision_FacePreview \
+    libCamera_motcancunfs5kjnsmipirawrow_Night_Vision_FacePreview \
     libCamera_motcancunfsc202mipiraw_50_Capture \
     libCamera_motcancunfsc202mipiraw_ArcSoft_Raw_NV_Capture \
     libCamera_motcancunfsc202mipiraw_ArcSoft_Raw_NV_Preview \

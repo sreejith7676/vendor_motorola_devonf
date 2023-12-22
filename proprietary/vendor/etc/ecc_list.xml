@@ -36,7 +36,8 @@
 
     <!-- Add for Saudi Arabia -->
     <EccEntry Ecc="993" Category="1" Condition="1" Plmn="420 FFF"/>
-    <EccEntry Ecc="997" Category="2" Condition="1" Plmn="420 FFF"/>
+    <EccEntry Ecc="997" Category="0" Condition="1" Plmn="420 FFF"/>
+    <EccEntry Ecc="998" Category="0" Condition="1" Plmn="420 FFF"/>
     <EccEntry Ecc="999" Category="1" Condition="1" Plmn="420 FFF"/>
 
     <!-- Add for Iran -->

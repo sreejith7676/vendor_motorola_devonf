@@ -1,5 +1,5 @@
 
-s71202Ùø‘ù"Î,
+s71202¿·‘ù"Î,
 (allow_emergency_numbers_in_call_log_bool(
 maxImageHeightò
 maxImageWidth†
