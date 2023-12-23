@@ -20484,9 +20484,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.wifi.supplicant",
+	name: "android.hardware.wifi.supplicant_mtk",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant_mtk.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,

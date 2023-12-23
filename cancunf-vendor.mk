@@ -1492,7 +1492,7 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
-    android.hardware.wifi.supplicant \
+    android.hardware.wifi.supplicant_mtk \
     com.motorola.hardware.display.panel@1.2-service \
     lights-mtk-default \
     manifest_IMoto_Fingerprint \
