@@ -14549,6 +14549,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libTBaseProvisioning",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libTBaseProvisioning.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libadpcmdec_mtk",
 	owner: "motorola",
 	strip: {
@@ -20475,6 +20492,33 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "android.hardware.security.keymint-service.trustonic",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.secureclock-service.trustonic",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.sharedsecret-service.trustonic",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "android.hardware.usb@1.2-service-mediatekv2",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml",
@@ -20586,6 +20630,18 @@ cc_prebuilt_binary {
 	name: "SN1X0__RF-On.txt",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/SN1X0__RF-On.txt"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "TBaseDeviceBinding",
+	owner: "motorola",
+	srcs: ["proprietary/vendor/bin/TBaseDeviceBinding"],
 	check_elf_files: false,
 	strip: {
 		none: true,

@@ -1150,6 +1150,7 @@ PRODUCT_PACKAGES += \
     libMtkOmxApeDec \
     libMtkOmxGsmDec \
     libMtkOmxMp3Dec \
+    libTBaseProvisioning \
     libadpcmdec_mtk \
     libh264dec_customize \
     libh264dec_sa.ca7 \
@@ -1491,6 +1492,9 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks-shim-service-mtk \
+    android.hardware.security.keymint-service.trustonic \
+    android.hardware.security.secureclock-service.trustonic \
+    android.hardware.security.sharedsecret-service.trustonic \
     android.hardware.usb@1.2-service-mediatekv2 \
     android.hardware.wifi.supplicant_mtk \
     com.motorola.hardware.display.panel@1.2-service \
@@ -1504,6 +1508,7 @@ PRODUCT_PACKAGES += \
     power-mtk-default \
     vendor.dolby.hardware.dms \
     SN1X0__RF-On.txt \
+    TBaseDeviceBinding \
     atcid \
     audiocmdservice_atci \
     autobt \
