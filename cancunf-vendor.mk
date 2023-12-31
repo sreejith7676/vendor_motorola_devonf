@@ -6,10 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/cancunf
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/cancunf/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
     vendor/motorola/cancunf/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
     vendor/motorola/cancunf/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/motorola/cancunf/proprietary/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/031c0000000000000000000000000000.drbin \
@@ -181,7 +179,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_1.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_2.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
-    vendor/motorola/cancunf/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dual_golden_wide.bin \
     vendor/motorola/cancunf/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -317,7 +314,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/motorola/cancunf/proprietary/vendor/etc/mot_spn_table:$(TARGET_COPY_OUT_VENDOR)/etc/mot_spn_table \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/12m/Factory_SW_Logo.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/Factory_SW_Logo.jpg \
@@ -1486,11 +1482,16 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    MotoDolbyDax3 \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     daxService \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
+    com.motorola.dolby.dolbyui.dax3.features \
+    hiddenapi-whitelist-com.motorola.dolby.dolbyui \
+    dax-default \
+    media_codecs_dolby_audio \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.security.keymint-service.trustonic \
     android.hardware.security.secureclock-service.trustonic \
@@ -1507,6 +1508,9 @@ PRODUCT_PACKAGES += \
     motorola.hardware.mtk.fm.service \
     power-mtk-default \
     vendor.dolby.hardware.dms \
+    default-permissions-com.motorola.dolby.dolbyui \
+    com.dolby.daxservice \
+    kpoc_charger \
     SN1X0__RF-On.txt \
     TBaseDeviceBinding \
     atcid \
