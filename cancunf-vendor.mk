@@ -375,7 +375,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/xgf.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/xgf.cfg \
     vendor/motorola/cancunf/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/motorola/cancunf/proprietary/vendor/firmware/ILITEK_FW:$(TARGET_COPY_OUT_VENDOR)/firmware/ILITEK_FW \
+    vendor/motorola/cancunf/proprietary/recovery/root/vendor/firmware/ILITEK_FW:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ILITEK_FW \
     vendor/motorola/cancunf/proprietary/vendor/firmware/NT36xxx_MP_Setting_Criteria_606B.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/NT36xxx_MP_Setting_Criteria_606B.csv \
+    vendor/motorola/cancunf/proprietary/recovery/root/vendor/firmware/NT36xxx_MP_Setting_Criteria_606B.csv:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/NT36xxx_MP_Setting_Criteria_606B.csv \
     vendor/motorola/cancunf/proprietary/vendor/firmware/WIFI_RAM_CODE_soc2_2_1b_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc2_2_1b_1.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/WIFI_RAM_CODE_soc2_2_1c_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc2_2_1c_1.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg \
@@ -387,7 +389,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/firmware/cps4035.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cps4035.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
     vendor/motorola/cancunf/proprietary/vendor/firmware/focaltech_ts_fw_csot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_csot.bin \
+    vendor/motorola/cancunf/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_csot.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_csot.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/focaltech_ts_fw_csot_ft8725.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_csot_ft8725.bin \
+    vendor/motorola/cancunf/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_csot_ft8725.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_csot_ft8725.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/mt6627_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_coeff.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/mt6627_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_patch.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/mt6630_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v1_coeff.bin \
@@ -403,7 +407,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/firmware/mt6635_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_coeff.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/mt6635_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_patch.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw.bin \
+    vendor/motorola/cancunf/proprietary/recovery/root/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_mp.bin \
+    vendor/motorola/cancunf/proprietary/recovery/root/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
     vendor/motorola/cancunf/proprietary/vendor/firmware/rgx.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/rgx.fw \
     vendor/motorola/cancunf/proprietary/vendor/firmware/rgx.sh:$(TARGET_COPY_OUT_VENDOR)/firmware/rgx.sh \
