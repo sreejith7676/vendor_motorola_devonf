@@ -40,6 +40,20 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/attpre_6716af0c135559728ae9e9754da47ccd.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/attpre_6716af0c135559728ae9e9754da47ccd.tabin \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin \
+    vendor/motorola/cancunf/proprietary/vendor/bin/hardware_revisions.sh:$(TARGET_COPY_OUT_VENDOR)/bin/hardware_revisions.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.insmod.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.insmod.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.backup.trustlet.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.backup.trustlet.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.block_perm.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.block_perm.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.boot.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.modem-rfs.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.modem-rfs.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.modules.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.modules.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.shutdown.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.shutdown.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.touch.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.touch.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.usb.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.oem.fingerprint2.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.oem.fingerprint2.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/init.oem.hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.oem.hw.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/pstore_annotate.sh:$(TARGET_COPY_OUT_VENDOR)/bin/pstore_annotate.sh \
+    vendor/motorola/cancunf/proprietary/vendor/bin/vendor.mmi.cxp.sh:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.mmi.cxp.sh \
     vendor/motorola/cancunf/proprietary/vendor/etc/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/AW_DSP.bin \
     vendor/motorola/cancunf/proprietary/vendor/etc/AW_SINWAVE_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/AW_SINWAVE_DSP.bin \
     vendor/motorola/cancunf/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
@@ -179,6 +193,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_1.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_2.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
+    vendor/motorola/cancunf/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dual_golden_wide.bin \
     vendor/motorola/cancunf/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -323,15 +338,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/12m/focaltech-csot_ft8725-primary-cancunf.ini:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/focaltech-csot_ft8725-primary-cancunf.ini \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/12m/focaltech-csot_ft8726-primary-cancunf.ini:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/focaltech-csot_ft8726-primary-cancunf.ini \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/12m/key_code_map.txt:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/key_code_map.txt \
-    vendor/motorola/cancunf/proprietary/vendor/etc/motorola/props/sku.n.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.n.prop \
-    vendor/motorola/cancunf/proprietary/vendor/etc/motorola/props/sku.nc.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.nc.prop \
-    vendor/motorola/cancunf/proprietary/vendor/etc/motorola/props/sku.nq.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.nq.prop \
-    vendor/motorola/cancunf/proprietary/vendor/etc/motorola/props/sku.q.prop:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/props/sku.q.prop \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/sensors/mot_sensor_settings.json:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/sensors/mot_sensor_settings.json \
     vendor/motorola/cancunf/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
+    vendor/motorola/cancunf/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/permissions/motorola-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/motorola-hardware-sensorscalibrate.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/permissions/unavail.android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.barometer.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
@@ -345,6 +357,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/motorola/cancunf/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/motorola/cancunf/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
+    vendor/motorola/cancunf/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
@@ -753,8 +766,112 @@ PRODUCT_PACKAGES += \
     libCamera_motcancunfs5k4h7mipirawrow_Zoom_Preview_2X \
     libCamera_motcancunfs5k4h7mipirawrow_Zoom_Preview_4X \
     libCamera_motcancunfs5k4h7mipirawrow_Zoom_Preview_8X \
+    libCamera_motcancunfs5kjnsmipiraw_ArcSoft_Raw_NV_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_ArcSoft_Raw_NV_FaceCapture \
+    libCamera_motcancunfs5kjnsmipiraw_ArcSoft_Raw_NV_Preview \
+    libCamera_motcancunfs5kjnsmipiraw_Bokeh_Capture_Face_HDR \
+    libCamera_motcancunfs5kjnsmipiraw_Bokeh_Capture_HDR \
+    libCamera_motcancunfs5kjnsmipiraw_E2EHDR_Preview \
+    libCamera_motcancunfs5kjnsmipiraw_E2EHDR_Video \
+    libCamera_motcancunfs5kjnsmipiraw_EIS_Slow_Motion \
+    libCamera_motcancunfs5kjnsmipiraw_EIS_Slow_Motion_2X \
+    libCamera_motcancunfs5kjnsmipiraw_EIS_Video_1080 \
+    libCamera_motcancunfs5kjnsmipiraw_EIS_Video_1080_2X \
+    libCamera_motcancunfs5kjnsmipiraw_EIS_Video_1080_4X \
+    libCamera_motcancunfs5kjnsmipiraw_EIS_Video_1080_8X \
+    libCamera_motcancunfs5kjnsmipiraw_Face_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_Face_Capture_4cell \
+    libCamera_motcancunfs5kjnsmipiraw_Face_Preview_ZSD \
+    libCamera_motcancunfs5kjnsmipiraw_Flash_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_ITS_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_LLHDR_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_LLHDR_Face_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_Night_Vision_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_Night_Vision_FaceCapture \
     libCamera_motcancunfs5kjnsmipiraw_Night_Vision_FacePreview \
+    libCamera_motcancunfs5kjnsmipiraw_Night_Vision_Preview \
+    libCamera_motcancunfs5kjnsmipiraw_P1_YUV \
+    libCamera_motcancunfs5kjnsmipiraw_Panorama \
+    libCamera_motcancunfs5kjnsmipiraw_SR_Zoom_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_3rd_party_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_3rd_party_Capture_HDR \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_3rd_party_Preview \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_3rd_party_ZOOM \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_3rd_party_videocall \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_Capture_4cell \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_Preview \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_Preview_ZSD \
+    libCamera_motcancunfs5kjnsmipiraw_Scene_YUV_Reprocess \
+    libCamera_motcancunfs5kjnsmipiraw_Slow_Motion \
+    libCamera_motcancunfs5kjnsmipiraw_Slow_Motion_2X \
+    libCamera_motcancunfs5kjnsmipiraw_Video_1080 \
+    libCamera_motcancunfs5kjnsmipiraw_Video_1080_2X \
+    libCamera_motcancunfs5kjnsmipiraw_Video_1080_4X \
+    libCamera_motcancunfs5kjnsmipiraw_Video_1080_8X \
+    libCamera_motcancunfs5kjnsmipiraw_Video_Capture \
+    libCamera_motcancunfs5kjnsmipiraw_Video_Capture_2X \
+    libCamera_motcancunfs5kjnsmipiraw_Video_Capture_4X \
+    libCamera_motcancunfs5kjnsmipiraw_Video_Capture_8X \
+    libCamera_motcancunfs5kjnsmipiraw_Zoom_Capture_2X \
+    libCamera_motcancunfs5kjnsmipiraw_Zoom_Capture_4X \
+    libCamera_motcancunfs5kjnsmipiraw_Zoom_Capture_8X \
+    libCamera_motcancunfs5kjnsmipiraw_Zoom_Preview_2X \
+    libCamera_motcancunfs5kjnsmipiraw_Zoom_Preview_4X \
+    libCamera_motcancunfs5kjnsmipiraw_Zoom_Preview_8X \
+    libCamera_motcancunfs5kjnsmipirawrow_ArcSoft_Raw_NV_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_ArcSoft_Raw_NV_FaceCapture \
+    libCamera_motcancunfs5kjnsmipirawrow_ArcSoft_Raw_NV_Preview \
+    libCamera_motcancunfs5kjnsmipirawrow_Bokeh_Capture_Face_HDR \
+    libCamera_motcancunfs5kjnsmipirawrow_Bokeh_Capture_HDR \
+    libCamera_motcancunfs5kjnsmipirawrow_E2EHDR_Preview \
+    libCamera_motcancunfs5kjnsmipirawrow_E2EHDR_Video \
+    libCamera_motcancunfs5kjnsmipirawrow_EIS_Slow_Motion \
+    libCamera_motcancunfs5kjnsmipirawrow_EIS_Slow_Motion_2X \
+    libCamera_motcancunfs5kjnsmipirawrow_EIS_Video_1080 \
+    libCamera_motcancunfs5kjnsmipirawrow_EIS_Video_1080_2X \
+    libCamera_motcancunfs5kjnsmipirawrow_EIS_Video_1080_4X \
+    libCamera_motcancunfs5kjnsmipirawrow_EIS_Video_1080_8X \
+    libCamera_motcancunfs5kjnsmipirawrow_Face_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_Face_Capture_4cell \
+    libCamera_motcancunfs5kjnsmipirawrow_Face_Preview_ZSD \
+    libCamera_motcancunfs5kjnsmipirawrow_Flash_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_ITS_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_LLHDR_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_LLHDR_Face_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_Night_Vision_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_Night_Vision_FaceCapture \
     libCamera_motcancunfs5kjnsmipirawrow_Night_Vision_FacePreview \
+    libCamera_motcancunfs5kjnsmipirawrow_Night_Vision_Preview \
+    libCamera_motcancunfs5kjnsmipirawrow_P1_YUV \
+    libCamera_motcancunfs5kjnsmipirawrow_Panorama \
+    libCamera_motcancunfs5kjnsmipirawrow_SR_Zoom_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_3rd_party_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_3rd_party_Capture_HDR \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_3rd_party_Preview \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_3rd_party_ZOOM \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_3rd_party_videocall \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_Capture_4cell \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_Preview \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_Preview_ZSD \
+    libCamera_motcancunfs5kjnsmipirawrow_Scene_YUV_Reprocess \
+    libCamera_motcancunfs5kjnsmipirawrow_Slow_Motion \
+    libCamera_motcancunfs5kjnsmipirawrow_Slow_Motion_2X \
+    libCamera_motcancunfs5kjnsmipirawrow_Video_1080 \
+    libCamera_motcancunfs5kjnsmipirawrow_Video_1080_2X \
+    libCamera_motcancunfs5kjnsmipirawrow_Video_1080_4X \
+    libCamera_motcancunfs5kjnsmipirawrow_Video_1080_8X \
+    libCamera_motcancunfs5kjnsmipirawrow_Video_Capture \
+    libCamera_motcancunfs5kjnsmipirawrow_Video_Capture_2X \
+    libCamera_motcancunfs5kjnsmipirawrow_Video_Capture_4X \
+    libCamera_motcancunfs5kjnsmipirawrow_Video_Capture_8X \
+    libCamera_motcancunfs5kjnsmipirawrow_Zoom_Capture_2X \
+    libCamera_motcancunfs5kjnsmipirawrow_Zoom_Capture_4X \
+    libCamera_motcancunfs5kjnsmipirawrow_Zoom_Capture_8X \
+    libCamera_motcancunfs5kjnsmipirawrow_Zoom_Preview_2X \
+    libCamera_motcancunfs5kjnsmipirawrow_Zoom_Preview_4X \
+    libCamera_motcancunfs5kjnsmipirawrow_Zoom_Preview_8X \
     libCamera_motcancunfsc202mipiraw_50_Capture \
     libCamera_motcancunfsc202mipiraw_ArcSoft_Raw_NV_Capture \
     libCamera_motcancunfsc202mipiraw_ArcSoft_Raw_NV_Preview \
@@ -1084,6 +1201,10 @@ PRODUCT_PACKAGES += \
     mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr \
     mot_cancunf_s5k4h7_mipi_raw_row_tuning \
     mot_cancunf_s5k4h7_mipi_raw_tuning \
+    mot_cancunf_s5kjns_mipi_raw_IdxMgr \
+    mot_cancunf_s5kjns_mipi_raw_row_IdxMgr \
+    mot_cancunf_s5kjns_mipi_raw_row_tuning \
+    mot_cancunf_s5kjns_mipi_raw_tuning \
     mot_cancunf_sc202_mipi_raw_IdxMgr \
     mot_cancunf_sc202_mipi_raw_row_IdxMgr \
     mot_cancunf_sc202_mipi_raw_row_tuning \
@@ -1505,9 +1626,17 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.2-service-mediatekv2 \
     android.hardware.wifi.supplicant_mtk \
     com.motorola.hardware.display.panel@1.2-service \
+    gnss-mtk-default \
+    gnss-mtk@2.1-service \
+    lbs_hidl_service@1.0 \
     lights-mtk-default \
     manifest_IMoto_Fingerprint \
     manifest_android.hardware.drm@1.4-service.widevine \
+    manifest_apuware_apusys \
+    manifest_apuware_hmp \
+    manifest_apuware_utils \
+    manifest_cameraprovider \
+    manifest_hwcomposer \
     manifest_media_c2_V1_2_default \
     memtrack-mediatek \
     motorola.hardware.input@1.0-service \
@@ -1538,7 +1667,6 @@ PRODUCT_PACKAGES += \
     fuelgauged_nvram \
     gbe \
     gsm0710muxd \
-    hardware_revisions \
     android.hardware.biometrics.fingerprint@2.1-goodixservice \
     android.hardware.biometrics.fingerprint@2.1-service-chipone \
     android.hardware.biometrics.fingerprint@2.1-service-fpc \
@@ -1582,18 +1710,9 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.alps.alps_device@1.1-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
-    init.insmod \
-    init.mmi.backup.trustlet \
-    init.mmi.block_perm \
-    init.mmi.boot \
-    init.mmi.modem-rfs \
-    init.mmi.modules \
-    init.mmi.shutdown \
-    init.mmi.touch \
-    init.mmi.usb \
-    init.oem.fingerprint2 \
-    init.oem.hw \
     ipsec_mon \
+    kpgather \
+    kpreadwrite \
     lbs_hidl_service \
     mcDriverDaemon \
     mnld \
@@ -1606,13 +1725,13 @@ PRODUCT_PACKAGES += \
     netdagent \
     netdc \
     nvram_daemon \
+    rcs_volte_stack \
     rsudaemon_proxy \
     rt5512_calibration \
     sns_mot_client \
     stp_dump3 \
     thermal_core \
     thermal_intf \
-    vendor.mmi.cxp \
     volte_clientapi_ua \
     volte_rcs_ua \
     vpud \
