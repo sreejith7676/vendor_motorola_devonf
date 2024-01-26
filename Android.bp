@@ -11744,6 +11744,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libdecrypt",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libdecrypt.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libdecrypt.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libdlbpreg",
 	owner: "motorola",
 	strip: {
@@ -19125,57 +19145,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "motorola.hardware.fdrcontrol@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.fdrcontrol@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.fdrcontrol@1.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.fdrcontrol@1.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.fdrcontrol@1.2",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.fdrcontrol@1.2.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "motorola.hardware.health.storage@1.0",
 	owner: "motorola",
 	strip: {
@@ -22690,63 +22659,63 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.neuralnetworks-shim-service-mtk",
+	name: "manifest_android.hardware.neuralnetworks-shim-service-mtk",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.neuralnetworks-shim-service-mtk.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.security.keymint-service.trustonic",
+	name: "manifest_android.hardware.security.keymint-service.trustonic",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.security.keymint-service.trustonic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.security.secureclock-service.trustonic",
+	name: "manifest_android.hardware.security.secureclock-service.trustonic",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.security.secureclock-service.trustonic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.security.sharedsecret-service.trustonic",
+	name: "manifest_android.hardware.security.sharedsecret-service.trustonic",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.security.sharedsecret-service.trustonic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.usb@1.2-service-mediatekv2",
+	name: "manifest_android.hardware.usb@1.2-service-mediatekv2",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.usb@1.2-service-mediatekv2.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.wifi.supplicant_mtk",
+	name: "manifest_android.hardware.wifi.supplicant",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant_mtk.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.wifi.supplicant.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "com.motorola.hardware.display.panel@1.2-service",
+	name: "manifest_com.motorola.hardware.display.panel@1.2-service",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/com.motorola.hardware.display.panel@1.2-service.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_com.motorola.hardware.display.panel@1.2-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -22897,9 +22866,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.dolby.hardware.dms",
+	name: "manifest_vendor.dolby.hardware.dms",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -23450,19 +23419,6 @@ cc_prebuilt_binary {
 	name: "motorola.hardware.camera.imgtuner@2.0-service",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.camera.imgtuner@2.0-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "motorola.hardware.fdrcontrol@1.2-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.fdrcontrol@1.2-service"],
 	check_elf_files: false,
 	strip: {
 		none: true,

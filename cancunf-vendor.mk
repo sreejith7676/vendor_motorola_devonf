@@ -297,7 +297,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.fdrcontrol@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.fdrcontrol@1.2-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health.storage@1.0-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.health@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health@2.0-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.input@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.input@1.0-service.rc \
@@ -1028,6 +1027,7 @@ PRODUCT_PACKAGES += \
     libcustom_nvram \
     libcvsd_mtk \
     libdapparamstorage \
+    libdecrypt \
     libdlbpreg \
     libdre \
     libdynamiclog \
@@ -1414,9 +1414,6 @@ PRODUCT_PACKAGES += \
     libwifitest \
     libwpfa \
     ls_nq_client \
-    motorola.hardware.fdrcontrol@1.0 \
-    motorola.hardware.fdrcontrol@1.1 \
-    motorola.hardware.fdrcontrol@1.2 \
     motorola.hardware.health.storage@1.0 \
     motorola.hardware.health@2.0 \
     motorola.hardware.input@1.0 \
@@ -1619,13 +1616,13 @@ PRODUCT_PACKAGES += \
     hiddenapi-whitelist-com.motorola.dolby.dolbyui \
     dax-default \
     media_codecs_dolby_audio \
-    android.hardware.neuralnetworks-shim-service-mtk \
-    android.hardware.security.keymint-service.trustonic \
-    android.hardware.security.secureclock-service.trustonic \
-    android.hardware.security.sharedsecret-service.trustonic \
-    android.hardware.usb@1.2-service-mediatekv2 \
-    android.hardware.wifi.supplicant_mtk \
-    com.motorola.hardware.display.panel@1.2-service \
+    manifest_android.hardware.neuralnetworks-shim-service-mtk \
+    manifest_android.hardware.security.keymint-service.trustonic \
+    manifest_android.hardware.security.secureclock-service.trustonic \
+    manifest_android.hardware.security.sharedsecret-service.trustonic \
+    manifest_android.hardware.usb@1.2-service-mediatekv2 \
+    manifest_android.hardware.wifi.supplicant \
+    manifest_com.motorola.hardware.display.panel@1.2-service \
     gnss-mtk-default \
     gnss-mtk@2.1-service \
     lbs_hidl_service@1.0 \
@@ -1642,7 +1639,7 @@ PRODUCT_PACKAGES += \
     motorola.hardware.input@1.0-service \
     motorola.hardware.mtk.fm.service \
     power-mtk-default \
-    vendor.dolby.hardware.dms \
+    manifest_vendor.dolby.hardware.dms \
     default-permissions-com.motorola.dolby.dolbyui \
     com.dolby.daxservice \
     kpoc_charger \
@@ -1688,7 +1685,6 @@ PRODUCT_PACKAGES += \
     fpc_ident \
     goodix_ident \
     motorola.hardware.camera.imgtuner@2.0-service \
-    motorola.hardware.fdrcontrol@1.2-service \
     motorola.hardware.health.storage@1.0-service \
     motorola.hardware.health@2.0-service \
     motorola.hardware.input@1.0-service \
