@@ -10684,6 +10684,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libadropbox",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libadropbox.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libadropbox.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libaedv",
 	owner: "motorola",
 	strip: {
@@ -12204,6 +12224,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libicd_decoder",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libicd_decoder.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libicd_decoder.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libimgsensorca",
 	owner: "motorola",
 	strip: {
@@ -13444,6 +13484,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libsimlock",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsimlock.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsimlock.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsimmelock",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsimmelock.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsimmelock.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libspeech_enh_lib",
 	owner: "motorola",
 	strip: {
@@ -13504,6 +13584,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libstorage_otp",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libstorage_otp.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libstorage_otp.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsysenv",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsysenv.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsysenv.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libtflite_mtk",
 	owner: "motorola",
 	strip: {
@@ -13515,6 +13635,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libtflite_mtk.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libthha",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libthha.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libthha.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -16954,23 +17094,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libthha",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libthha.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libtpa",
 	owner: "motorola",
 	strip: {
@@ -18949,40 +19072,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libstfactory-vendor.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libstorage_otp",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libstorage_otp.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsysenv",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsysenv.so"],
 		},
 	},
 	compile_multilib: "64",

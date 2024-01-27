@@ -974,6 +974,7 @@ PRODUCT_PACKAGES += \
     lib_ainr_enh \
     lib_iir \
     libaal_key \
+    libadropbox \
     libaedv \
     libappgamepq \
     libapu_mdw \
@@ -1050,6 +1051,7 @@ PRODUCT_PACKAGES += \
     libhdrvideo \
     libhevce_sb.ca7.android \
     libhwm \
+    libicd_decoder \
     libimgsensorca \
     libion_mtk \
     libion_ulit \
@@ -1112,10 +1114,15 @@ PRODUCT_PACKAGES += \
     librpc \
     librt_extamp_intf \
     libscltm \
+    libsimlock \
+    libsimmelock \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstagefrighthw \
+    libstorage_otp \
+    libsysenv \
     libtflite_mtk \
+    libthha \
     libtlcWidevineModularDrm \
     libudf \
     liburee_meta_drmkeyinstall \
@@ -1286,7 +1293,6 @@ PRODUCT_PACKAGES += \
     libpkip \
     librcs_interface \
     librcs_volte_core \
-    libthha \
     libtpa \
     libvcodec_utility_plat.mt6789 \
     libvcodec_utility_plat.mt6855 \
@@ -1403,8 +1409,6 @@ PRODUCT_PACKAGES += \
     librilfusion \
     librsumodem \
     libstfactory-vendor \
-    libstorage_otp \
-    libsysenv \
     libtrm \
     libundistort_impl \
     libvia-ril \
