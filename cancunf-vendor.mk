@@ -277,21 +277,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/hw/init.mmi.usb.configfs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.usb.configfs.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.alpslegacy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.alpslegacy.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.chipone_ident.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.chipone_ident.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.fmradio_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fmradio_drv.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fpsgo.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.gf_ident.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gf_ident.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
