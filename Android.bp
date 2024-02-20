@@ -6,6 +6,230 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libcomutils",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libcomutils.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libimsma",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libimsma.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libimsma_adapt",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libimsma_adapt.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libimsma_rtp",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libimsma_rtp.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libimsma_socketwrapper",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libimsma_socketwrapper.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmtk_vt_service",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libmtk_vt_service.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmtk_vt_wrapper",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libmtk_vt_wrapper.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmtkperf_client",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libmtkperf_client.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsignal",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libsignal.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsink",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libsink.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsource",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libsource.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libvcodec_cap",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libvcodec_cap.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libvcodec_capenc",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libvcodec_capenc.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libvt_avsync",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libvt_avsync.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "AVCSecureVdecCA",
 	owner: "motorola",
 	strip: {
@@ -97,26 +321,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.motorola.hardware.display.panel@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/com.motorola.hardware.display.panel@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.0.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -17422,91 +17626,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "com.motorola.hardware.display.panel@1.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.motorola.hardware.display.panel@1.2",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.2.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.motorola.hardware.display.touch@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.motorola.hardware.display.touch@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.motorola.hardware.display.touch@1.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.motorola.hardware.display.touch@1.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.motorola.hardware.display.touch@1.2",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/com.motorola.hardware.display.touch@1.2.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "android.hardware.gnss-impl-mediatek",
 	owner: "motorola",
 	strip: {
@@ -18673,23 +18792,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmotohid",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmotohid.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmpbase",
 	owner: "motorola",
 	strip: {
@@ -19234,91 +19336,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "motorola.hardware.health.storage@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.health.storage@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.health@2.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.health@2.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.input@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.input@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.mtk.fm-V1-ndk_platform",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.mtk.fm-V1-ndk_platform.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.sarwifi-V1-ndk_platform",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.sarwifi-V1-ndk_platform.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "motorola.hardware.sensorscalibrate@1.0",
 	owner: "motorola",
 	strip: {
@@ -19327,40 +19344,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/motorola.hardware.sensorscalibrate@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.wifi.hostapd@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.wifi.hostapd@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.wifi.supplicant@1.0_vendor",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.wifi.supplicant@1.0_vendor.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -22654,14 +22637,57 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.videotelephony@1.0.system_ext",
+	stem: "vendor.mediatek.hardware.videotelephony@1.0",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
+}
+
 android_app_import {
 	name: "MotoDolbyDax3",
 	owner: "motorola",
 	apk: "proprietary/app/MotoDolbyDax3/MotoDolbyDax3.apk",
+	overrides: ["MusicFX"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+}
+
+android_app_import {
+	name: "MotoSignatureApp",
+	owner: "motorola",
+	apk: "proprietary/app/MotoSignatureApp/MotoSignatureApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "ImsService",
+	owner: "motorola",
+	apk: "proprietary/priv-app/ImsService/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 }
 
 android_app_import {
@@ -22689,6 +22715,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MotorolaSettingsProvider",
+	owner: "motorola",
+	apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "daxService",
 	owner: "motorola",
 	apk: "proprietary/system_ext/priv-app/daxService/daxService.apk",
@@ -22698,6 +22736,60 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.motorola.frameworks.core.addon",
+	owner: "motorola",
+	jars: ["proprietary/framework/com.motorola.frameworks.core.addon.jar"],
+}
+
+dex_import {
+	name: "com.motorola.motosignature",
+	owner: "motorola",
+	jars: ["proprietary/framework/com.motorola.motosignature.jar"],
+}
+
+dex_import {
+	name: "mediatek-common",
+	owner: "motorola",
+	jars: ["proprietary/framework/mediatek-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-framework",
+	owner: "motorola",
+	jars: ["proprietary/framework/mediatek-framework.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-base",
+	owner: "motorola",
+	jars: ["proprietary/framework/mediatek-ims-base.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-oem-plugin",
+	owner: "motorola",
+	jars: ["proprietary/framework/mediatek-ims-oem-plugin.jar"],
+}
+
+dex_import {
+	name: "mediatek-services",
+	owner: "motorola",
+	jars: ["proprietary/framework/mediatek-services.jar"],
+}
+
+dex_import {
+	name: "moto-checkin",
+	owner: "motorola",
+	jars: ["proprietary/framework/moto-checkin.jar"],
+}
+
+dex_import {
+	name: "moto-settings",
+	owner: "motorola",
+	jars: ["proprietary/framework/moto-settings.jar"],
 }
 
 dex_import {
@@ -22718,6 +22810,38 @@ prebuilt_etc_xml {
 	name: "com.motorola.dolby.dolbyui.dax3.features",
 	owner: "motorola",
 	src: "proprietary/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml",
+	filename_from_src: true,
+	sub_dir: "permissions",
+}
+
+prebuilt_etc_xml {
+	name: "permissions-com.motorola.frameworks.core.addon",
+	owner: "motorola",
+	src: "proprietary/etc/permissions/permissions-com.motorola.frameworks.core.addon.xml",
+	filename_from_src: true,
+	sub_dir: "permissions",
+}
+
+prebuilt_etc_xml {
+	name: "permissions-com.motorola.motosignature",
+	owner: "motorola",
+	src: "proprietary/etc/permissions/permissions-com.motorola.motosignature.xml",
+	filename_from_src: true,
+	sub_dir: "permissions",
+}
+
+prebuilt_etc_xml {
+	name: "permissions-moto-checkin",
+	owner: "motorola",
+	src: "proprietary/etc/permissions/permissions-moto-checkin.xml",
+	filename_from_src: true,
+	sub_dir: "permissions",
+}
+
+prebuilt_etc_xml {
+	name: "permissions-moto-settings",
+	owner: "motorola",
+	src: "proprietary/etc/permissions/permissions-moto-settings.xml",
 	filename_from_src: true,
 	sub_dir: "permissions",
 }
@@ -22787,24 +22911,6 @@ prebuilt_etc_xml {
 	name: "manifest_android.hardware.usb@1.2-service-mediatekv2",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.usb@1.2-service-mediatekv2.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.wifi.supplicant",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.wifi.supplicant.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_com.motorola.hardware.display.panel@1.2-service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_com.motorola.hardware.display.panel@1.2-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -22928,24 +23034,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "motorola.hardware.input@1.0-service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.input@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "motorola.hardware.mtk.fm.service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.mtk.fm.service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "power-mtk-default",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/power-mtk-default.xml",
@@ -22985,6 +23073,17 @@ cc_prebuilt_binary {
 	name: "kpoc_charger",
 	owner: "motorola",
 	srcs: ["proprietary/bin/kpoc_charger"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+}
+
+cc_prebuilt_binary {
+	name: "vtservice",
+	owner: "motorola",
+	srcs: ["proprietary/bin/vtservice"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -23401,19 +23500,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.sensors@2.0-service.multihal-mediatek",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.thermal@2.0-service.mtk",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk"],
@@ -23453,32 +23539,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "com.motorola.hardware.display.panel@1.2-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/com.motorola.hardware.display.panel@1.2-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "com.motorola.hardware.display.touch@1.2-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/com.motorola.hardware.display.touch@1.2-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "fpc_ident",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/fpc_ident"],
@@ -23508,71 +23568,6 @@ cc_prebuilt_binary {
 	name: "motorola.hardware.camera.imgtuner@2.0-service",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.camera.imgtuner@2.0-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "motorola.hardware.health.storage@1.0-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.health.storage@1.0-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "motorola.hardware.health@2.0-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.health@2.0-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "motorola.hardware.input@1.0-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.input@1.0-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "motorola.hardware.mtk.fm-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.mtk.fm-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "motorola.hardware.sarwifi-srv",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.sarwifi-srv"],
 	check_elf_files: false,
 	strip: {
 		none: true,

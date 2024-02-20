@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/cancunf
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/cancunf/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
     vendor/motorola/cancunf/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
     vendor/motorola/cancunf/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
@@ -253,17 +254,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/com.motorola.hardware.display.panel@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.motorola.hardware.display.panel@1.2-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/com.motorola.hardware.display.touch@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.motorola.hardware.display.touch@1.2-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/eara-io-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eara-io-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fpsgo.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
@@ -289,10 +286,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health.storage@1.0-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.health@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health@2.0-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.input@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.input@1.0-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.mtk.fm.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.mtk.fm.service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.sensorscalibrate@1.0-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -300,7 +293,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/sarwifi-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sarwifi-default.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
@@ -348,7 +340,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/motorola/cancunf/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/motorola/cancunf/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
-    vendor/motorola/cancunf/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
@@ -434,12 +425,25 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/lib64/super_night_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/super_night_raw.bin
 
 PRODUCT_PACKAGES += \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libmtkperf_client \
+    libsignal \
+    libsink \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
     com.fingerprints.extension@1.0 \
     com.motorola.hardware.biometric.fingerprint@1.0 \
-    com.motorola.hardware.display.panel@1.0 \
     libGLES_meow \
     libMEOW_data \
     libMEOW_gift \
@@ -1304,11 +1308,6 @@ PRODUCT_PACKAGES += \
     APUWareHmpServer \
     APUWareUtilsServer \
     android.hardware.power-service-mediatek \
-    com.motorola.hardware.display.panel@1.1 \
-    com.motorola.hardware.display.panel@1.2 \
-    com.motorola.hardware.display.touch@1.0 \
-    com.motorola.hardware.display.touch@1.1 \
-    com.motorola.hardware.display.touch@1.2 \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
@@ -1377,7 +1376,6 @@ PRODUCT_PACKAGES += \
     libksensor \
     libmipc \
     libmmagent \
-    libmotohid \
     libmpbase \
     libmtk-ril \
     libmtk-rilop \
@@ -1410,14 +1408,7 @@ PRODUCT_PACKAGES += \
     libwifitest \
     libwpfa \
     ls_nq_client \
-    motorola.hardware.health.storage@1.0 \
-    motorola.hardware.health@2.0 \
-    motorola.hardware.input@1.0 \
-    motorola.hardware.mtk.fm-V1-ndk_platform \
-    motorola.hardware.sarwifi-V1-ndk_platform \
     motorola.hardware.sensorscalibrate@1.0 \
-    motorola.hardware.wifi.hostapd@1.0 \
-    motorola.hardware.wifi.supplicant@1.0_vendor \
     motrilutils \
     lib3a.ae.stat \
     lib3a.af.assist \
@@ -1602,13 +1593,30 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    vendor.mediatek.hardware.videotelephony@1.0.system_ext \
     MotoDolbyDax3 \
+    MotoSignatureApp \
+    ImsService \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
+    MotorolaSettingsProvider \
     daxService \
+    com.motorola.frameworks.core.addon \
+    com.motorola.motosignature \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-oem-plugin \
+    mediatek-services \
+    moto-checkin \
+    moto-settings \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
     com.motorola.dolby.dolbyui.dax3.features \
+    permissions-com.motorola.frameworks.core.addon \
+    permissions-com.motorola.motosignature \
+    permissions-moto-checkin \
+    permissions-moto-settings \
     hiddenapi-whitelist-com.motorola.dolby.dolbyui \
     dax-default \
     media_codecs_dolby_audio \
@@ -1617,8 +1625,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.security.secureclock-service.trustonic \
     manifest_android.hardware.security.sharedsecret-service.trustonic \
     manifest_android.hardware.usb@1.2-service-mediatekv2 \
-    manifest_android.hardware.wifi.supplicant \
-    manifest_com.motorola.hardware.display.panel@1.2-service \
     gnss-mtk-default \
     gnss-mtk@2.1-service \
     lbs_hidl_service@1.0 \
@@ -1632,13 +1638,12 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer \
     manifest_media_c2_V1_2_default \
     memtrack-mediatek \
-    motorola.hardware.input@1.0-service \
-    motorola.hardware.mtk.fm.service \
     power-mtk-default \
     manifest_vendor.dolby.hardware.dms \
     default-permissions-com.motorola.dolby.dolbyui \
     com.dolby.daxservice \
     kpoc_charger \
+    vtservice \
     SN1X0__RF-On.txt \
     TBaseDeviceBinding \
     atcid \
@@ -1672,20 +1677,12 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.security.keymint-service.trustonic \
-    android.hardware.sensors@2.0-service.multihal-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
     chipone_ident \
-    com.motorola.hardware.display.panel@1.2-service \
-    com.motorola.hardware.display.touch@1.2-service \
     fpc_ident \
     goodix_ident \
     motorola.hardware.camera.imgtuner@2.0-service \
-    motorola.hardware.health.storage@1.0-service \
-    motorola.hardware.health@2.0-service \
-    motorola.hardware.input@1.0-service \
-    motorola.hardware.mtk.fm-service \
-    motorola.hardware.sarwifi-srv \
     motorola.hardware.sensorscalibrate@1.0-service \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6855 \
     camerahalserver \

@@ -1,4 +1,0 @@
-service vendor.fm /vendor/bin/hw/motorola.hardware.mtk.fm-service
-    class hal
-    user system
-    group system  media radio sdcard_r sdcard_rw

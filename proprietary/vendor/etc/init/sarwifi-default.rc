@@ -1,5 +1,0 @@
-service moto.sarwifi /vendor/bin/hw/motorola.hardware.sarwifi-srv
-    class hal
-    user system
-    group system
-    shutdown critical
