@@ -6,8 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/cancunf
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/cancunf/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
     vendor/motorola/cancunf/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
+    vendor/motorola/cancunf/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/motorola/cancunf/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/motorola/cancunf/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
@@ -425,20 +425,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/lib64/super_night_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/super_night_raw.bin
 
 PRODUCT_PACKAGES += \
-    libcomutils \
-    libimsma \
-    libimsma_adapt \
-    libimsma_rtp \
-    libimsma_socketwrapper \
-    libmtk_vt_service \
-    libmtk_vt_wrapper \
-    libmtkperf_client \
-    libsignal \
-    libsink \
-    libsource \
-    libvcodec_cap \
-    libvcodec_capenc \
-    libvt_avsync \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
@@ -1268,7 +1254,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
     libHEVCdec_sa.ca7.android \
     libMcRegistry \
     libMtkOmxAdpcmDec \
@@ -1588,11 +1573,27 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.radio_op@3.0 \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.trustonic.alps.alps_device@1.0 \
     vendor.trustonic.alps.alps_device@1.1 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libmtkperf_client \
+    libsignal \
+    libsink \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
     MotoDolbyDax3 \
     MotoSignatureApp \
@@ -1643,7 +1644,6 @@ PRODUCT_PACKAGES += \
     default-permissions-com.motorola.dolby.dolbyui \
     com.dolby.daxservice \
     kpoc_charger \
-    vtservice \
     SN1X0__RF-On.txt \
     TBaseDeviceBinding \
     atcid \
@@ -1728,7 +1728,8 @@ PRODUCT_PACKAGES += \
     wifitest \
     wlan_assistant \
     wmt_launcher \
-    wmt_loader
+    wmt_loader \
+    vtservice
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay
