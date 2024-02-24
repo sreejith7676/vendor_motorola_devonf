@@ -1595,30 +1595,16 @@ PRODUCT_PACKAGES += \
     libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
-    MotoDolbyDax3 \
-    MotoSignatureApp \
     ImsService \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
-    MotorolaSettingsProvider \
-    daxService \
-    com.motorola.frameworks.core.addon \
-    com.motorola.motosignature \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-oem-plugin \
     mediatek-services \
-    moto-checkin \
-    moto-settings \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
-    com.motorola.dolby.dolbyui.dax3.features \
-    permissions-com.motorola.frameworks.core.addon \
-    permissions-com.motorola.motosignature \
-    permissions-moto-checkin \
-    permissions-moto-settings \
-    hiddenapi-whitelist-com.motorola.dolby.dolbyui \
     dax-default \
     media_codecs_dolby_audio \
     manifest_android.hardware.neuralnetworks-shim-service-mtk \
@@ -1641,8 +1627,6 @@ PRODUCT_PACKAGES += \
     memtrack-mediatek \
     power-mtk-default \
     manifest_vendor.dolby.hardware.dms \
-    default-permissions-com.motorola.dolby.dolbyui \
-    com.dolby.daxservice \
     kpoc_charger \
     SN1X0__RF-On.txt \
     TBaseDeviceBinding \
