@@ -1601,8 +1601,11 @@ PRODUCT_PACKAGES += \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
-    mediatek-ims-oem-plugin \
-    mediatek-services \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
     dax-default \

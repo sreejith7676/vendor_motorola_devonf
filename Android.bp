@@ -22737,15 +22737,33 @@ dex_import {
 }
 
 dex_import {
-	name: "mediatek-ims-oem-plugin",
+	name: "mediatek-ims-common",
 	owner: "motorola",
-	jars: ["proprietary/framework/mediatek-ims-oem-plugin.jar"],
+	jars: ["proprietary/framework/mediatek-ims-common.jar"],
 }
 
 dex_import {
-	name: "mediatek-services",
+	name: "mediatek-ims-extension-plugin",
 	owner: "motorola",
-	jars: ["proprietary/framework/mediatek-services.jar"],
+	jars: ["proprietary/framework/mediatek-ims-extension-plugin.jar"],
+}
+
+dex_import {
+	name: "mediatek-telecom-common",
+	owner: "motorola",
+	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-base",
+	owner: "motorola",
+	jars: ["proprietary/framework/mediatek-telephony-base.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-common",
+	owner: "motorola",
+	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
 }
 
 dex_import {
