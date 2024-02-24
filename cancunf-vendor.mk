@@ -194,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_1.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/cust_color_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_2.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
-    vendor/motorola/cancunf/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dual_golden_wide.bin \
     vendor/motorola/cancunf/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -442,7 +441,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl-mediatek \
     android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.thermal@2.0-impl \
-    audio.bluetooth.default \
     audio.primary.mediatek \
     audio.r_submix.mediatek \
     displaypanel.default \
@@ -985,7 +983,6 @@ PRODUCT_PACKAGES += \
     libawinic_mtk_aurisys \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
     libbluetooth_mtk \
@@ -1201,9 +1198,7 @@ PRODUCT_PACKAGES += \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
     sensors.moto \
-    libaudiopreprocessing \
     libdlbvol \
-    libhapticgenerator \
     libmsstwrapper \
     libswdap \
     libswgamedap \
