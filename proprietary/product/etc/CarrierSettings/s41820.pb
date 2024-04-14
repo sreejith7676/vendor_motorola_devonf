@@ -1,5 +1,5 @@
 
-s41820¿·‘ù
+s41820ËŒπ¢
 Zaindefault"∞
 maxImageHeightò
 maxImageWidth†
