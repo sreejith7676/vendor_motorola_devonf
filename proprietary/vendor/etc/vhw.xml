@@ -302,7 +302,7 @@
 		</mappings>
 	</device>
 
-	<device name="cancunf" version="1.0">
+	<device name="cancunf" version="1.5">
 
 		<!-- Features list variable hardware components for this device -->
 		<features>
@@ -357,7 +357,7 @@
 			<!-- look up value by matching "hwid" table, combination with current device,
 				then parsing out field indicated by "index",
 				and then translating the field as prescribed by "map" -->
-			<string name="radio/.auto">key=hwid;index=2;map=1:BRLA,2:APEU,3:PRC,4:JAPAN,5:INDIA,6:EU,7:BRLA2,8:APEU2,9:PRC2,10:JAPAN2,11:INDIA2,12:EU2</string>
+			<string name="radio/.auto">key=hwid;index=2;map=1:BRLA,2:APEU,3:PRC,4:JAPAN,5:INDIA,6:EU,7:BRLA2,8:APEU2,9:PRC2,10:JAPAN2,11:INDIA2,12:EU2,13:INDIA3,14:JPSB,15:PRC3,16:JPRET</string>
 			<string name="radio/.cmdline">androidboot.</string>
 			<string name="radio/.system">ro.vendor.hw.</string>
 			<string-array name="radio/.range">
@@ -373,6 +373,10 @@
 				<item>JAPAN2</item>
 				<item>INDIA2</item>
 				<item>EU2</item>
+				<item>INDIA3</item>
+				<item>JPSB</item>
+				<item>PRC3</item>
+				<item>JPRET</item>
 			</string-array>
 
 			<!-- use result of ram HW detection to fill the field -->
@@ -417,6 +421,9 @@
 				<item>ambrosia</item>
 				<item>littleboyblue</item>
 				<item>vivamagenta</item>
+				<item>ambrosia2</item>
+				<item>tofu</item>
+				<item>lavender</item>
 				<item>other</item>
 			</string-array>
 
@@ -434,7 +441,7 @@
 				<item>true</item>
 			</string-array>
 
-			<string name="nfc/.auto">key=hwid;index=2;map=1:samsung,2:samsung,3:false,4:ese_nq,5:false,6:samsung,7:samsung,8:samsung,9:false,10:ese_nq,11:false,12:samsung</string>
+			<string name="nfc/.auto">key=hwid;index=2;map=1:samsung,2:samsung,3:false,4:ese_nq,5:false,6:samsung,7:samsung,8:samsung,9:false,10:ese_nq,11:false,12:samsung,13:false,14:ese_nq,15:false,16:ese_nq</string>
 			<string name="nfc/.chosen">mmi,</string>
 			<string name="nfc/.system">ro.vendor.hw.</string>
 			<string-array name="nfc/.range">
@@ -450,7 +457,7 @@
 				<item>n</item>
 			</string-array>
 
-			<string name="felica/.auto">key=hwid;index=2;map=1:false,2:false,3:false,4:true,5:false,6:false,7:false,8:false,9:false,10:true,11:false,12:false</string>
+			<string name="felica/.auto">key=hwid;index=2;map=1:false,2:false,3:false,4:true,5:false,6:false,7:false,8:false,9:false,10:true,11:false,12:false,13:false,14:true,15:false,16:true</string>
 			<string name="felica/.chosen">mmi,</string>
 			<string name="felica/.system">ro.vendor.hw.</string>
 			<string-array name="felica/.range">
@@ -466,23 +473,29 @@
 		<mappings>
 			<sku-variants export="ro.vendor.hw.sku_variant" writeback="sku_variant">
 				<!-- ... same format as before ... -->
-				<variant name="nq">
+				<variant1 name="nq">
 					<string name="nfc">samsung</string>
 					<string name="radio">EU</string>
-				</variant>
-				<variant name="nq">
+				</variant1>
+				<variant2 name="nq">
 					<string name="nfc">samsung</string>
 					<string name="radio">EU2</string>
-				</variant>
-				<variant name="q">
+				</variant2>
+				<variant3 name="q">
 					<string name="radio">INDIA</string>
-				</variant>
-				<variant name="q">
+				</variant3>
+				<variant4 name="q">
 					<string name="radio">INDIA2</string>
-				</variant>
-				<variant name="n">
+				</variant4>
+				<variant5 name="q">
+					<string name="radio">INDIA3</string>
+				</variant5>
+				<variant6 name="n">
 					<string name="nfc">samsung</string>
-				</variant>
+				</variant6>
+				<variant7 name="n">
+					<string name="nfc">ese_nq</string>
+				</variant7>
 			</sku-variants>
 
 			<products export="ro.vendor.product.display" default="moto g54 5G">
@@ -520,7 +533,7 @@
 		</mappings>
 	</device>
 
-	<device name="cancunn" version="0.2">
+	<device name="cancunn" version="0.5">
 
 		<!-- Features list variable hardware components for this device -->
 		<features>
@@ -584,6 +597,7 @@
 			<string-array name="ram/.range">
 				<item>4GB</item>
 				<item>6GB</item>
+				<item>8GB</item>
 			</string-array>
 
 			<!-- use result of storage HW detection to fill the field -->
@@ -611,8 +625,8 @@
 			<!-- frontcolor has to be programmed explicitly -->
 			<string name="frontcolor/.system">ro.vendor.hw.</string>
 			<string-array name="frontcolor/.range">
-				<item>iron</item>
-				<item>cosmo</item>
+				<item>outerspace</item>
+				<item>orchidtint</item>
 				<item>other</item>
 			</string-array>
 
@@ -642,11 +656,6 @@
 		</constraints>
 
 		<mappings>
-			<!-- Variants describe mapping of feature combinations to device fingerprints,
-				to be set in property indicated by "export" -->
-			<products export="ro.vendor.product.display" default="moto g power 5G - 2023">
-			</products>
-
 			<!-- SKUs describe mapping of feature combinations to factory SKUs,
 				to be set in property indicated by "export" -->
 			<skus export="ro.vendor.product.hardware.sku.variant">

@@ -5,6 +5,7 @@ on early-init
     insmod /vendor/lib/modules/mmi_decrete_charger_cp_qc3p.ko
     insmod /vendor/lib/modules/moto_mmap_fault.ko
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules qpnp_adaptive_charge leds-gpio pn557
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules zram
 
 on post-fs-data
     # calibration
@@ -48,6 +49,7 @@ on late-init
     chown system system /sys/class/sensors/capsense_top_mid/poll_delay
     chown system system /sys/class/sensors/capsense_top_right/enable
     chown system system /sys/class/sensors/capsense_top_right/poll_delay
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules moto_mm moto_swap
 
 service capsense_reset /vendor/bin/capsense_reset
     class core
@@ -136,6 +138,8 @@ on boot
     write /sys/block/sdc/queue/scheduler bfq
     write /sys/block/sdc/queue/iosched/slice_idle 0
 
+    write /proc/sys/vm/dirty_background_bytes 26214400
+    write /proc/sys/vm/dirty_bytes 104857600
 on fs
    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mmi_relay nova_0flash_mmi_v2 focaltech_0flash_mmi_v2 ilitek_v3_mmi
 
@@ -145,6 +149,7 @@ on property:sys.boot_completed=1
   chmod 0644 /data/vendor/camera_dump/mot_gt24p128f_s5kjns_eeprom.bin
   chmod 0644 /data/vendor/camera_dump/serial_number_main.bin
   chmod 0644 /data/vendor/camera_dump/mot_gt24p64ba2_hi1634q_eeprom.bin
+  chmod 0644 /data/vendor/camera_dump/mot_gt24p64ba2_s5k3p9sp04_eeprom.bin
   chmod 0644 /data/vendor/camera_dump/serial_number_front.bin
   chmod 0644 /data/vendor/camera_dump/mot_cancunf_s5k4h7_otp.bin
   chmod 0644 /data/vendor/camera_dump/serial_number_wide.bin

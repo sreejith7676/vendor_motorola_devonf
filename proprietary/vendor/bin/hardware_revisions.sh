@@ -33,6 +33,13 @@
 
 export PATH=/vendor/bin:$PATH
 
+scriptname=${0##*/}
+notice()
+{
+    echo "$*"
+    echo "$scriptname: $*" > /dev/kmsg
+}
+
 # Output destination and permissions
 OUT_PATH=/data/vendor/hardware_revisions
 OUT_USR=system
@@ -45,11 +52,13 @@ PATH_RAM=/sys/ram
 PATH_NVM=/sys/block/mmcblk0/device
 PATH_STORAGE=/sys/storage
 PATH_SDCARD=/sys/block/mmcblk1/device
-PATH_TOUCH_CLASS="/sys/class/touchscreen/"`cd /sys/class/touchscreen && ls */ic_ver | sed 's/ic_ver//g'`
+# PATH_TOUCH_CLASS="/sys/class/touchscreen/"`cd /sys/class/touchscreen && ls */ic_ver | sed 's/ic_ver//g'`
+PATH_TOUCH_MMI="/sys/class/touchscreen/"
 PATH_TOUCH="/sys/bus/i2c/drivers/"`cd /sys/bus/i2c/drivers && ls */?-*/ic_ver | sed 's/ic_ver//g'`
 PATH_TOUCH_SPI="/sys/bus/spi/drivers/"`cd /sys/bus/spi/drivers && ls */*.?/ic_ver | sed 's/ic_ver//g'`
 PATH_DISPLAY=/sys/class/graphics/fb0
 PATH_DISPLAY_DRM=/sys/class/drm/card0-DSI-1
+PATH_DISPLAY_DRM_CLI=/sys/class/drm/card0-DSI-2
 PATH_DISPLAY_DEVICETREE=/sys/firmware/devicetree/base/chosen
 PATH_PMIC=/sys/hardware_revisions/pmic
 
@@ -98,7 +107,29 @@ create_common_revision_data()
     write_one_revision_data "date" "${5}" ${FILE}
     write_one_revision_data "lot_code" "${6}" ${FILE}
     write_one_revision_data "fw_rev" "${7}" ${FILE}
+}
 
+create_secondary_revision_data()
+{
+    FILE="${1}"
+
+    write_one_revision_data "hw_name_s" "${2}" ${FILE}
+    write_one_revision_data "vendor_id_s" "${3}" ${FILE}
+    write_one_revision_data "hw_rev_s" "${4}" ${FILE}
+    write_one_revision_data "date_s" "${5}" ${FILE}
+    write_one_revision_data "lot_code_s" "${6}" ${FILE}
+    write_one_revision_data "fw_rev_s" "${7}" ${FILE}
+}
+
+create_multiple_revision_data()
+{
+    local primary=0
+    if [ $1 -eq $primary ]
+    then
+        create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+    else
+        create_secondary_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+    fi
 }
 
 #
@@ -219,12 +250,13 @@ apply_revision_data_perms "${FILE}"
 #
 # copy pmic data
 #
+FILE="${OUT_PATH}/pmic"
 if [ -e "/sys/hardware_revisions/pmic" ]; then
-    cat /sys/hardware_revisions/pmic > ${OUT_PATH}/pmic
+    cat /sys/hardware_revisions/pmic > ${FILE}
 else
-    create_common_revision_data "${OUT_PATH}/pmic" "" "" "" "" "" ""
+    create_common_revision_data "${FILE}" "" "" "" "" "" ""
 fi
-apply_revision_data_perms "${OUT_PATH}/pmic"
+apply_revision_data_perms "${FILE}"
 
 
 #
@@ -239,20 +271,42 @@ copy_panel_revision_data()
     VEND=
     HREV=
     local wait_cnt=0
+    local has_lid
+    local lid=1
+    lid_property=ro.vendor.mot.hw.lid
+
+    has_lid=$(getprop $lid_property 2> /dev/null)
+    notice "has lid = ${has_lid}  lid= ${lid}"
     while [ "$wait_cnt" -lt 8 ]; do
         if [ -e ${PATH_DISPLAY_DRM}/panelName -o -e ${PATH_DISPLAY}/panelName ]; then
             if [ -e ${PATH_DISPLAY_DRM}/panelName ] ; then
                 HNAME=`cat ${PATH_DISPLAY_DRM}/panelName`
                 VEND=`cat ${PATH_DISPLAY_DRM}/panelSupplier`
                 HREV=`cat ${PATH_DISPLAY_DRM}/panelVer`
+                create_multiple_revision_data 0 "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "" "" ""
+                apply_revision_data_perms "${FILE}"
+                notice "creat primary panel hwrev"
             else
                 HNAME=`cat ${PATH_DISPLAY}/panel_name`
                 VEND=`cat ${PATH_DISPLAY}/panel_supplier`
                 HREV=`cat ${PATH_DISPLAY}/panel_ver`
+                create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "" "" ""
+                apply_revision_data_perms "${FILE}"
             fi
-            create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "" "" ""
-            apply_revision_data_perms "${FILE}"
-            break;
+            if [ $has_lid -eq $lid ]
+            then
+                if [ -e ${PATH_DISPLAY_DRM_CLI}/panelName ] ; then
+                    HNAME=`cat ${PATH_DISPLAY_DRM_CLI}/panelName`
+                    VEND=`cat ${PATH_DISPLAY_DRM_CLI}/panelSupplier`
+                    HREV=`cat ${PATH_DISPLAY_DRM_CLI}/panelVer`
+                    notice "creat CLI hwrev"
+                    create_multiple_revision_data 1 "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "" "" ""
+                    apply_revision_data_perms "${FILE}"
+                    break;
+                fi
+            else
+                break;
+            fi
         fi
         sleep 1;
         wait_cnt=$((wait_cnt+1))
@@ -273,28 +327,42 @@ LOT_CODE=
 
 # If there is the touchclass path, then access the nodes under the path to get the touch related
 # information, otherwise access the path originally defined by the script.
-if [ -e "${PATH_TOUCH_CLASS}/vendor" ]; then
-    HNAME=`cat ${PATH_TOUCH_CLASS}/vendor`
-    ICVER=`cat -e ${PATH_TOUCH_CLASS}/ic_ver`
-    if [ "$HNAME" ]; then
+if [ -e "${PATH_TOUCH_MMI}" ]; then
+    cd ${PATH_TOUCH_MMI}
+    let index=0
+    for i in $(ls */ic_ver); do
+        class_name=`echo $i|sed 's/ic_ver//g'`
+        PATH_TOUCH_CLASS=${PATH_TOUCH_MMI}${class_name}
+        if [ -e "${PATH_TOUCH_CLASS}/vendor" ]; then
+            HNAME=`cat ${PATH_TOUCH_CLASS}/vendor`
+            ICVER=`cat -e ${PATH_TOUCH_CLASS}/ic_ver`
+            if [ "$HNAME" ]; then
+                VEND="${ICVER##*'Product ID: '}"
+                VEND="${VEND%%\$*}"
+                FREV="${ICVER##*'Build ID: '}"
+                FREV="${FREV%%\$*}"
+                LOT_CODE="${ICVER##*'Config ID: '}"
+                LOT_CODE="${LOT_CODE%%\$*}"
+            fi
+            create_multiple_revision_data "${index}" "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+            #create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+            apply_revision_data_perms "${FILE}"
+            let index++
+        fi
+    done
+elif [ -e "${PATH_TOUCH_SPI}/name" ]; then
+    HNAME=`cat ${PATH_TOUCH_SPI}/name`
+    ICVER=`cat -e ${PATH_TOUCH_SPI}/ic_ver`
+    case "$HNAME" in
+    focaltech*)
         VEND="${ICVER##*'Product ID: '}"
         VEND="${VEND%%\$*}"
         FREV="${ICVER##*'Build ID: '}"
         FREV="${FREV%%\$*}"
-        LOT_CODE="${ICVER##*'Config ID: '}"
-        LOT_CODE="${LOT_CODE%%\$*}"
-    fi
-elif [ -e "${PATH_TOUCH_SPI}/name" ]; then
-	HNAME=`cat ${PATH_TOUCH_SPI}/name`
-	ICVER=`cat -e ${PATH_TOUCH_SPI}/ic_ver`
-	case "$HNAME" in
-	    focaltech*)
-		VEND="${ICVER##*'Product ID: '}"
-		VEND="${VEND%%\$*}"
-		FREV="${ICVER##*'Build ID: '}"
-		FREV="${FREV%%\$*}"
-		;;
-	esac
+        ;;
+    esac
+    create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+    apply_revision_data_perms "${FILE}"
 else
     if [ -e "${PATH_TOUCH}/name" ]; then
         HNAME=`cat ${PATH_TOUCH}/name`
@@ -334,7 +402,7 @@ else
                 LOT_CODE="${LOT_CODE%%\$*}"
                 ;;
         esac
+        create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
+        apply_revision_data_perms "${FILE}"
     fi
 fi
-create_common_revision_data "${FILE}" "${HNAME}" "${VEND}" "${HREV}" "${DATE}" "${LOT_CODE}" "${FREV}"
-apply_revision_data_perms "${FILE}"

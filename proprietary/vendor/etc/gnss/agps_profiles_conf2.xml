@@ -650,7 +650,7 @@
         available value: true (default), false
   -->
   <cp_setting
-    molr_pos_method="0"
+    molr_pos_method="1"
     external_addr_enable="false"
     external_addr="0123456789*#+"
     mlc_number_enable="false"
@@ -658,7 +658,7 @@
     cp_auto_reset="false"
     epc_molr_lpp_payload_enable="false"
     epc_molr_lpp_payload="D2000010237B2026404FB8007202BFFFFFFFF80000000020C0000100940FB9001202B7FFFFF8000000000061800002018A00"
-    reject_non911_nilr_enable="false"
+    reject_non911_nilr_enable="true"
     cp_2g_disable="false"
     cp_3g_disable="false"
     cp_4g_disable="false"
@@ -668,6 +668,7 @@
     cp_lppe_srn_enable="false"
     cp_lppe_sensor_enable="false"
     cp_lppe_dbh_enable="false"
+    cp_gvc_enable="true"
     cp_lppe_civic_enable="false"
     cp_ssr_enable="true"
   />

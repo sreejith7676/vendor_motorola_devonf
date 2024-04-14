@@ -316,7 +316,7 @@
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
                            frame_size_ms="20"
                            b_interleave="0"
-                           enable_log="0"
+                           enable_log="1"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">
@@ -343,7 +343,7 @@
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
                            frame_size_ms="20"
                            b_interleave="0"
-                           enable_log="0"
+                           enable_log="1"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">

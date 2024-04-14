@@ -2701,6 +2701,2126 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_FaceCapture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_FaceCapture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_FaceCapture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Bokeh_Capture_Face_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Bokeh_Capture_Face_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Bokeh_Capture_Face_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Bokeh_Capture_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Bokeh_Capture_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Bokeh_Capture_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_E2EHDR_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_E2EHDR_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_E2EHDR_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_E2EHDR_Video",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_E2EHDR_Video.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_E2EHDR_Video.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_EIS_Slow_Motion",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_EIS_Slow_Motion.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_EIS_Slow_Motion.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_EIS_Slow_Motion_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_EIS_Slow_Motion_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_EIS_Slow_Motion_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Face_Capture_4cell",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Face_Capture_4cell.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Face_Capture_4cell.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Face_Preview_ZSD",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Face_Preview_ZSD.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Face_Preview_ZSD.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Flash_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Flash_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Flash_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_ITS_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_ITS_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_ITS_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_LLHDR_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_LLHDR_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_LLHDR_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_LLHDR_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_LLHDR_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_LLHDR_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Night_Vision_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Night_Vision_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Night_Vision_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Night_Vision_FaceCapture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Night_Vision_FaceCapture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Night_Vision_FaceCapture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Night_Vision_FacePreview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Night_Vision_FacePreview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Night_Vision_FacePreview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Night_Vision_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Night_Vision_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Night_Vision_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_P1_YUV",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_P1_YUV.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_P1_YUV.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Panorama",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Panorama.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Panorama.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_SR_Zoom_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_SR_Zoom_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_SR_Zoom_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Capture_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Capture_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Capture_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_ZOOM",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_ZOOM.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_ZOOM.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_videocall",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_videocall.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_videocall.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_Capture_4cell",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_Capture_4cell.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_Capture_4cell.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_Preview_ZSD",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_Preview_ZSD.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_Preview_ZSD.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Scene_YUV_Reprocess",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Scene_YUV_Reprocess.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Scene_YUV_Reprocess.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Slow_Motion",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Slow_Motion.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Slow_Motion.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Slow_Motion_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Slow_Motion_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Slow_Motion_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Video_1080",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Video_1080.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Video_1080.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Video_1080_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Video_1080_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Video_1080_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Video_1080_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Video_1080_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Video_1080_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Video_1080_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Video_1080_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Video_1080_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Video_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Video_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Video_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Video_Capture_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Video_Capture_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Video_Capture_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Video_Capture_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Video_Capture_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Video_Capture_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Video_Capture_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Video_Capture_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Video_Capture_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_FaceCapture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_FaceCapture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_FaceCapture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Bokeh_Capture_Face_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Bokeh_Capture_Face_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Bokeh_Capture_Face_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Bokeh_Capture_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Bokeh_Capture_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Bokeh_Capture_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_E2EHDR_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_E2EHDR_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_E2EHDR_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_E2EHDR_Video",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_E2EHDR_Video.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_E2EHDR_Video.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_EIS_Slow_Motion",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_EIS_Slow_Motion.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_EIS_Slow_Motion.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_EIS_Slow_Motion_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_EIS_Slow_Motion_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_EIS_Slow_Motion_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Face_Capture_4cell",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Face_Capture_4cell.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Face_Capture_4cell.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Face_Preview_ZSD",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Face_Preview_ZSD.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Face_Preview_ZSD.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Flash_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Flash_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Flash_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_ITS_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_ITS_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_ITS_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_LLHDR_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_LLHDR_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_LLHDR_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_LLHDR_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_LLHDR_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_LLHDR_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Night_Vision_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Night_Vision_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Night_Vision_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Night_Vision_FaceCapture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Night_Vision_FaceCapture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Night_Vision_FaceCapture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Night_Vision_FacePreview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Night_Vision_FacePreview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Night_Vision_FacePreview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Night_Vision_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Night_Vision_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Night_Vision_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_P1_YUV",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_P1_YUV.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_P1_YUV.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Panorama",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Panorama.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Panorama.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_SR_Zoom_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_SR_Zoom_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_SR_Zoom_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Capture_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Capture_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Capture_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_ZOOM",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_ZOOM.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_ZOOM.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_videocall",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_videocall.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_videocall.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_Capture_4cell",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_Capture_4cell.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_Capture_4cell.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_Preview_ZSD",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_Preview_ZSD.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_Preview_ZSD.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Scene_YUV_Reprocess",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Scene_YUV_Reprocess.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Scene_YUV_Reprocess.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Slow_Motion",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Slow_Motion.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Slow_Motion.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Slow_Motion_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Slow_Motion_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Slow_Motion_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Video_1080",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Video_1080.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Video_1080.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Video_1080_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Video_1080_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Video_1080_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Video_1080_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Video_1080_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Video_1080_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Video_1080_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Video_1080_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Video_1080_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Video_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Video_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Video_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Video_Capture_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Video_Capture_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Video_Capture_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Video_Capture_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Video_Capture_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Video_Capture_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Video_Capture_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Video_Capture_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Video_Capture_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libCamera_motcancunfov50dmipiraw_ArcSoft_Raw_NV_Capture",
 	owner: "motorola",
 	strip: {
@@ -4812,6 +6932,1646 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfov50dmipirawrow_Zoom_Preview_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Capture_flash",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Capture_flash.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Capture_flash.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Preview_flash",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Preview_flash.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Preview_flash.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Bokeh_Capture_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Bokeh_Capture_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Bokeh_Capture_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Display_Flash_Big_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Display_Flash_Big_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Display_Flash_Big_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Display_Flash_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Display_Flash_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Display_Flash_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_E2EHDR_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_E2EHDR_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_E2EHDR_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_E2EHDR_Video",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_E2EHDR_Video.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_E2EHDR_Video.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Slow_Motion",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Slow_Motion.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Slow_Motion.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Face_Capture_4cell",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Face_Capture_4cell.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Face_Capture_4cell.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Face_Preview_ZSD",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Face_Preview_ZSD.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Face_Preview_ZSD.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_ITS_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_ITS_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_ITS_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_LLHDR_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_LLHDR_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_LLHDR_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_LLHDR_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_LLHDR_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_LLHDR_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_P1_YUV",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_P1_YUV.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_P1_YUV.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Panorama",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Panorama.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Panorama.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Capture_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Capture_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Capture_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Videocall",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Videocall.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Videocall.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Capture_4cell",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Capture_4cell.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Capture_4cell.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Preview_ZSD",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Preview_ZSD.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Preview_ZSD.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Scene_YUV_Reprocess",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_YUV_Reprocess.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Scene_YUV_Reprocess.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Slow_Motion",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Slow_Motion.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Slow_Motion.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipiraw_Zoom_Capture_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipiraw_Zoom_Capture_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipiraw_Zoom_Capture_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Capture_flash",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Capture_flash.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Capture_flash.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Preview_flash",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Preview_flash.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Preview_flash.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Bokeh_Capture_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Bokeh_Capture_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Bokeh_Capture_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Display_Flash_Big_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Display_Flash_Big_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Display_Flash_Big_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Display_Flash_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Display_Flash_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Display_Flash_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_E2EHDR_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_E2EHDR_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_E2EHDR_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_E2EHDR_Video",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_E2EHDR_Video.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_E2EHDR_Video.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Slow_Motion",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Slow_Motion.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Slow_Motion.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Capture_4cell",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Capture_4cell.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Capture_4cell.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Preview_ZSD",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Preview_ZSD.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Preview_ZSD.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_ITS_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_ITS_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_ITS_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_LLHDR_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_LLHDR_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_LLHDR_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_LLHDR_Face_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_LLHDR_Face_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_LLHDR_Face_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_P1_YUV",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_P1_YUV.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_P1_YUV.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Panorama",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Panorama.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Panorama.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Capture_HDR",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Capture_HDR.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Capture_HDR.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Videocall",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Videocall.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Videocall.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Capture_4cell",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Capture_4cell.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Capture_4cell.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Preview",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Preview.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Preview.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Preview_ZSD",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Preview_ZSD.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Preview_ZSD.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_YUV_Reprocess",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_YUV_Reprocess.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_YUV_Reprocess.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Slow_Motion",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Slow_Motion.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Slow_Motion.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_2X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_4X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_4X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_4X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_8X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_8X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_8X.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libCamera_motcancunfs5k3p9sp04mipirawrow_Zoom_Capture_2X",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libCamera_motcancunfs5k3p9sp04mipirawrow_Zoom_Capture_2X.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libCamera_motcancunfs5k3p9sp04mipirawrow_Zoom_Capture_2X.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -15067,6 +18827,90 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "mot_cancunf_jns_yova_mipi_raw_IdxMgr",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/mt6855/mot_cancunf_jns_yova_mipi_raw_IdxMgr.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_jns_yova_mipi_raw_IdxMgr.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "mot_cancunf_jns_yova_mipi_raw_row_IdxMgr",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/mt6855/mot_cancunf_jns_yova_mipi_raw_row_IdxMgr.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_jns_yova_mipi_raw_row_IdxMgr.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "mot_cancunf_jns_yova_mipi_raw_row_tuning",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/mt6855/mot_cancunf_jns_yova_mipi_raw_row_tuning.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_jns_yova_mipi_raw_row_tuning.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "mot_cancunf_jns_yova_mipi_raw_tuning",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/mt6855/mot_cancunf_jns_yova_mipi_raw_tuning.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_jns_yova_mipi_raw_tuning.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "mot_cancunf_ov50d_mipi_raw_IdxMgr",
 	owner: "motorola",
 	strip: {
@@ -15141,6 +18985,90 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_ov50d_mipi_raw_tuning.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_tuning",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_tuning.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_tuning.so"],
 		},
 	},
 	compile_multilib: "both",

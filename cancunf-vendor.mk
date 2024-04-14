@@ -64,8 +64,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/ap_gain.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain.bin \
     vendor/motorola/cancunf/proprietary/vendor/etc/ap_gain_mmul.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain_mmul.bin \
-    vendor/motorola/cancunf/proprietary/vendor/etc/apdb/APDB_MT6855___W2325:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6855___W2325 \
-    vendor/motorola/cancunf/proprietary/vendor/etc/apdb/APDB_MT6855___W2325_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6855___W2325_ENUM \
+    vendor/motorola/cancunf/proprietary/vendor/etc/apdb/APDB_MT6855___W2401:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6855___W2401 \
+    vendor/motorola/cancunf/proprietary/vendor/etc/apdb/APDB_MT6855___W2401_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6855___W2401_ENUM \
     vendor/motorola/cancunf/proprietary/vendor/etc/aualgo/aualgo_comp_azpp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/aualgo_comp_azpp.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/aualgo/aualgo_sst.conf:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/aualgo_sst.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
@@ -344,7 +344,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_kpoc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_kpoc.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
+    vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_03.conf \
+    vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_04.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_04.conf \
+    vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_05.conf \
+    vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_07.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_07.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
+    vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_09.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_10.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_12.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_12.conf \
     vendor/motorola/cancunf/proprietary/vendor/etc/thermal/thermal_policy_13.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_13.conf \
@@ -373,6 +378,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/firmware/WMT_SOC_CANCUNN_FEM.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC_CANCUNN_FEM.cfg \
     vendor/motorola/cancunf/proprietary/vendor/firmware/WMT_SOC_devonn_epa.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC_devonn_epa.cfg \
     vendor/motorola/cancunf/proprietary/vendor/firmware/aw86006.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/aw86006.prog \
+    vendor/motorola/cancunf/proprietary/vendor/firmware/aw86006vcmyova.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/aw86006vcmyova.prog \
     vendor/motorola/cancunf/proprietary/vendor/firmware/aw87xxx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_acf.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/cps4035.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cps4035.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
@@ -551,6 +557,112 @@ PRODUCT_PACKAGES += \
     libCamera_motcancunfhi1634qmipirawrow_Zoom_Preview_2X \
     libCamera_motcancunfhi1634qmipirawrow_Zoom_Preview_4X \
     libCamera_motcancunfhi1634qmipirawrow_Zoom_Preview_8X \
+    libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_Capture \
+    libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_FaceCapture \
+    libCamera_motcancunfjnsyovamipiraw_ArcSoft_Raw_NV_Preview \
+    libCamera_motcancunfjnsyovamipiraw_Bokeh_Capture_Face_HDR \
+    libCamera_motcancunfjnsyovamipiraw_Bokeh_Capture_HDR \
+    libCamera_motcancunfjnsyovamipiraw_E2EHDR_Preview \
+    libCamera_motcancunfjnsyovamipiraw_E2EHDR_Video \
+    libCamera_motcancunfjnsyovamipiraw_EIS_Slow_Motion \
+    libCamera_motcancunfjnsyovamipiraw_EIS_Slow_Motion_2X \
+    libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080 \
+    libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_2X \
+    libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_4X \
+    libCamera_motcancunfjnsyovamipiraw_EIS_Video_1080_8X \
+    libCamera_motcancunfjnsyovamipiraw_Face_Capture \
+    libCamera_motcancunfjnsyovamipiraw_Face_Capture_4cell \
+    libCamera_motcancunfjnsyovamipiraw_Face_Preview_ZSD \
+    libCamera_motcancunfjnsyovamipiraw_Flash_Capture \
+    libCamera_motcancunfjnsyovamipiraw_ITS_Capture \
+    libCamera_motcancunfjnsyovamipiraw_LLHDR_Capture \
+    libCamera_motcancunfjnsyovamipiraw_LLHDR_Face_Capture \
+    libCamera_motcancunfjnsyovamipiraw_Night_Vision_Capture \
+    libCamera_motcancunfjnsyovamipiraw_Night_Vision_FaceCapture \
+    libCamera_motcancunfjnsyovamipiraw_Night_Vision_FacePreview \
+    libCamera_motcancunfjnsyovamipiraw_Night_Vision_Preview \
+    libCamera_motcancunfjnsyovamipiraw_P1_YUV \
+    libCamera_motcancunfjnsyovamipiraw_Panorama \
+    libCamera_motcancunfjnsyovamipiraw_SR_Zoom_Capture \
+    libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Capture \
+    libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Capture_HDR \
+    libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_Preview \
+    libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_ZOOM \
+    libCamera_motcancunfjnsyovamipiraw_Scene_3rd_party_videocall \
+    libCamera_motcancunfjnsyovamipiraw_Scene_Capture \
+    libCamera_motcancunfjnsyovamipiraw_Scene_Capture_4cell \
+    libCamera_motcancunfjnsyovamipiraw_Scene_Preview \
+    libCamera_motcancunfjnsyovamipiraw_Scene_Preview_ZSD \
+    libCamera_motcancunfjnsyovamipiraw_Scene_YUV_Reprocess \
+    libCamera_motcancunfjnsyovamipiraw_Slow_Motion \
+    libCamera_motcancunfjnsyovamipiraw_Slow_Motion_2X \
+    libCamera_motcancunfjnsyovamipiraw_Video_1080 \
+    libCamera_motcancunfjnsyovamipiraw_Video_1080_2X \
+    libCamera_motcancunfjnsyovamipiraw_Video_1080_4X \
+    libCamera_motcancunfjnsyovamipiraw_Video_1080_8X \
+    libCamera_motcancunfjnsyovamipiraw_Video_Capture \
+    libCamera_motcancunfjnsyovamipiraw_Video_Capture_2X \
+    libCamera_motcancunfjnsyovamipiraw_Video_Capture_4X \
+    libCamera_motcancunfjnsyovamipiraw_Video_Capture_8X \
+    libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_2X \
+    libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_4X \
+    libCamera_motcancunfjnsyovamipiraw_Zoom_Capture_8X \
+    libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_2X \
+    libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_4X \
+    libCamera_motcancunfjnsyovamipiraw_Zoom_Preview_8X \
+    libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_FaceCapture \
+    libCamera_motcancunfjnsyovamipirawrow_ArcSoft_Raw_NV_Preview \
+    libCamera_motcancunfjnsyovamipirawrow_Bokeh_Capture_Face_HDR \
+    libCamera_motcancunfjnsyovamipirawrow_Bokeh_Capture_HDR \
+    libCamera_motcancunfjnsyovamipirawrow_E2EHDR_Preview \
+    libCamera_motcancunfjnsyovamipirawrow_E2EHDR_Video \
+    libCamera_motcancunfjnsyovamipirawrow_EIS_Slow_Motion \
+    libCamera_motcancunfjnsyovamipirawrow_EIS_Slow_Motion_2X \
+    libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080 \
+    libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_2X \
+    libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_4X \
+    libCamera_motcancunfjnsyovamipirawrow_EIS_Video_1080_8X \
+    libCamera_motcancunfjnsyovamipirawrow_Face_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_Face_Capture_4cell \
+    libCamera_motcancunfjnsyovamipirawrow_Face_Preview_ZSD \
+    libCamera_motcancunfjnsyovamipirawrow_Flash_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_ITS_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_LLHDR_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_LLHDR_Face_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_Night_Vision_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_Night_Vision_FaceCapture \
+    libCamera_motcancunfjnsyovamipirawrow_Night_Vision_FacePreview \
+    libCamera_motcancunfjnsyovamipirawrow_Night_Vision_Preview \
+    libCamera_motcancunfjnsyovamipirawrow_P1_YUV \
+    libCamera_motcancunfjnsyovamipirawrow_Panorama \
+    libCamera_motcancunfjnsyovamipirawrow_SR_Zoom_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Capture_HDR \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_Preview \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_ZOOM \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_3rd_party_videocall \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_Capture_4cell \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_Preview \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_Preview_ZSD \
+    libCamera_motcancunfjnsyovamipirawrow_Scene_YUV_Reprocess \
+    libCamera_motcancunfjnsyovamipirawrow_Slow_Motion \
+    libCamera_motcancunfjnsyovamipirawrow_Slow_Motion_2X \
+    libCamera_motcancunfjnsyovamipirawrow_Video_1080 \
+    libCamera_motcancunfjnsyovamipirawrow_Video_1080_2X \
+    libCamera_motcancunfjnsyovamipirawrow_Video_1080_4X \
+    libCamera_motcancunfjnsyovamipirawrow_Video_1080_8X \
+    libCamera_motcancunfjnsyovamipirawrow_Video_Capture \
+    libCamera_motcancunfjnsyovamipirawrow_Video_Capture_2X \
+    libCamera_motcancunfjnsyovamipirawrow_Video_Capture_4X \
+    libCamera_motcancunfjnsyovamipirawrow_Video_Capture_8X \
+    libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_2X \
+    libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_4X \
+    libCamera_motcancunfjnsyovamipirawrow_Zoom_Capture_8X \
+    libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_2X \
+    libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_4X \
+    libCamera_motcancunfjnsyovamipirawrow_Zoom_Preview_8X \
     libCamera_motcancunfov50dmipiraw_ArcSoft_Raw_NV_Capture \
     libCamera_motcancunfov50dmipiraw_ArcSoft_Raw_NV_FaceCapture \
     libCamera_motcancunfov50dmipiraw_ArcSoft_Raw_NV_Preview \
@@ -657,6 +769,88 @@ PRODUCT_PACKAGES += \
     libCamera_motcancunfov50dmipirawrow_Zoom_Preview_2X \
     libCamera_motcancunfov50dmipirawrow_Zoom_Preview_4X \
     libCamera_motcancunfov50dmipirawrow_Zoom_Preview_8X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Capture_flash \
+    libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Preview \
+    libCamera_motcancunfs5k3p9sp04mipiraw_ArcSoft_Raw_NV_Preview_flash \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Bokeh_Capture_HDR \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Display_Flash_Big_Face_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Display_Flash_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_E2EHDR_Preview \
+    libCamera_motcancunfs5k3p9sp04mipiraw_E2EHDR_Video \
+    libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Slow_Motion \
+    libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080 \
+    libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_2X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_4X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_EIS_Video_1080_8X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Face_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Face_Capture_4cell \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Face_Preview_ZSD \
+    libCamera_motcancunfs5k3p9sp04mipiraw_ITS_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_LLHDR_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_LLHDR_Face_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_P1_YUV \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Panorama \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Capture_HDR \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Preview \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_3rd_party_Videocall \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Capture_4cell \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Preview \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_Preview_ZSD \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Scene_YUV_Reprocess \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Slow_Motion \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080 \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_2X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_4X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Video_1080_8X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_2X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_4X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Video_Capture_8X \
+    libCamera_motcancunfs5k3p9sp04mipiraw_Zoom_Capture_2X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Capture_flash \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Preview \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_ArcSoft_Raw_NV_Preview_flash \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Bokeh_Capture_HDR \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Display_Flash_Big_Face_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Display_Flash_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_E2EHDR_Preview \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_E2EHDR_Video \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Slow_Motion \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080 \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_2X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_4X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_EIS_Video_1080_8X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Capture_4cell \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Face_Preview_ZSD \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_ITS_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_LLHDR_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_LLHDR_Face_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_P1_YUV \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Panorama \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Capture_HDR \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Preview \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_3rd_party_Videocall \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Capture_4cell \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Preview \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_Preview_ZSD \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Scene_YUV_Reprocess \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Slow_Motion \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080 \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_2X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_4X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Video_1080_8X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_2X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_4X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Video_Capture_8X \
+    libCamera_motcancunfs5k3p9sp04mipirawrow_Zoom_Capture_2X \
     libCamera_motcancunfs5k4h7mipiraw_ArcSoft_Raw_NV_Capture \
     libCamera_motcancunfs5k4h7mipiraw_ArcSoft_Raw_NV_FaceCapture \
     libCamera_motcancunfs5k4h7mipiraw_ArcSoft_Raw_NV_Preview \
@@ -1166,10 +1360,18 @@ PRODUCT_PACKAGES += \
     mot_cancunf_hi1634q_mipi_raw_row_IdxMgr \
     mot_cancunf_hi1634q_mipi_raw_row_tuning \
     mot_cancunf_hi1634q_mipi_raw_tuning \
+    mot_cancunf_jns_yova_mipi_raw_IdxMgr \
+    mot_cancunf_jns_yova_mipi_raw_row_IdxMgr \
+    mot_cancunf_jns_yova_mipi_raw_row_tuning \
+    mot_cancunf_jns_yova_mipi_raw_tuning \
     mot_cancunf_ov50d_mipi_raw_IdxMgr \
     mot_cancunf_ov50d_mipi_raw_row_IdxMgr \
     mot_cancunf_ov50d_mipi_raw_row_tuning \
     mot_cancunf_ov50d_mipi_raw_tuning \
+    mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr \
+    mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr \
+    mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning \
+    mot_cancunf_s5k3p9sp04_mipi_raw_tuning \
     mot_cancunf_s5k4h7_mipi_raw_IdxMgr \
     mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr \
     mot_cancunf_s5k4h7_mipi_raw_row_tuning \

@@ -232,7 +232,8 @@ service vendor.mmi-usb-sh /vendor/bin/init.mmi.usb.sh
     oneshot
 
 on userspace-reboot-resume
-    start vendor.mmi-usb-sh
+    setprop persist.vendor.mot.usb.config ${persist.sys.usb.config}
+    setprop persist.vendor.usb.config ${persist.sys.usb.config}
 
 on charger
     insmod /vendor/lib/modules/moto_f_mass_storage.ko
@@ -813,7 +814,7 @@ on property:sys.usb.config=ptp,adb && property:vendor.usb.use_ffs_mtp=1 && prope
     symlink /config/usb_gadget/g1/functions/ffs.ptp /config/usb_gadget/g1/configs/b.1/f1
     symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
 
-on boot
+on init
     setprop sys.usb.controller none
     chown root system /sys/module/uvcvideo/parameters/quirks
     chmod 0660 /sys/module/uvcvideo/parameters/quirks
