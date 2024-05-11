@@ -21324,91 +21324,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "lib_eara_io_scndet",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/lib_eara_io_scndet.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "lib_eara_io_service",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/lib_eara_io_service.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "lib_eara_io_systracer",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/lib_eara_io_systracer.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "lib_eara_io_timer",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/lib_eara_io_timer.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "lib_eara_io_util",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/lib_eara_io_util.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libalps",
 	owner: "motorola",
 	strip: {
@@ -22709,23 +22624,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/ls_nq_client.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "motorola.hardware.sensorscalibrate@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/motorola.hardware.sensorscalibrate@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -26752,18 +26650,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "eara_io_service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/eara_io_service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "factory",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/factory"],
@@ -27072,19 +26958,6 @@ cc_prebuilt_binary {
 	name: "motorola.hardware.camera.imgtuner@2.0-service",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.camera.imgtuner@2.0-service"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "motorola.hardware.sensorscalibrate@1.0-service",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/motorola.hardware.sensorscalibrate@1.0-service"],
 	check_elf_files: false,
 	strip: {
 		none: true,

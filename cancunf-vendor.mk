@@ -46,7 +46,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.block_perm.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.block_perm.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.boot.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.modem-rfs.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.modem-rfs.sh \
-    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.modules.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.modules.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.shutdown.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.shutdown.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.touch.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.touch.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.usb.sh \
@@ -259,7 +258,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/eara-io-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eara-io-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fpsgo.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
@@ -284,7 +282,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner@2.0-service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.sensorscalibrate@1.0-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
@@ -323,7 +320,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/motorola/cancunf/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
-    vendor/motorola/cancunf/proprietary/vendor/etc/permissions/motorola-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/motorola-hardware-sensorscalibrate.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/permissions/unavail.android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.barometer.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/motorola/cancunf/proprietary/vendor/etc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn4v_hwreg.bin \
@@ -1491,11 +1487,6 @@ PRODUCT_PACKAGES += \
     libBSTbase_share \
     libBasicModule \
     libVkLayer_mtk_rt_sdk \
-    lib_eara_io_scndet \
-    lib_eara_io_service \
-    lib_eara_io_systracer \
-    lib_eara_io_timer \
-    lib_eara_io_util \
     libalps \
     libarcsoft_hdr_detection \
     libarcsoft_high_dynamic_range_v2 \
@@ -1573,7 +1564,6 @@ PRODUCT_PACKAGES += \
     libwifitest \
     libwpfa \
     ls_nq_client \
-    motorola.hardware.sensorscalibrate@1.0 \
     motrilutils \
     lib3a.ae.stat \
     lib3a.af.assist \
@@ -1822,7 +1812,6 @@ PRODUCT_PACKAGES += \
     ccci_rpcd \
     chipinfo \
     conninfra_loader \
-    eara_io_service \
     factory \
     fpc_tee_test \
     fpsgo \
@@ -1848,7 +1837,6 @@ PRODUCT_PACKAGES += \
     fpc_ident \
     goodix_ident \
     motorola.hardware.camera.imgtuner@2.0-service \
-    motorola.hardware.sensorscalibrate@1.0-service \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6855 \
     camerahalserver \
     mtkfusionrild \
