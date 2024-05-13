@@ -1882,6 +1882,3 @@ PRODUCT_PACKAGES += \
     wmt_launcher \
     wmt_loader \
     vtservice
-
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlay
