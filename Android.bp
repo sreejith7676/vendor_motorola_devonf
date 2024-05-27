@@ -26395,15 +26395,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "lights-mtk-default",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/lights-mtk-default.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_IMoto_Fingerprint",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_IMoto_Fingerprint.xml",
@@ -26802,19 +26793,6 @@ cc_prebuilt_binary {
 	name: "android.hardware.gnss-service.mediatek",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.lights-service.mediatek",
-	owner: "motorola",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.lights-service.mediatek"],
 	check_elf_files: false,
 	strip: {
 		none: true,
