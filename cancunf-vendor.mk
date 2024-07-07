@@ -253,7 +253,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
@@ -1778,7 +1777,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.security.keymint-service.trustonic \
     manifest_android.hardware.security.secureclock-service.trustonic \
     manifest_android.hardware.security.sharedsecret-service.trustonic \
-    manifest_android.hardware.usb@1.2-service-mediatekv2 \
     gnss-mtk-default \
     gnss-mtk@2.1-service \
     lbs_hidl_service@1.0 \
@@ -1824,7 +1822,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.security.keymint-service.trustonic \
     android.hardware.thermal@2.0-service.mtk \
-    android.hardware.usb@1.2-service-mediatekv2 \
     chipone_ident \
     fpc_ident \
     goodix_ident \
