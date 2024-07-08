@@ -49,7 +49,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.modem-rfs.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.modem-rfs.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.shutdown.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.shutdown.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.touch.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.touch.sh \
-    vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.usb.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.oem.fingerprint2.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.oem.fingerprint2.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.oem.hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.oem.hw.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/pstore_annotate.sh:$(TARGET_COPY_OUT_VENDOR)/bin/pstore_annotate.sh \
@@ -264,7 +263,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/hw/init.mmi.backup.trustlet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.backup.trustlet.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/hw/init.mmi.usb.configfs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.usb.configfs.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.alpslegacy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.alpslegacy.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
