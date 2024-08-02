@@ -16921,6 +16921,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libpn557_fw",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libpn557_fw.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libpn557_fw.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libpn560_fw",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libpn560_fw.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libpn560_fw.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libportrait_repair_ppl3_ocl",
 	owner: "motorola",
 	strip: {
@@ -17072,6 +17112,46 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsimmelock.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsn100u_fw",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsn100u_fw.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsn100u_fw.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsn220u_fw",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsn220u_fw.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsn220u_fw.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -19368,6 +19448,26 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "mt6855",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "nfc_nci_sec",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/nfc_nci_sec.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/nfc_nci_sec.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -22607,6 +22707,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwpfa.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "ls_client",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/ls_client.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -26829,6 +26946,32 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "android.hardware.nfc@1.2-service.sec",
+	owner: "motorola",
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service.sec"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.secure_element@1.2-service-mediatek",
+	owner: "motorola",
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "android.hardware.security.keymint-service.trustonic",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.security.keymint-service.trustonic"],
@@ -27271,6 +27414,30 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "pnscr",
+	owner: "motorola",
+	srcs: ["proprietary/vendor/bin/pnscr"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "pnscr_cal",
+	owner: "motorola",
+	srcs: ["proprietary/vendor/bin/pnscr_cal"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "rcs_volte_stack",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/rcs_volte_stack"],
@@ -27298,6 +27465,18 @@ cc_prebuilt_binary {
 	name: "rt5512_calibration",
 	owner: "motorola",
 	srcs: ["proprietary/vendor/bin/rt5512_calibration"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "sec_nfc_test",
+	owner: "motorola",
+	srcs: ["proprietary/vendor/bin/sec_nfc_test"],
 	check_elf_files: false,
 	strip: {
 		none: true,
