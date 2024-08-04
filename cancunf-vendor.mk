@@ -50,7 +50,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.shutdown.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.shutdown.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.mmi.touch.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mmi.touch.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/init.oem.fingerprint2.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.oem.fingerprint2.sh \
-    vendor/motorola/cancunf/proprietary/vendor/bin/init.oem.hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.oem.hw.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/pstore_annotate.sh:$(TARGET_COPY_OUT_VENDOR)/bin/pstore_annotate.sh \
     vendor/motorola/cancunf/proprietary/vendor/bin/vendor.mmi.cxp.sh:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.mmi.cxp.sh \
     vendor/motorola/cancunf/proprietary/vendor/etc/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/AW_DSP.bin \
