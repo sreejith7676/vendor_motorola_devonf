@@ -1784,32 +1784,32 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleRISCV \
     HotwordEnrollmentXGoogleRISCV \
     ImsService \
-    moto-telephony \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-oem-plugin \
+    moto-telephony \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
     dax-default \
     media_codecs_dolby_audio \
-    manifest_android.hardware.neuralnetworks-shim-service-mtk \
-    manifest_android.hardware.security.keymint-service.trustonic \
-    manifest_android.hardware.security.secureclock-service.trustonic \
-    manifest_android.hardware.security.sharedsecret-service.trustonic \
     gnss-mtk-default \
     gnss-mtk@2.1-service \
     lbs_hidl_service@1.0 \
     manifest_IMoto_Fingerprint \
     manifest_android.hardware.drm@1.4-service.widevine \
+    manifest_android.hardware.neuralnetworks-shim-service-mtk \
+    manifest_android.hardware.security.keymint-service.trustonic \
+    manifest_android.hardware.security.secureclock-service.trustonic \
+    manifest_android.hardware.security.sharedsecret-service.trustonic \
     manifest_apuware_apusys \
     manifest_apuware_hmp \
     manifest_apuware_utils \
     manifest_cameraprovider \
     manifest_hwcomposer \
     manifest_media_c2_V1_2_default \
-    memtrack-mediatek \
     manifest_vendor.dolby.hardware.dms \
+    memtrack-mediatek \
     SN1X0__RF-On.txt \
     TBaseDeviceBinding \
     atcid \
@@ -1896,3 +1896,6 @@ PRODUCT_PACKAGES += \
     wmt_launcher \
     wmt_loader \
     vtservice
+
+PRODUCT_PACKAGES += \
+    motobox_expat_symlink
