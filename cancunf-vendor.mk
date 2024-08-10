@@ -1504,6 +1504,7 @@ PRODUCT_PACKAGES += \
     libBasicModule \
     libVkLayer_mtk_rt_sdk \
     libalps \
+    libalsautils-v31 \
     libarcsoft_hdr_detection \
     libarcsoft_high_dynamic_range_v2 \
     libarcsoft_portrait_distortion_correction \
