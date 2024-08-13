@@ -28098,9 +28098,2669 @@ cc_prebuilt_binary {
 }
 
 install_symlink {
+	name: "android.hardware.graphics.allocator@4.0-service-mediatek_android.hardware.graphics.allocator@4_symlink",
+	soc_specific: true,
+	installed_location: "bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek",
+	symlink_target: "/vendor/bin/hw/mt6855/android.hardware.graphics.allocator@4.0-service-mediatek.mt6855",
+}
+
+install_symlink {
+	name: "camerahalserver_camerahalserver_symlink",
+	soc_specific: true,
+	installed_location: "bin/hw/camerahalserver",
+	symlink_target: "/vendor/bin/hw/mt6855/camerahalserver",
+}
+
+install_symlink {
 	name: "motobox_expat_symlink",
 	soc_specific: true,
 	installed_location: "bin/expat",
 	symlink_target: "/vendor/bin/motobox",
+}
+
+install_symlink {
+	name: "jpegtool_jpegtool_symlink",
+	soc_specific: true,
+	installed_location: "bin/jpegtool",
+	symlink_target: "/vendor/bin/mt6855/jpegtool",
+}
+
+install_symlink {
+	name: "v3avpud_v3avpud_symlink",
+	soc_specific: true,
+	installed_location: "bin/v3avpud",
+	symlink_target: "/vendor/bin/mt6855/v3avpud.mt6855",
+}
+
+install_symlink {
+	name: "libEGL_mtk_libEGL_mtk_symlink32",
+	soc_specific: true,
+	installed_location: "lib/egl/libEGL_mtk.so",
+	symlink_target: "/vendor/lib/egl/mt6855/libEGL_mtk.so",
+}
+
+install_symlink {
+	name: "libGLESv1_CM_mtk_libGLESv1_CM_mtk_symlink32",
+	soc_specific: true,
+	installed_location: "lib/egl/libGLESv1_CM_mtk.so",
+	symlink_target: "/vendor/lib/egl/mt6855/libGLESv1_CM_mtk.so",
+}
+
+install_symlink {
+	name: "libGLESv2_mtk_libGLESv2_mtk_symlink32",
+	soc_specific: true,
+	installed_location: "lib/egl/libGLESv2_mtk.so",
+	symlink_target: "/vendor/lib/egl/mt6855/libGLESv2_mtk.so",
+}
+
+install_symlink {
+	name: "audio.primary.mediatek_audio.primary.mt6855_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/audio.primary.mt6855.so",
+	symlink_target: "/vendor/lib/hw/audio.primary.mediatek.so",
+}
+
+install_symlink {
+	name: "audio.r_submix.mediatek_audio.r_submix.mt6855_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/audio.r_submix.mt6855.so",
+	symlink_target: "/vendor/lib/hw/audio.r_submix.mediatek.so",
+}
+
+install_symlink {
+	name: "kmsetkey.trustonic_kmsetkey.default_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/kmsetkey.default.so",
+	symlink_target: "/vendor/lib/hw/kmsetkey.trustonic.so",
+}
+
+install_symlink {
+	name: "libMcGatekeeper_gatekeeper.trustonic_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/gatekeeper.trustonic.so",
+	symlink_target: "/vendor/lib/hw/libMcGatekeeper.so",
+}
+
+install_symlink {
+	name: "libSoftGatekeeper_gatekeeper.default_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/gatekeeper.default.so",
+	symlink_target: "/vendor/lib/hw/libSoftGatekeeper.so",
+}
+
+install_symlink {
+	name: "android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+	symlink_target: "/vendor/lib/hw/mt6855/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+}
+
+install_symlink {
+	name: "gralloc.rogue_gralloc.rogue_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/gralloc.rogue.so",
+	symlink_target: "/vendor/lib/hw/mt6855/gralloc.rogue.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.camera.atms@1.0-impl_vendor.mediatek.hardware.camera.atms@1.0-impl_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so",
+	symlink_target: "/vendor/lib/hw/mt6855/vendor.mediatek.hardware.camera.atms@1.0-impl.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.camera.bgservice@1.1-impl_vendor.mediatek.hardware.camera.bgservice@1.1-impl_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
+	symlink_target: "/vendor/lib/hw/mt6855/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.pq@2.15-impl_vendor.mediatek.hardware.pq@2.15-impl_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so",
+	symlink_target: "/vendor/lib/hw/mt6855/vendor.mediatek.hardware.pq@2.15-impl.so",
+}
+
+install_symlink {
+	name: "vulkan.mtk_vulkan.mtk_symlink32",
+	soc_specific: true,
+	installed_location: "lib/hw/vulkan.mtk.so",
+	symlink_target: "/vendor/lib/hw/mt6855/vulkan.mtk.so",
+}
+
+install_symlink {
+	name: "lib3a.ae.core_lib3a.ae.core_symlink32",
+	soc_specific: true,
+	installed_location: "lib/lib3a.ae.core.so",
+	symlink_target: "/vendor/lib/mt6855/lib3a.ae.core.so",
+}
+
+install_symlink {
+	name: "lib3a.ae_lib3a.ae_symlink32",
+	soc_specific: true,
+	installed_location: "lib/lib3a.ae.so",
+	symlink_target: "/vendor/lib/mt6855/lib3a.ae.so",
+}
+
+install_symlink {
+	name: "lib3a.awb.core_lib3a.awb.core_symlink32",
+	soc_specific: true,
+	installed_location: "lib/lib3a.awb.core.so",
+	symlink_target: "/vendor/lib/mt6855/lib3a.awb.core.so",
+}
+
+install_symlink {
+	name: "lib3a.log_lib3a.log_symlink32",
+	soc_specific: true,
+	installed_location: "lib/lib3a.log.so",
+	symlink_target: "/vendor/lib/mt6855/lib3a.log.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_E2EHDR_Preview_libCamera_mtk000mipiraw_E2EHDR_Preview_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_E2EHDR_Preview.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_E2EHDR_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_E2EHDR_Video_libCamera_mtk000mipiraw_E2EHDR_Video_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_E2EHDR_Video.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_E2EHDR_Video.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Face_Capture_libCamera_mtk000mipiraw_Face_Capture_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Face_Capture.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Face_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Flash_Capture_libCamera_mtk000mipiraw_Flash_Capture_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Flash_Capture.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Flash_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Capture_libCamera_mtk000mipiraw_HDR_Capture_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_HDR_Capture.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_HDR_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Preview_libCamera_mtk000mipiraw_HDR_Preview_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_HDR_Preview.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_HDR_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Reconfig_Preview_libCamera_mtk000mipiraw_HDR_Reconfig_Preview_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_HDR_Reconfig_Preview.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_HDR_Reconfig_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Reconfig_Video_libCamera_mtk000mipiraw_HDR_Reconfig_Video_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_HDR_Reconfig_Video.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_HDR_Reconfig_Video.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Video_libCamera_mtk000mipiraw_HDR_Video_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_HDR_Video.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_HDR_Video.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_N3D_Capture_libCamera_mtk000mipiraw_N3D_Capture_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_N3D_Capture.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_N3D_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_N3D_Preview_libCamera_mtk000mipiraw_N3D_Preview_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_N3D_Preview.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_N3D_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_N3D_Video_libCamera_mtk000mipiraw_N3D_Video_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_N3D_Video.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_N3D_Video.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_P1_YUV_libCamera_mtk000mipiraw_P1_YUV_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_P1_YUV.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_P1_YUV.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Capture_libCamera_mtk000mipiraw_Scene_Capture_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Scene_Capture.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Scene_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Capture_4cell_libCamera_mtk000mipiraw_Scene_Capture_4cell_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Scene_Capture_4cell.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Scene_Capture_4cell.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Preview_libCamera_mtk000mipiraw_Scene_Preview_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Scene_Preview.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Scene_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Preview_4k_libCamera_mtk000mipiraw_Scene_Preview_4k_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Scene_Preview_4k.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Scene_Preview_4k.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Preview_ZSD_Flash_libCamera_mtk000mipiraw_Scene_Preview_ZSD_Flash_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Scene_Preview_ZSD_Flash.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Scene_Preview_ZSD_Flash.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Video_1080_libCamera_mtk000mipiraw_Video_1080_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Video_1080.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Video_1080.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Video_4k_libCamera_mtk000mipiraw_Video_4k_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libCamera_mtk000mipiraw_Video_4k.so",
+	symlink_target: "/vendor/lib/mt6855/libCamera_mtk000mipiraw_Video_4k.so",
+}
+
+install_symlink {
+	name: "libIMGegl_libIMGegl_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libIMGegl.so",
+	symlink_target: "/vendor/lib/mt6855/libIMGegl.so",
+}
+
+install_symlink {
+	name: "libPVRMtkutils_libPVRMtkutils_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libPVRMtkutils.so",
+	symlink_target: "/vendor/lib/mt6855/libPVRMtkutils.so",
+}
+
+install_symlink {
+	name: "libPVROCL_libPVROCL_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libPVROCL.so",
+	symlink_target: "/vendor/lib/mt6855/libPVROCL.so",
+}
+
+install_symlink {
+	name: "libPVRScopeServices_libPVRScopeServices_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libPVRScopeServices.so",
+	symlink_target: "/vendor/lib/mt6855/libPVRScopeServices.so",
+}
+
+install_symlink {
+	name: "libaiawb_moon_model_libaiawb_moon_model_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libaiawb_moon_model.so",
+	symlink_target: "/vendor/lib/mt6855/libaiawb_moon_model.so",
+}
+
+install_symlink {
+	name: "libaiawb_sun_model_libaiawb_sun_model_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libaiawb_sun_model.so",
+	symlink_target: "/vendor/lib/mt6855/libaiawb_sun_model.so",
+}
+
+install_symlink {
+	name: "libaiselector_libaiselector_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libaiselector.so",
+	symlink_target: "/vendor/lib/mt6855/libaiselector.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.log_libcam.hal3a.log_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libcam.hal3a.log.so",
+	symlink_target: "/vendor/lib/mt6855/libcam.hal3a.log.so",
+}
+
+install_symlink {
+	name: "libcam.halsensor.hwintegration_libcam.halsensor.hwintegration_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libcam.halsensor.hwintegration.so",
+	symlink_target: "/vendor/lib/mt6855/libcam.halsensor.hwintegration.so",
+}
+
+install_symlink {
+	name: "libcamalgo.platform2_libcamalgo.platform2_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libcamalgo.platform2.so",
+	symlink_target: "/vendor/lib/mt6855/libcamalgo.platform2.so",
+}
+
+install_symlink {
+	name: "libcameracustom.lens_libcameracustom.lens_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libcameracustom.lens.so",
+	symlink_target: "/vendor/lib/mt6855/libcameracustom.lens.so",
+}
+
+install_symlink {
+	name: "libcameracustom_libcameracustom_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libcameracustom.so",
+	symlink_target: "/vendor/lib/mt6855/libcameracustom.so",
+}
+
+install_symlink {
+	name: "libdpframework_libdpframework_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libdpframework.so",
+	symlink_target: "/vendor/lib/mt6855/libdpframework.so",
+}
+
+install_symlink {
+	name: "libgpudataproducer_libgpudataproducer_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libgpudataproducer.so",
+	symlink_target: "/vendor/lib/mt6855/libgpudataproducer.so",
+}
+
+install_symlink {
+	name: "libmemtrack_GL_libmemtrack_GL_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmemtrack_GL.so",
+	symlink_target: "/vendor/lib/mt6855/libmemtrack_GL.so",
+}
+
+install_symlink {
+	name: "libmpvr_libmpvr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmpvr.so",
+	symlink_target: "/vendor/lib/mt6855/libmpvr.so",
+}
+
+install_symlink {
+	name: "libmtk_drvb_libmtk_drvb_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtk_drvb.so",
+	symlink_target: "/vendor/lib/mt6855/libmtk_drvb.so",
+}
+
+install_symlink {
+	name: "libmtkcam.atmseventmgr_libmtkcam.atmseventmgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam.atmseventmgr.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam.atmseventmgr.so",
+}
+
+install_symlink {
+	name: "libmtkcam.eventcallback_libmtkcam.eventcallback_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam.eventcallback.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam.eventcallback.so",
+}
+
+install_symlink {
+	name: "libmtkcam_debugutils_libmtkcam_debugutils_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam_debugutils.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam_debugutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_metadata_libmtkcam_metadata_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam_metadata.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam_metadata.so",
+}
+
+install_symlink {
+	name: "libmtkcam_modulehelper_libmtkcam_modulehelper_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam_modulehelper.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam_modulehelper.so",
+}
+
+install_symlink {
+	name: "libmtkcam_stdutils_libmtkcam_stdutils_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam_stdutils.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam_stdutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_sysutils_libmtkcam_sysutils_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam_sysutils.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam_sysutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_tuning_utils_libmtkcam_tuning_utils_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam_tuning_utils.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam_tuning_utils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_ulog_libmtkcam_ulog_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libmtkcam_ulog.so",
+	symlink_target: "/vendor/lib/mt6855/libmtkcam_ulog.so",
+}
+
+install_symlink {
+	name: "libneuralnetworks_sl_driver_mtk_prebuilt_libneuralnetworks_sl_driver_mtk_prebuilt_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libneuralnetworks_sl_driver_mtk_prebuilt.so",
+	symlink_target: "/vendor/lib/mt6855/libneuralnetworks_sl_driver_mtk_prebuilt.so",
+}
+
+install_symlink {
+	name: "libneuron_adapter_mgvi_libneuron_adapter_mgvi_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libneuron_adapter_mgvi.so",
+	symlink_target: "/vendor/lib/mt6855/libneuron_adapter_mgvi.so",
+}
+
+install_symlink {
+	name: "libnir_neon_driver_libnir_neon_driver_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libnir_neon_driver.so",
+	symlink_target: "/vendor/lib/mt6855/libnir_neon_driver.so",
+}
+
+install_symlink {
+	name: "libpq_cust_base_libpq_cust_base_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libpq_cust_base.so",
+	symlink_target: "/vendor/lib/mt6855/libpq_cust_base.so",
+}
+
+install_symlink {
+	name: "libpq_prot_libpq_prot_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libpq_prot.so",
+	symlink_target: "/vendor/lib/mt6855/libpq_prot.so",
+}
+
+install_symlink {
+	name: "libpqparamparser_libpqparamparser_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libpqparamparser.so",
+	symlink_target: "/vendor/lib/mt6855/libpqparamparser.so",
+}
+
+install_symlink {
+	name: "libpqpconfig_libpqpconfig_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libpqpconfig.so",
+	symlink_target: "/vendor/lib/mt6855/libpqpconfig.so",
+}
+
+install_symlink {
+	name: "libsrv_um_libsrv_um_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libsrv_um.so",
+	symlink_target: "/vendor/lib/mt6855/libsrv_um.so",
+}
+
+install_symlink {
+	name: "libufwriter_libufwriter_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libufwriter.so",
+	symlink_target: "/vendor/lib/mt6855/libufwriter.so",
+}
+
+install_symlink {
+	name: "libusc_libusc_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libusc.so",
+	symlink_target: "/vendor/lib/mt6855/libusc.so",
+}
+
+install_symlink {
+	name: "libvcodec_utility_libvcodec_utility_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libvcodec_utility.so",
+	symlink_target: "/vendor/lib/mt6855/libvcodec_utility.so",
+}
+
+install_symlink {
+	name: "libvcodec_utility_v3a_libvcodec_utility_v3a_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libvcodec_utility_v3a.so",
+	symlink_target: "/vendor/lib/mt6855/libvcodec_utility_v3a.so",
+}
+
+install_symlink {
+	name: "libvcodecdrv_libvcodecdrv_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libvcodecdrv.so",
+	symlink_target: "/vendor/lib/mt6855/libvcodecdrv.so",
+}
+
+install_symlink {
+	name: "libvcodecdrv_v3a_libvcodecdrv_v3a_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libvcodecdrv_v3a.so",
+	symlink_target: "/vendor/lib/mt6855/libvcodecdrv_v3a.so",
+}
+
+install_symlink {
+	name: "libvpudv3a_vcodec_libvpudv3a_vcodec_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libvpudv3a_vcodec.so",
+	symlink_target: "/vendor/lib/mt6855/libvpudv3a_vcodec.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_hi1634q_mipi_raw_IdxMgr_mot_cancunf_hi1634q_mipi_raw_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_hi1634q_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_hi1634q_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_hi1634q_mipi_raw_row_IdxMgr_mot_cancunf_hi1634q_mipi_raw_row_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_hi1634q_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_hi1634q_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_hi1634q_mipi_raw_row_tuning_mot_cancunf_hi1634q_mipi_raw_row_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_hi1634q_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_hi1634q_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_hi1634q_mipi_raw_tuning_mot_cancunf_hi1634q_mipi_raw_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_hi1634q_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_hi1634q_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_jns_yova_mipi_raw_IdxMgr_mot_cancunf_jns_yova_mipi_raw_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_jns_yova_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_jns_yova_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_jns_yova_mipi_raw_row_IdxMgr_mot_cancunf_jns_yova_mipi_raw_row_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_jns_yova_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_jns_yova_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_jns_yova_mipi_raw_row_tuning_mot_cancunf_jns_yova_mipi_raw_row_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_jns_yova_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_jns_yova_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_jns_yova_mipi_raw_tuning_mot_cancunf_jns_yova_mipi_raw_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_jns_yova_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_jns_yova_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_ov50d_mipi_raw_IdxMgr_mot_cancunf_ov50d_mipi_raw_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_ov50d_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_ov50d_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_ov50d_mipi_raw_row_IdxMgr_mot_cancunf_ov50d_mipi_raw_row_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_ov50d_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_ov50d_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_ov50d_mipi_raw_row_tuning_mot_cancunf_ov50d_mipi_raw_row_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_ov50d_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_ov50d_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_ov50d_mipi_raw_tuning_mot_cancunf_ov50d_mipi_raw_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_ov50d_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_ov50d_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr_mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr_mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning_mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_tuning_mot_cancunf_s5k3p9sp04_mipi_raw_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5k3p9sp04_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k4h7_mipi_raw_IdxMgr_mot_cancunf_s5k4h7_mipi_raw_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5k4h7_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5k4h7_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr_mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k4h7_mipi_raw_row_tuning_mot_cancunf_s5k4h7_mipi_raw_row_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5k4h7_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5k4h7_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k4h7_mipi_raw_tuning_mot_cancunf_s5k4h7_mipi_raw_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5k4h7_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5k4h7_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5kjns_mipi_raw_IdxMgr_mot_cancunf_s5kjns_mipi_raw_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5kjns_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5kjns_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5kjns_mipi_raw_row_IdxMgr_mot_cancunf_s5kjns_mipi_raw_row_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5kjns_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5kjns_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5kjns_mipi_raw_row_tuning_mot_cancunf_s5kjns_mipi_raw_row_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5kjns_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5kjns_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5kjns_mipi_raw_tuning_mot_cancunf_s5kjns_mipi_raw_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_s5kjns_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_s5kjns_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_sc202_mipi_raw_IdxMgr_mot_cancunf_sc202_mipi_raw_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_sc202_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_sc202_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_sc202_mipi_raw_row_IdxMgr_mot_cancunf_sc202_mipi_raw_row_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_sc202_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_sc202_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_sc202_mipi_raw_row_tuning_mot_cancunf_sc202_mipi_raw_row_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_sc202_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_sc202_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_sc202_mipi_raw_tuning_mot_cancunf_sc202_mipi_raw_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mot_cancunf_sc202_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mot_cancunf_sc202_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mtk000_mipi_raw_IdxMgr_mtk000_mipi_raw_IdxMgr_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mtk000_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib/mt6855/mtk000_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mtk000_mipi_raw_tuning_mtk000_mipi_raw_tuning_symlink32",
+	soc_specific: true,
+	installed_location: "lib/mtk000_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib/mt6855/mtk000_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "libEGL_mtk_libEGL_mtk_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/egl/libEGL_mtk.so",
+	symlink_target: "/vendor/lib64/egl/mt6855/libEGL_mtk.so",
+}
+
+install_symlink {
+	name: "libGLESv1_CM_mtk_libGLESv1_CM_mtk_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/egl/libGLESv1_CM_mtk.so",
+	symlink_target: "/vendor/lib64/egl/mt6855/libGLESv1_CM_mtk.so",
+}
+
+install_symlink {
+	name: "libGLESv2_mtk_libGLESv2_mtk_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/egl/libGLESv2_mtk.so",
+	symlink_target: "/vendor/lib64/egl/mt6855/libGLESv2_mtk.so",
+}
+
+install_symlink {
+	name: "audio.primary.mediatek_audio.primary.mt6855_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/audio.primary.mt6855.so",
+	symlink_target: "/vendor/lib64/hw/audio.primary.mediatek.so",
+}
+
+install_symlink {
+	name: "audio.r_submix.mediatek_audio.r_submix.mt6855_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/audio.r_submix.mt6855.so",
+	symlink_target: "/vendor/lib64/hw/audio.r_submix.mediatek.so",
+}
+
+install_symlink {
+	name: "kmsetkey.trustonic_kmsetkey.default_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/kmsetkey.default.so",
+	symlink_target: "/vendor/lib64/hw/kmsetkey.trustonic.so",
+}
+
+install_symlink {
+	name: "libMcGatekeeper_gatekeeper.trustonic_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/gatekeeper.trustonic.so",
+	symlink_target: "/vendor/lib64/hw/libMcGatekeeper.so",
+}
+
+install_symlink {
+	name: "libSoftGatekeeper_gatekeeper.default_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/gatekeeper.default.so",
+	symlink_target: "/vendor/lib64/hw/libSoftGatekeeper.so",
+}
+
+install_symlink {
+	name: "android.hardware.camera.provider@2.6-impl-mediatek_android.hardware.camera.provider@2.6-impl-mediatek_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/android.hardware.camera.provider@2.6-impl-mediatek.so",
+}
+
+install_symlink {
+	name: "android.hardware.graphics.mapper@4.0-impl-mediatek_android.hardware.graphics.mapper@4.0-impl-mediatek_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
+}
+
+install_symlink {
+	name: "gralloc.rogue_gralloc.rogue_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/gralloc.rogue.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/gralloc.rogue.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.camera.atms@1.0-impl_vendor.mediatek.hardware.camera.atms@1.0-impl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.atms@1.0-impl.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.camera.bgservice@1.1-impl_vendor.mediatek.hardware.camera.bgservice@1.1-impl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.camera.ccap@1.0-impl_vendor.mediatek.hardware.camera.ccap@1.0-impl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.ccap@1.0-impl.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.camera.isphal@1.0-impl_vendor.mediatek.hardware.camera.isphal@1.0-impl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.isphal@1.0-impl.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.camera.isphal@1.1-impl_vendor.mediatek.hardware.camera.isphal@1.1-impl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.camera.lomoeffect@1.0-impl_vendor.mediatek.hardware.camera.lomoeffect@1.0-impl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so",
+}
+
+install_symlink {
+	name: "vendor.mediatek.hardware.pq@2.15-impl_vendor.mediatek.hardware.pq@2.15-impl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.pq@2.15-impl.so",
+}
+
+install_symlink {
+	name: "vulkan.mtk_vulkan.mtk_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/vulkan.mtk.so",
+	symlink_target: "/vendor/lib64/hw/mt6855/vulkan.mtk.so",
+}
+
+install_symlink {
+	name: "sensors.mediatek.V2.0_sensors.mt6855_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/hw/sensors.mt6855.so",
+	symlink_target: "/vendor/lib64/hw/sensors.mediatek.V2.0.so",
+}
+
+install_symlink {
+	name: "lib3a.ae.core_lib3a.ae.core_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.ae.core.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.ae.core.so",
+}
+
+install_symlink {
+	name: "lib3a.ae_lib3a.ae_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.ae.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.ae.so",
+}
+
+install_symlink {
+	name: "lib3a.ae.stat_lib3a.ae.stat_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.ae.stat.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.ae.stat.so",
+}
+
+install_symlink {
+	name: "lib3a.af.assist_lib3a.af.assist_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.af.assist.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.af.assist.so",
+}
+
+install_symlink {
+	name: "lib3a.af.assist.utils_lib3a.af.assist.utils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.af.assist.utils.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.af.assist.utils.so",
+}
+
+install_symlink {
+	name: "lib3a.af.core_lib3a.af.core_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.af.core.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.af.core.so",
+}
+
+install_symlink {
+	name: "lib3a.af_lib3a.af_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.af.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.af.so",
+}
+
+install_symlink {
+	name: "lib3a.alsflicker_lib3a.alsflicker_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.alsflicker.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.alsflicker.so",
+}
+
+install_symlink {
+	name: "lib3a.awb.core_lib3a.awb.core_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.awb.core.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.awb.core.so",
+}
+
+install_symlink {
+	name: "lib3a.ccudrv_lib3a.ccudrv_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.ccudrv.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.ccudrv.so",
+}
+
+install_symlink {
+	name: "lib3a.ccuif_lib3a.ccuif_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.ccuif.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.ccuif.so",
+}
+
+install_symlink {
+	name: "lib3a.custom.ae_lib3a.custom.ae_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.custom.ae.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.custom.ae.so",
+}
+
+install_symlink {
+	name: "lib3a.dce_lib3a.dce_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.dce.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.dce.so",
+}
+
+install_symlink {
+	name: "lib3a.flash_lib3a.flash_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.flash.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.flash.so",
+}
+
+install_symlink {
+	name: "lib3a.flicker_lib3a.flicker_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.flicker.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.flicker.so",
+}
+
+install_symlink {
+	name: "lib3a.gma_lib3a.gma_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.gma.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.gma.so",
+}
+
+install_symlink {
+	name: "lib3a.lce_lib3a.lce_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.lce.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.lce.so",
+}
+
+install_symlink {
+	name: "lib3a.log_lib3a.log_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.log.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.log.so",
+}
+
+install_symlink {
+	name: "lib3a.n3d3a_lib3a.n3d3a_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.n3d3a.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.n3d3a.so",
+}
+
+install_symlink {
+	name: "lib3a.sensors.color_lib3a.sensors.color_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.sensors.color.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.sensors.color.so",
+}
+
+install_symlink {
+	name: "lib3a.sensors.flicker_lib3a.sensors.flicker_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib3a.sensors.flicker.so",
+	symlink_target: "/vendor/lib64/mt6855/lib3a.sensors.flicker.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_E2EHDR_Preview_libCamera_mtk000mipiraw_E2EHDR_Preview_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_E2EHDR_Preview.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_E2EHDR_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_E2EHDR_Video_libCamera_mtk000mipiraw_E2EHDR_Video_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_E2EHDR_Video.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_E2EHDR_Video.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Face_Capture_libCamera_mtk000mipiraw_Face_Capture_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Face_Capture.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Face_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Flash_Capture_libCamera_mtk000mipiraw_Flash_Capture_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Flash_Capture.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Flash_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Capture_libCamera_mtk000mipiraw_HDR_Capture_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_HDR_Capture.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_HDR_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Preview_libCamera_mtk000mipiraw_HDR_Preview_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_HDR_Preview.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_HDR_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Reconfig_Preview_libCamera_mtk000mipiraw_HDR_Reconfig_Preview_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_HDR_Reconfig_Preview.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_HDR_Reconfig_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Reconfig_Video_libCamera_mtk000mipiraw_HDR_Reconfig_Video_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_HDR_Reconfig_Video.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_HDR_Reconfig_Video.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_HDR_Video_libCamera_mtk000mipiraw_HDR_Video_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_HDR_Video.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_HDR_Video.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_N3D_Capture_libCamera_mtk000mipiraw_N3D_Capture_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_N3D_Capture.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_N3D_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_N3D_Preview_libCamera_mtk000mipiraw_N3D_Preview_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_N3D_Preview.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_N3D_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_N3D_Video_libCamera_mtk000mipiraw_N3D_Video_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_N3D_Video.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_N3D_Video.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_P1_YUV_libCamera_mtk000mipiraw_P1_YUV_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_P1_YUV.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_P1_YUV.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Capture_libCamera_mtk000mipiraw_Scene_Capture_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Scene_Capture.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Scene_Capture.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Capture_4cell_libCamera_mtk000mipiraw_Scene_Capture_4cell_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Scene_Capture_4cell.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Scene_Capture_4cell.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Preview_libCamera_mtk000mipiraw_Scene_Preview_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Scene_Preview.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Scene_Preview.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Preview_4k_libCamera_mtk000mipiraw_Scene_Preview_4k_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Scene_Preview_4k.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Scene_Preview_4k.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Scene_Preview_ZSD_Flash_libCamera_mtk000mipiraw_Scene_Preview_ZSD_Flash_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Scene_Preview_ZSD_Flash.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Scene_Preview_ZSD_Flash.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Video_1080_libCamera_mtk000mipiraw_Video_1080_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Video_1080.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Video_1080.so",
+}
+
+install_symlink {
+	name: "libCamera_mtk000mipiraw_Video_4k_libCamera_mtk000mipiraw_Video_4k_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libCamera_mtk000mipiraw_Video_4k.so",
+	symlink_target: "/vendor/lib64/mt6855/libCamera_mtk000mipiraw_Video_4k.so",
+}
+
+install_symlink {
+	name: "libDR_libDR_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libDR.so",
+	symlink_target: "/vendor/lib64/mt6855/libDR.so",
+}
+
+install_symlink {
+	name: "libIMGegl_libIMGegl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libIMGegl.so",
+	symlink_target: "/vendor/lib64/mt6855/libIMGegl.so",
+}
+
+install_symlink {
+	name: "libPVRMtkutils_libPVRMtkutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libPVRMtkutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libPVRMtkutils.so",
+}
+
+install_symlink {
+	name: "libPVROCL_libPVROCL_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libPVROCL.so",
+	symlink_target: "/vendor/lib64/mt6855/libPVROCL.so",
+}
+
+install_symlink {
+	name: "libPVRScopeServices_libPVRScopeServices_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libPVRScopeServices.so",
+	symlink_target: "/vendor/lib64/mt6855/libPVRScopeServices.so",
+}
+
+install_symlink {
+	name: "libSonyIMX230PdafLibrary_libSonyIMX230PdafLibrary_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libSonyIMX230PdafLibrary.so",
+	symlink_target: "/vendor/lib64/mt6855/libSonyIMX230PdafLibrary.so",
+}
+
+install_symlink {
+	name: "libSonyIMX230PdafLibraryWrapper_libSonyIMX230PdafLibraryWrapper_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libSonyIMX230PdafLibraryWrapper.so",
+	symlink_target: "/vendor/lib64/mt6855/libSonyIMX230PdafLibraryWrapper.so",
+}
+
+install_symlink {
+	name: "libSonyIMX338PdafLibrary_libSonyIMX338PdafLibrary_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libSonyIMX338PdafLibrary.so",
+	symlink_target: "/vendor/lib64/mt6855/libSonyIMX338PdafLibrary.so",
+}
+
+install_symlink {
+	name: "libSonyIMX338PdafLibraryWrapper_libSonyIMX338PdafLibraryWrapper_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libSonyIMX338PdafLibraryWrapper.so",
+	symlink_target: "/vendor/lib64/mt6855/libSonyIMX338PdafLibraryWrapper.so",
+}
+
+install_symlink {
+	name: "libSonyIMX386PdafLibrary_libSonyIMX386PdafLibrary_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libSonyIMX386PdafLibrary.so",
+	symlink_target: "/vendor/lib64/mt6855/libSonyIMX386PdafLibrary.so",
+}
+
+install_symlink {
+	name: "libSonyIMX386PdafLibraryWrapper_libSonyIMX386PdafLibraryWrapper_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libSonyIMX386PdafLibraryWrapper.so",
+	symlink_target: "/vendor/lib64/mt6855/libSonyIMX386PdafLibraryWrapper.so",
+}
+
+install_symlink {
+	name: "libSonyIMX519PdafLibrary_libSonyIMX519PdafLibrary_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libSonyIMX519PdafLibrary.so",
+	symlink_target: "/vendor/lib64/mt6855/libSonyIMX519PdafLibrary.so",
+}
+
+install_symlink {
+	name: "libSonyIMX519PdafLibraryWrapper_libSonyIMX519PdafLibraryWrapper_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libSonyIMX519PdafLibraryWrapper.so",
+	symlink_target: "/vendor/lib64/mt6855/libSonyIMX519PdafLibraryWrapper.so",
+}
+
+install_symlink {
+	name: "lib_bsscore_lib_bsscore_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/lib_bsscore.so",
+	symlink_target: "/vendor/lib64/mt6855/lib_bsscore.so",
+}
+
+install_symlink {
+	name: "libaaa_ltm_libaaa_ltm_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaaa_ltm.so",
+	symlink_target: "/vendor/lib64/mt6855/libaaa_ltm.so",
+}
+
+install_symlink {
+	name: "libaaa_ltmx_libaaa_ltmx_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaaa_ltmx.so",
+	symlink_target: "/vendor/lib64/mt6855/libaaa_ltmx.so",
+}
+
+install_symlink {
+	name: "libacdk_libacdk_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libacdk.so",
+	symlink_target: "/vendor/lib64/mt6855/libacdk.so",
+}
+
+install_symlink {
+	name: "libaiawb_moon_libaiawb_moon_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaiawb_moon.so",
+	symlink_target: "/vendor/lib64/mt6855/libaiawb_moon.so",
+}
+
+install_symlink {
+	name: "libaiawb_moon_model_libaiawb_moon_model_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaiawb_moon_model.so",
+	symlink_target: "/vendor/lib64/mt6855/libaiawb_moon_model.so",
+}
+
+install_symlink {
+	name: "libaiawb_p1ggm_libaiawb_p1ggm_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaiawb_p1ggm.so",
+	symlink_target: "/vendor/lib64/mt6855/libaiawb_p1ggm.so",
+}
+
+install_symlink {
+	name: "libaiawb_sun_libaiawb_sun_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaiawb_sun.so",
+	symlink_target: "/vendor/lib64/mt6855/libaiawb_sun.so",
+}
+
+install_symlink {
+	name: "libaiawb_sun_model_libaiawb_sun_model_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaiawb_sun_model.so",
+	symlink_target: "/vendor/lib64/mt6855/libaiawb_sun_model.so",
+}
+
+install_symlink {
+	name: "libaibc_tuning_libaibc_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaibc_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/libaibc_tuning.so",
+}
+
+install_symlink {
+	name: "libaibc_tuning_p2_libaibc_tuning_p2_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaibc_tuning_p2.so",
+	symlink_target: "/vendor/lib64/mt6855/libaibc_tuning_p2.so",
+}
+
+install_symlink {
+	name: "libaibc_tuning_p3_libaibc_tuning_p3_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaibc_tuning_p3.so",
+	symlink_target: "/vendor/lib64/mt6855/libaibc_tuning_p3.so",
+}
+
+install_symlink {
+	name: "libaibc_tuning_p4_libaibc_tuning_p4_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaibc_tuning_p4.so",
+	symlink_target: "/vendor/lib64/mt6855/libaibc_tuning_p4.so",
+}
+
+install_symlink {
+	name: "libaidepth_tuning_libaidepth_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaidepth_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/libaidepth_tuning.so",
+}
+
+install_symlink {
+	name: "libaiselector_libaiselector_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libaiselector.so",
+	symlink_target: "/vendor/lib64/mt6855/libaiselector.so",
+}
+
+install_symlink {
+	name: "libcam.afhal_libcam.afhal_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.afhal.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.afhal.so",
+}
+
+install_symlink {
+	name: "libcam.chdr_libcam.chdr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.chdr.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.chdr.so",
+}
+
+install_symlink {
+	name: "libcam.feature_utils_libcam.feature_utils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.feature_utils.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.feature_utils.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.cctsvr_libcam.hal3a.cctsvr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.cctsvr.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.cctsvr.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.log_libcam.hal3a.log_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.log.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.log.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.ae_libcam.hal3a.v3.ae_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.ae.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.ae.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.ai3a_libcam.hal3a.v3.ai3a_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.ai3a.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.ai3a.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.awb_libcam.hal3a.v3.awb_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.awb.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.awb.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.dng_libcam.hal3a.v3.dng_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.dng.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.dng.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.fsmgr_libcam.hal3a.v3.fsmgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.fsmgr.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.fsmgr.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.lscMgr_libcam.hal3a.v3.lscMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.lscMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.lscMgr.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.lsctbl.50_libcam.hal3a.v3.lsctbl.50_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.lsctbl.50.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.lsctbl.50.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.nvram.50_libcam.hal3a.v3.nvram.50_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.nvram.50.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.nvram.50.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.platform_libcam.hal3a.v3.platform_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.platform.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.platform.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3.resultpool_libcam.hal3a.v3.resultpool_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.resultpool.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.resultpool.so",
+}
+
+install_symlink {
+	name: "libcam.hal3a.v3_libcam.hal3a.v3_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.hal3a.v3.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.hal3a.v3.so",
+}
+
+install_symlink {
+	name: "libcam.halisp.buf_libcam.halisp.buf_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.halisp.buf.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.halisp.buf.so",
+}
+
+install_symlink {
+	name: "libcam.halisp.common_libcam.halisp.common_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.halisp.common.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.halisp.common.so",
+}
+
+install_symlink {
+	name: "libcam.halisp_libcam.halisp_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.halisp.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.halisp.so",
+}
+
+install_symlink {
+	name: "libcam.halsensor.hwintegration_libcam.halsensor.hwintegration_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.halsensor.hwintegration.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.halsensor.hwintegration.so",
+}
+
+install_symlink {
+	name: "libcam.halsensor_libcam.halsensor_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.halsensor.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.halsensor.so",
+}
+
+install_symlink {
+	name: "libcam.iopipe_libcam.iopipe_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.iopipe.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.iopipe.so",
+}
+
+install_symlink {
+	name: "libcam.isptuning_libcam.isptuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.isptuning.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.isptuning.so",
+}
+
+install_symlink {
+	name: "libcam.pdtblgen_libcam.pdtblgen_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.pdtblgen.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.pdtblgen.so",
+}
+
+install_symlink {
+	name: "libcam.tuning.cache_libcam.tuning.cache_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.tuning.cache.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.tuning.cache.so",
+}
+
+install_symlink {
+	name: "libcam.utils.sensorprovider_libcam.utils.sensorprovider_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.utils.sensorprovider.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.utils.sensorprovider.so",
+}
+
+install_symlink {
+	name: "libcam.vhdr_libcam.vhdr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcam.vhdr.so",
+	symlink_target: "/vendor/lib64/mt6855/libcam.vhdr.so",
+}
+
+install_symlink {
+	name: "libcamalgo.ispfeature_libcamalgo.ispfeature_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamalgo.ispfeature.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamalgo.ispfeature.so",
+}
+
+install_symlink {
+	name: "libcamalgo.lsc_libcamalgo.lsc_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamalgo.lsc.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamalgo.lsc.so",
+}
+
+install_symlink {
+	name: "libcamalgo.mfnr_libcamalgo.mfnr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamalgo.mfnr.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamalgo.mfnr.so",
+}
+
+install_symlink {
+	name: "libcamalgo.platform2_libcamalgo.platform2_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamalgo.platform2.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamalgo.platform2.so",
+}
+
+install_symlink {
+	name: "libcamdrv_isp_libcamdrv_isp_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamdrv_isp.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamdrv_isp.so",
+}
+
+install_symlink {
+	name: "libcamdrv_tuning_mgr_libcamdrv_tuning_mgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamdrv_tuning_mgr.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamdrv_tuning_mgr.so",
+}
+
+install_symlink {
+	name: "libcamdrv_twin_libcamdrv_twin_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamdrv_twin.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamdrv_twin.so",
+}
+
+install_symlink {
+	name: "libcamera.custom.pd_buf_mgr_libcamera.custom.pd_buf_mgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamera.custom.pd_buf_mgr.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamera.custom.pd_buf_mgr.so",
+}
+
+install_symlink {
+	name: "libcamera.customae_libcamera.customae_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamera.customae.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamera.customae.so",
+}
+
+install_symlink {
+	name: "libcamera.customaf_libcamera.customaf_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamera.customaf.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamera.customaf.so",
+}
+
+install_symlink {
+	name: "libcamera.customawb_libcamera.customawb_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamera.customawb.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamera.customawb.so",
+}
+
+install_symlink {
+	name: "libcamera.customflk_libcamera.customflk_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcamera.customflk.so",
+	symlink_target: "/vendor/lib64/mt6855/libcamera.customflk.so",
+}
+
+install_symlink {
+	name: "libcameracustom.camera.3a_libcameracustom.camera.3a_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.camera.3a.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.camera.3a.so",
+}
+
+install_symlink {
+	name: "libcameracustom.camera.isp_libcameracustom.camera.isp_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.camera.isp.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.camera.isp.so",
+}
+
+install_symlink {
+	name: "libcameracustom.camera.sensors_libcameracustom.camera.sensors_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.camera.sensors.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.camera.sensors.so",
+}
+
+install_symlink {
+	name: "libcameracustom.camera_exif_libcameracustom.camera_exif_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.camera_exif.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.camera_exif.so",
+}
+
+install_symlink {
+	name: "libcameracustom.eis_libcameracustom.eis_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.eis.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.eis.so",
+}
+
+install_symlink {
+	name: "libcameracustom.flashlight_libcameracustom.flashlight_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.flashlight.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.flashlight.so",
+}
+
+install_symlink {
+	name: "libcameracustom.lens_libcameracustom.lens_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.lens.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.lens.so",
+}
+
+install_symlink {
+	name: "libcameracustom.plugin_libcameracustom.plugin_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.plugin.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.plugin.so",
+}
+
+install_symlink {
+	name: "libcameracustom_libcameracustom_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libcameracustom.so",
+	symlink_target: "/vendor/lib64/mt6855/libcameracustom.so",
+}
+
+install_symlink {
+	name: "libdip_drv_libdip_drv_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libdip_drv.so",
+	symlink_target: "/vendor/lib64/mt6855/libdip_drv.so",
+}
+
+install_symlink {
+	name: "libdip_postproc_libdip_postproc_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libdip_postproc.so",
+	symlink_target: "/vendor/lib64/mt6855/libdip_postproc.so",
+}
+
+install_symlink {
+	name: "libdpframework_libdpframework_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libdpframework.so",
+	symlink_target: "/vendor/lib64/mt6855/libdpframework.so",
+}
+
+install_symlink {
+	name: "libeffecthal.base_libeffecthal.base_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libeffecthal.base.so",
+	symlink_target: "/vendor/lib64/mt6855/libeffecthal.base.so",
+}
+
+install_symlink {
+	name: "libfeature.face_libfeature.face_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libfeature.face.so",
+	symlink_target: "/vendor/lib64/mt6855/libfeature.face.so",
+}
+
+install_symlink {
+	name: "libfeature.stereo.provider_libfeature.stereo.provider_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libfeature.stereo.provider.so",
+	symlink_target: "/vendor/lib64/mt6855/libfeature.stereo.provider.so",
+}
+
+install_symlink {
+	name: "libfeature_3dnr_libfeature_3dnr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libfeature_3dnr.so",
+	symlink_target: "/vendor/lib64/mt6855/libfeature_3dnr.so",
+}
+
+install_symlink {
+	name: "libfeature_eis_libfeature_eis_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libfeature_eis.so",
+	symlink_target: "/vendor/lib64/mt6855/libfeature_eis.so",
+}
+
+install_symlink {
+	name: "libfeature_fsc_libfeature_fsc_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libfeature_fsc.so",
+	symlink_target: "/vendor/lib64/mt6855/libfeature_fsc.so",
+}
+
+install_symlink {
+	name: "libfeature_lmv_libfeature_lmv_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libfeature_lmv.so",
+	symlink_target: "/vendor/lib64/mt6855/libfeature_lmv.so",
+}
+
+install_symlink {
+	name: "libfeature_rss_libfeature_rss_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libfeature_rss.so",
+	symlink_target: "/vendor/lib64/mt6855/libfeature_rss.so",
+}
+
+install_symlink {
+	name: "libfeatureiodrv_mem_libfeatureiodrv_mem_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libfeatureiodrv_mem.so",
+	symlink_target: "/vendor/lib64/mt6855/libfeatureiodrv_mem.so",
+}
+
+install_symlink {
+	name: "libgpudataproducer_libgpudataproducer_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libgpudataproducer.so",
+	symlink_target: "/vendor/lib64/mt6855/libgpudataproducer.so",
+}
+
+install_symlink {
+	name: "libimageio_libimageio_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libimageio.so",
+	symlink_target: "/vendor/lib64/mt6855/libimageio.so",
+}
+
+install_symlink {
+	name: "libimageio_plat_drv_libimageio_plat_drv_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libimageio_plat_drv.so",
+	symlink_target: "/vendor/lib64/mt6855/libimageio_plat_drv.so",
+}
+
+install_symlink {
+	name: "libimageio_plat_pipe_libimageio_plat_pipe_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libimageio_plat_pipe.so",
+	symlink_target: "/vendor/lib64/mt6855/libimageio_plat_pipe.so",
+}
+
+install_symlink {
+	name: "liblpcnr_liblpcnr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/liblpcnr.so",
+	symlink_target: "/vendor/lib64/mt6855/liblpcnr.so",
+}
+
+install_symlink {
+	name: "libmemtrack_GL_libmemtrack_GL_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmemtrack_GL.so",
+	symlink_target: "/vendor/lib64/mt6855/libmemtrack_GL.so",
+}
+
+install_symlink {
+	name: "libmfllcore_libmfllcore_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmfllcore.so",
+	symlink_target: "/vendor/lib64/mt6855/libmfllcore.so",
+}
+
+install_symlink {
+	name: "libmnl_libmnl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmnl.so",
+	symlink_target: "/vendor/lib64/mt6855/libmnl.so",
+}
+
+install_symlink {
+	name: "libmpvr_libmpvr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmpvr.so",
+	symlink_target: "/vendor/lib64/mt6855/libmpvr.so",
+}
+
+install_symlink {
+	name: "libmsnr_libmsnr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmsnr.so",
+	symlink_target: "/vendor/lib64/mt6855/libmsnr.so",
+}
+
+install_symlink {
+	name: "libmtk_drvb_libmtk_drvb_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtk_drvb.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtk_drvb.so",
+}
+
+install_symlink {
+	name: "libmtkcam.atmseventmgr_libmtkcam.atmseventmgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam.atmseventmgr.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam.atmseventmgr.so",
+}
+
+install_symlink {
+	name: "libmtkcam.debugwrapper_libmtkcam.debugwrapper_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam.debugwrapper.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam.debugwrapper.so",
+}
+
+install_symlink {
+	name: "libmtkcam.eventcallback_libmtkcam.eventcallback_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam.eventcallback.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam.eventcallback.so",
+}
+
+install_symlink {
+	name: "libmtkcam.featurepipe.capture_libmtkcam.featurepipe.capture_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam.featurepipe.capture.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam.featurepipe.capture.so",
+}
+
+install_symlink {
+	name: "libmtkcam.featurepipe.streaming_libmtkcam.featurepipe.streaming_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam.featurepipe.streaming.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam.featurepipe.streaming.so",
+}
+
+install_symlink {
+	name: "libmtkcam.featurepipe.vsdof_util_libmtkcam.featurepipe.vsdof_util_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam.featurepipe.vsdof_util.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam.featurepipe.vsdof_util.so",
+}
+
+install_symlink {
+	name: "libmtkcam.logicalmodule_libmtkcam.logicalmodule_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam.logicalmodule.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam.logicalmodule.so",
+}
+
+install_symlink {
+	name: "libmtkcam_3rdparty.core_libmtkcam_3rdparty.core_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_3rdparty.core.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_3rdparty.core.so",
+}
+
+install_symlink {
+	name: "libmtkcam_3rdparty.customer_libmtkcam_3rdparty.customer_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_3rdparty.customer.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_3rdparty.customer.so",
+}
+
+install_symlink {
+	name: "libmtkcam_3rdparty.mtk_libmtkcam_3rdparty.mtk_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_3rdparty.mtk.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_3rdparty.mtk.so",
+}
+
+install_symlink {
+	name: "libmtkcam_3rdparty_libmtkcam_3rdparty_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_3rdparty.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_3rdparty.so",
+}
+
+install_symlink {
+	name: "libmtkcam_calibration_convertor_libmtkcam_calibration_convertor_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_calibration_convertor.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_calibration_convertor.so",
+}
+
+install_symlink {
+	name: "libmtkcam_calibration_provider_libmtkcam_calibration_provider_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_calibration_provider.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_calibration_provider.so",
+}
+
+install_symlink {
+	name: "libmtkcam_debugutils_libmtkcam_debugutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_debugutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_debugutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_device3_app_libmtkcam_device3_app_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_device3_app.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_device3_app.so",
+}
+
+install_symlink {
+	name: "libmtkcam_device3_hal_libmtkcam_device3_hal_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_device3_hal.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_device3_hal.so",
+}
+
+install_symlink {
+	name: "libmtkcam_device3_hidl_libmtkcam_device3_hidl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_device3_hidl.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_device3_hidl.so",
+}
+
+install_symlink {
+	name: "libmtkcam_device3_hidlutils_libmtkcam_device3_hidlutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_device3_hidlutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_device3_hidlutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_device3_utils_libmtkcam_device3_utils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_device3_utils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_device3_utils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_devicesessionpolicy_libmtkcam_devicesessionpolicy_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_devicesessionpolicy.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_devicesessionpolicy.so",
+}
+
+install_symlink {
+	name: "libmtkcam_diputils_libmtkcam_diputils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_diputils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_diputils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_exif_libmtkcam_exif_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_exif.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_exif.so",
+}
+
+install_symlink {
+	name: "libmtkcam_fdvt_libmtkcam_fdvt_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_fdvt.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_fdvt.so",
+}
+
+install_symlink {
+	name: "libmtkcam_featurepolicy_libmtkcam_featurepolicy_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_featurepolicy.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_featurepolicy.so",
+}
+
+install_symlink {
+	name: "libmtkcam_featureutils_libmtkcam_featureutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_featureutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_featureutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_fwkutils_libmtkcam_fwkutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_fwkutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_fwkutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_grallocutils_libmtkcam_grallocutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_grallocutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_grallocutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_hwnode_libmtkcam_hwnode_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_hwnode.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_hwnode.so",
+}
+
+install_symlink {
+	name: "libmtkcam_hwutils_libmtkcam_hwutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_hwutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_hwutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_imem_libmtkcam_imem_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_imem.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_imem.so",
+}
+
+install_symlink {
+	name: "libmtkcam_imgbuf_libmtkcam_imgbuf_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_imgbuf.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_imgbuf.so",
+}
+
+install_symlink {
+	name: "libmtkcam_mapping_mgr_libmtkcam_mapping_mgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_mapping_mgr.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_mapping_mgr.so",
+}
+
+install_symlink {
+	name: "libmtkcam_metadata_libmtkcam_metadata_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_metadata.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_metadata.so",
+}
+
+install_symlink {
+	name: "libmtkcam_metastore_libmtkcam_metastore_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_metastore.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_metastore.so",
+}
+
+install_symlink {
+	name: "libmtkcam_mfb_libmtkcam_mfb_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_mfb.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_mfb.so",
+}
+
+install_symlink {
+	name: "libmtkcam_modulefactory_aaa_libmtkcam_modulefactory_aaa_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_modulefactory_aaa.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_modulefactory_aaa.so",
+}
+
+install_symlink {
+	name: "libmtkcam_modulefactory_custom_libmtkcam_modulefactory_custom_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_modulefactory_custom.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_modulefactory_custom.so",
+}
+
+install_symlink {
+	name: "libmtkcam_modulefactory_drv_libmtkcam_modulefactory_drv_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_modulefactory_drv.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_modulefactory_drv.so",
+}
+
+install_symlink {
+	name: "libmtkcam_modulefactory_utils_libmtkcam_modulefactory_utils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_modulefactory_utils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_modulefactory_utils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_modulehelper_libmtkcam_modulehelper_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_modulehelper.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_modulehelper.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipeline_libmtkcam_pipeline_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipeline.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipeline.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipeline_fbm_libmtkcam_pipeline_fbm_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipeline_fbm.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipeline_fbm.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinemodel_libmtkcam_pipelinemodel_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinemodel.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinemodel.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinemodel_adapter_libmtkcam_pipelinemodel_adapter_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinemodel_adapter.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinemodel_adapter.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinemodel_capture_libmtkcam_pipelinemodel_capture_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinemodel_capture.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinemodel_capture.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinemodel_isp_libmtkcam_pipelinemodel_isp_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinemodel_isp.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinemodel_isp.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinemodel_session_libmtkcam_pipelinemodel_session_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinemodel_session.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinemodel_session.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinemodel_utils_libmtkcam_pipelinemodel_utils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinemodel_utils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinemodel_utils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinemodel_zsl_libmtkcam_pipelinemodel_zsl_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinemodel_zsl.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinemodel_zsl.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinepolicy-security_libmtkcam_pipelinepolicy-security_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinepolicy-security.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinepolicy-security.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinepolicy-smvr_libmtkcam_pipelinepolicy-smvr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinepolicy-smvr.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinepolicy-smvr.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinepolicy_libmtkcam_pipelinepolicy_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinepolicy.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinepolicy.so",
+}
+
+install_symlink {
+	name: "libmtkcam_pipelinepolicy_factory_libmtkcam_pipelinepolicy_factory_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_pipelinepolicy_factory.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_pipelinepolicy_factory.so",
+}
+
+install_symlink {
+	name: "libmtkcam_prerelease_libmtkcam_prerelease_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_prerelease.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_prerelease.so",
+}
+
+install_symlink {
+	name: "libmtkcam_rsc_libmtkcam_rsc_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_rsc.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_rsc.so",
+}
+
+install_symlink {
+	name: "libmtkcam_scenariorecorder_libmtkcam_scenariorecorder_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_scenariorecorder.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_scenariorecorder.so",
+}
+
+install_symlink {
+	name: "libmtkcam_stdutils_libmtkcam_stdutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_stdutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_stdutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_streamutils_libmtkcam_streamutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_streamutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_streamutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_synchelper_libmtkcam_synchelper_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_synchelper.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_synchelper.so",
+}
+
+install_symlink {
+	name: "libmtkcam_sysutils_libmtkcam_sysutils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_sysutils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_sysutils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_tuning_utils_libmtkcam_tuning_utils_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_tuning_utils.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_tuning_utils.so",
+}
+
+install_symlink {
+	name: "libmtkcam_ulog_libmtkcam_ulog_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libmtkcam_ulog.so",
+	symlink_target: "/vendor/lib64/mt6855/libmtkcam_ulog.so",
+}
+
+install_symlink {
+	name: "libneuralnetworks_sl_driver_mtk_prebuilt_libneuralnetworks_sl_driver_mtk_prebuilt_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so",
+	symlink_target: "/vendor/lib64/mt6855/libneuralnetworks_sl_driver_mtk_prebuilt.so",
+}
+
+install_symlink {
+	name: "libneuron_adapter_mgvi_libneuron_adapter_mgvi_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libneuron_adapter_mgvi.so",
+	symlink_target: "/vendor/lib64/mt6855/libneuron_adapter_mgvi.so",
+}
+
+install_symlink {
+	name: "libneuron_runtime.5_libneuron_runtime.5_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libneuron_runtime.5.so",
+	symlink_target: "/vendor/lib64/mt6855/libneuron_runtime.5.so",
+}
+
+install_symlink {
+	name: "libnir_neon_driver_libnir_neon_driver_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libnir_neon_driver.so",
+	symlink_target: "/vendor/lib64/mt6855/libnir_neon_driver.so",
+}
+
+install_symlink {
+	name: "libpda_usdriver_libpda_usdriver_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libpda_usdriver.so",
+	symlink_target: "/vendor/lib64/mt6855/libpda_usdriver.so",
+}
+
+install_symlink {
+	name: "libpq_cust_base_libpq_cust_base_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libpq_cust_base.so",
+	symlink_target: "/vendor/lib64/mt6855/libpq_cust_base.so",
+}
+
+install_symlink {
+	name: "libpq_prot_libpq_prot_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libpq_prot.so",
+	symlink_target: "/vendor/lib64/mt6855/libpq_prot.so",
+}
+
+install_symlink {
+	name: "libpqparamparser_libpqparamparser_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libpqparamparser.so",
+	symlink_target: "/vendor/lib64/mt6855/libpqparamparser.so",
+}
+
+install_symlink {
+	name: "libpqpconfig_libpqpconfig_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libpqpconfig.so",
+	symlink_target: "/vendor/lib64/mt6855/libpqpconfig.so",
+}
+
+install_symlink {
+	name: "libsrv_um_libsrv_um_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libsrv_um.so",
+	symlink_target: "/vendor/lib64/mt6855/libsrv_um.so",
+}
+
+install_symlink {
+	name: "libstereoinfoaccessor_vsdof_libstereoinfoaccessor_vsdof_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libstereoinfoaccessor_vsdof.so",
+	symlink_target: "/vendor/lib64/mt6855/libstereoinfoaccessor_vsdof.so",
+}
+
+install_symlink {
+	name: "libufwriter_libufwriter_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libufwriter.so",
+	symlink_target: "/vendor/lib64/mt6855/libufwriter.so",
+}
+
+install_symlink {
+	name: "libusc_libusc_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libusc.so",
+	symlink_target: "/vendor/lib64/mt6855/libusc.so",
+}
+
+install_symlink {
+	name: "libvainr_model_libvainr_model_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libvainr_model.so",
+	symlink_target: "/vendor/lib64/mt6855/libvainr_model.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_hi1634q_mipi_raw_IdxMgr_mot_cancunf_hi1634q_mipi_raw_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_hi1634q_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_hi1634q_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_hi1634q_mipi_raw_row_IdxMgr_mot_cancunf_hi1634q_mipi_raw_row_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_hi1634q_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_hi1634q_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_hi1634q_mipi_raw_row_tuning_mot_cancunf_hi1634q_mipi_raw_row_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_hi1634q_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_hi1634q_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_hi1634q_mipi_raw_tuning_mot_cancunf_hi1634q_mipi_raw_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_hi1634q_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_hi1634q_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_jns_yova_mipi_raw_IdxMgr_mot_cancunf_jns_yova_mipi_raw_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_jns_yova_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_jns_yova_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_jns_yova_mipi_raw_row_IdxMgr_mot_cancunf_jns_yova_mipi_raw_row_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_jns_yova_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_jns_yova_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_jns_yova_mipi_raw_row_tuning_mot_cancunf_jns_yova_mipi_raw_row_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_jns_yova_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_jns_yova_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_jns_yova_mipi_raw_tuning_mot_cancunf_jns_yova_mipi_raw_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_jns_yova_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_jns_yova_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_ov50d_mipi_raw_IdxMgr_mot_cancunf_ov50d_mipi_raw_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_ov50d_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_ov50d_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_ov50d_mipi_raw_row_IdxMgr_mot_cancunf_ov50d_mipi_raw_row_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_ov50d_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_ov50d_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_ov50d_mipi_raw_row_tuning_mot_cancunf_ov50d_mipi_raw_row_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_ov50d_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_ov50d_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_ov50d_mipi_raw_tuning_mot_cancunf_ov50d_mipi_raw_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_ov50d_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_ov50d_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr_mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr_mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning_mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k3p9sp04_mipi_raw_tuning_mot_cancunf_s5k3p9sp04_mipi_raw_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5k3p9sp04_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5k3p9sp04_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k4h7_mipi_raw_IdxMgr_mot_cancunf_s5k4h7_mipi_raw_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5k4h7_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5k4h7_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr_mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5k4h7_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k4h7_mipi_raw_row_tuning_mot_cancunf_s5k4h7_mipi_raw_row_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5k4h7_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5k4h7_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5k4h7_mipi_raw_tuning_mot_cancunf_s5k4h7_mipi_raw_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5k4h7_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5k4h7_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5kjns_mipi_raw_IdxMgr_mot_cancunf_s5kjns_mipi_raw_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5kjns_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5kjns_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5kjns_mipi_raw_row_IdxMgr_mot_cancunf_s5kjns_mipi_raw_row_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5kjns_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5kjns_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5kjns_mipi_raw_row_tuning_mot_cancunf_s5kjns_mipi_raw_row_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5kjns_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5kjns_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_s5kjns_mipi_raw_tuning_mot_cancunf_s5kjns_mipi_raw_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_s5kjns_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_s5kjns_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_sc202_mipi_raw_IdxMgr_mot_cancunf_sc202_mipi_raw_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_sc202_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_sc202_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_sc202_mipi_raw_row_IdxMgr_mot_cancunf_sc202_mipi_raw_row_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_sc202_mipi_raw_row_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_sc202_mipi_raw_row_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_sc202_mipi_raw_row_tuning_mot_cancunf_sc202_mipi_raw_row_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_sc202_mipi_raw_row_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_sc202_mipi_raw_row_tuning.so",
+}
+
+install_symlink {
+	name: "mot_cancunf_sc202_mipi_raw_tuning_mot_cancunf_sc202_mipi_raw_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mot_cancunf_sc202_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mot_cancunf_sc202_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "mtk000_mipi_raw_IdxMgr_mtk000_mipi_raw_IdxMgr_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mtk000_mipi_raw_IdxMgr.so",
+	symlink_target: "/vendor/lib64/mt6855/mtk000_mipi_raw_IdxMgr.so",
+}
+
+install_symlink {
+	name: "mtk000_mipi_raw_tuning_mtk000_mipi_raw_tuning_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mtk000_mipi_raw_tuning.so",
+	symlink_target: "/vendor/lib64/mt6855/mtk000_mipi_raw_tuning.so",
+}
+
+install_symlink {
+	name: "libmtkcam_streaminfo_plugin-p1stt_libmtkcam_streaminfo_plugin-p1stt_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so",
+	symlink_target: "/vendor/lib64/mtkcam/mt6855/libmtkcam_streaminfo_plugin-p1stt.so",
 }
 
