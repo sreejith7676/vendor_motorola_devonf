@@ -359,7 +359,5 @@
         <Param name="sph_in_iir_mic2_pmv_type" type="ushort_array"/>
         <Param name="sph_in_iir_mic1_pmv_qfactor" type="double_array"/>
         <Param name="sph_in_iir_mic2_pmv_qfactor" type="double_array"/>
-		<Param name="speech_mode_para_ext" type="uint_array"/>
-
     </ParamUnit>
 </ParamUnitDesc>

@@ -7,8 +7,6 @@
     <ParamUnit param_id="0">
       <Param name="besloudness" value="1"/>
       <Param name="hifi_audio" value="1"/>
-      <Param name="voip_ainr_on" value="1"/>
-      <Param name="record_ainr_on" value="1"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>

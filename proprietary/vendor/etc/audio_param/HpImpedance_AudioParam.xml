@@ -69,10 +69,10 @@
     </ParamUnit>
     <ParamUnit param_id="6">
       <Param name="hp_impedance_enable" value="1"/>
-      <Param name="hp_impedance_onboard_resistor" value="10"/>
+      <Param name="hp_impedance_onboard_resistor" value="13"/>
       <Param name="hp_impedance_default_idx" value="1"/>
-      <Param name="hp_impedance_threshold_list" value="24,48,192,480"/>
-      <Param name="hp_impedance_gain_degrade_list" value="-2,0,0,0,0"/>
+      <Param name="hp_impedance_threshold_list" value="24,48,96,192"/>
+      <Param name="hp_impedance_gain_degrade_list" value="0,0,0,0,0"/>
     </ParamUnit>
     <ParamUnit param_id="7">
       <Param name="hp_impedance_enable" value="0"/>

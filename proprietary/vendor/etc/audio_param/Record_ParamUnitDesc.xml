@@ -16,7 +16,7 @@
 			<Category name="ASR" wording="ASR improvement" visible="false"/>
 			<Category name="VR" wording="Voice recognition" />
 			<Category name="VoiceUnLk" visible="false" />
-			<Category name="Customization2" visible="true"/>
+			<Category name="Customization2" visible="false"/>
 			<Category name="FastRecord" visible="false"/>
 			<Category name="Unprocessed" visible="false"/>
 			<Category name="IncallRecord" visible="false"/>
@@ -136,7 +136,5 @@
 		<Param name="sph_in_iir_mic2_enh_eq_freq" type="double_array"/>
 		<Param name="sph_in_iir_mic2_enh_eq_mag" type="double_array"/>
 		<Param name="sph_in_parameter" type="double_array"/>
-		<Param name="record_mode_para_ext" type="uint_array"/>
-
 	</ParamUnit>
 </ParamUnitDesc>

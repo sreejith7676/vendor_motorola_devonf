@@ -74,7 +74,7 @@ AP_CFG_RDCL_HWMON_GYRO_LID                                            13
 AP_CFG_RDCL_HWMON_PS_LID                                              18
 AP_CFG_RDCL_UART_LID                                                  9
 AP_CFG_RDEB_FILE_BT_ADDR_LID                                          1
-AP_CFG_RDEB_FILE_WIFI_CANCUNF_LID                                     56
+AP_CFG_RDEB_FILE_WIFI_DEVONF_LID                                      56
 AP_CFG_RDEB_FILE_WIFI_LID                                             55
 AP_CFG_RDEB_OMADM_USB_LID                                             14
 AP_CFG_RDEB_WIFI_CUSTOM_LID                                           57

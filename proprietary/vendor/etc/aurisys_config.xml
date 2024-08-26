@@ -232,15 +232,15 @@
          * =====================================================================
         -->
         <library name="mtk_speech_enh"
-                 lib_path="/vendor/lib/libmtkspparser_swb.so"
-                 lib64_path="/vendor/lib64/libmtkspparser_swb.so"
+                 lib_path="/vendor/lib/libmtkspparser.so"
+                 lib64_path="/vendor/lib64/libmtkspparser.so"
                  param_path="/vendor/etc/audio_param"
                  lib_dump_path="AUTO"
                  adb_cmd_key="MTKSE">
             <components>
                 <!-- for aurisys_scene low latency record -->
                 <component aurisys_scenario="AURISYS_SCENARIO_RECORD_LOW_LATENCY"
-                           sample_rate="32000,48000"
+                           sample_rate="16000,48000"
                            audio_format="AUDIO_FORMAT_PCM_8_24_BIT"
                            frame_size_ms="1,5"
                            b_interleave="0"
@@ -257,7 +257,7 @@
                 </component>
                 <!-- for aurisys_scene record w/o AEC -->
                 <component aurisys_scenario="AURISYS_SCENARIO_RECORD_WITHOUT_AEC"
-                           sample_rate="32000,48000"
+                           sample_rate="16000,48000"
                            audio_format="AUDIO_FORMAT_PCM_8_24_BIT"
                            frame_size_ms="20"
                            b_interleave="0"
@@ -274,7 +274,7 @@
                 </component>
                 <!-- for aurisys_scene record w/ AEC -->
                 <component aurisys_scenario="AURISYS_SCENARIO_RECORD_WITH_AEC"
-                           sample_rate="32000"
+                           sample_rate="16000"
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
                            frame_size_ms="20"
                            b_interleave="0"
@@ -295,7 +295,7 @@
                 </component>
                 <!-- for aurisys_scene low latency record -->
                 <component aurisys_scenario="AURISYS_SCENARIO_RECORD_IEM"
-                           sample_rate="32000,48000"
+                           sample_rate="16000,48000"
                            audio_format="AUDIO_FORMAT_PCM_8_24_BIT"
                            frame_size_ms="1,5"
                            b_interleave="0"
@@ -312,11 +312,11 @@
                 </component>
                 <!-- for aurisys_scene voip -->
                 <component aurisys_scenario="AURISYS_SCENARIO_VOIP"
-                           sample_rate="32000"
+                           sample_rate="16000"
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
                            frame_size_ms="20"
                            b_interleave="0"
-                           enable_log="1"
+                           enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">
@@ -339,11 +339,11 @@
                 </component>
                 <!-- for aurisys_scene voip w/o AEC -->
                 <component aurisys_scenario="AURISYS_SCENARIO_VOIP_WITHOUT_AEC"
-                           sample_rate="32000"
+                           sample_rate="16000"
                            audio_format="AUDIO_FORMAT_PCM_16_BIT"
                            frame_size_ms="20"
                            b_interleave="0"
-                           enable_log="1"
+                           enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
                            enhancement_mode="0">

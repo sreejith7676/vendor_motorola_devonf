@@ -21,7 +21,7 @@
 			<Category name="VR" wording="Voice recognition" />
 			<Category name="VoicePerformance" wording="Voice performance recording" />
 			<Category name="VoiceUnLk" visible="false" />
-			<Category name="Customization2" visible="true" />
+			<Category name="Customization2" visible="false" />
 			<Category name="CUSTOMIZATION3"/>
 			<Category name="FastRecord" visible="false"/>
 			<Category name="Unprocessed"/>

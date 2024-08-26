@@ -55,7 +55,6 @@
       <Param name="DV visibility" value="0"/>
       <Param name="UL Gain Set" value="1"/>
       <Param name="UL Gain Name" value="mic1,mic2,mic3,mic4"/>
-      <Param name="ModeParamExt visibility" value="1"/>
     </ParamUnit>
     <ParamUnit param_id="1">
       <Param name="DL FIR visibility" value="1"/>
@@ -83,7 +82,6 @@
       <Param name="DV visibility" value="0"/>
       <Param name="UL Gain Set" value="1"/>
       <Param name="UL Gain Name" value="mic1,mic2,mic3,mic4"/>
-      <Param name="ModeParamExt visibility" value="1"/>
     </ParamUnit>
     <ParamUnit param_id="2">
       <Param name="DL FIR visibility" value="1"/>
@@ -111,7 +109,6 @@
       <Param name="DV visibility" value="0"/>
       <Param name="UL Gain Set" value="1"/>
       <Param name="UL Gain Name" value="mic1,mic2,mic3,mic4"/>
-      <Param name="ModeParamExt visibility" value="1"/>
     </ParamUnit>
     <ParamUnit param_id="3">
       <Param name="DL FIR visibility" value="1"/>
@@ -139,7 +136,6 @@
       <Param name="DV visibility" value="0"/>
       <Param name="UL Gain Set" value="1"/>
       <Param name="UL Gain Name" value="mic1,mic2,mic3,mic4"/>
-      <Param name="ModeParamExt visibility" value="1"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>

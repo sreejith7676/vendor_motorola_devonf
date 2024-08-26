@@ -18,7 +18,7 @@
       <Param name="ringback_gain" value="22,19,17,16,13,10,7,4"/>
     </ParamUnit>
     <ParamUnit param_id="1">
-      <Param name="ringback_gain" value="11,10,9,8,6,4,2,0"/>
+      <Param name="ringback_gain" value="27,24,21,20,18,15,12,9"/>
     </ParamUnit>
     <ParamUnit param_id="2">
       <Param name="ringback_gain" value="22,19,17,16,13,10,7,4"/>

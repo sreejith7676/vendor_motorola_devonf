@@ -1,6 +1,6 @@
-libOpenCL.so
 libportrait_repair_ppl3_ocl.so
 
 libvpu.so
+libOpenCL.so
 libiqi_bridge.so
 libOpenCL.so

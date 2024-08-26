@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AudioParamOptions>
  <Param name="MTK_WB_SPEECH_SUPPORT" value="" />
- <Param name="MTK_AUDIO_HD_REC_SUPPORT" value="yes" />
+ <Param name="MTK_AUDIO_HD_REC_SUPPORT" value="" />
  <Param name="MTK_DUAL_MIC_SUPPORT" value="yes" />
- <Param name="MTK_HANDSFREE_DMNR_SUPPORT" value="yes" />
+ <Param name="MTK_HANDSFREE_DMNR_SUPPORT" value="" />
  <Param name="DMNR_TUNNING_AT_MODEMSIDE" value="" />
- <Param name="MTK_VOIP_ENHANCEMENT_SUPPORT" value="yes" />
+ <Param name="MTK_VOIP_ENHANCEMENT_SUPPORT" value="" />
  <Param name="MTK_TB_WIFI_3G_MODE" value="" />
  <Param name="MTK_DISABLE_EARPIECE" value="" />
  <Param name="MTK_ASR_SUPPORT" value="" />
- <Param name="MTK_VOIP_NORMAL_DMNR" value="yes" />
+ <Param name="MTK_VOIP_NORMAL_DMNR" value="" />
  <Param name="MTK_VOIP_HANDSFREE_DMNR" value="yes" />
- <Param name="MTK_INCALL_NORMAL_DMNR" value="yes" />
+ <Param name="MTK_INCALL_NORMAL_DMNR" value="" />
  <Param name="MTK_VOICE_UNLOCK_SUPPORT" value="" />
  <Param name="MTK_VOICE_UI_SUPPORT" value="" />
  <Param name="MTK_ACF_AUTO_GEN_SUPPORT" value="" />
@@ -58,12 +58,12 @@
  <Param name="MTK_VOW_RECORD_CONCURRENT" value="no" />
  <Param name="MTK_VOW_NORMAL_RECORD_ENROLL" value="no" />
  <Param name="MTK_PHONE_CALL_FIXED_48K_SAMPLERATE" value="yes" />
- <Param name="MTK_VOIP_SWB_ENHANCEMENT_SUPPORT" value="yes" />
+ <Param name="MTK_VOIP_SWB_ENHANCEMENT_SUPPORT" value="no" />
  <Param name="VIR_WIFI_ONLY_SUPPORT" value="no" />
  <Param name="VIR_3G_DATA_ONLY_SUPPORT" value="no" />
  <Param name="VIR_ASR_SUPPORT" value="no" />
- <Param name="VIR_VOIP_NORMAL_DMNR_SUPPORT" value="yes" />
- <Param name="VIR_VOIP_HANDSFREE_DMNR_SUPPORT" value="yes" />
+ <Param name="VIR_VOIP_NORMAL_DMNR_SUPPORT" value="no" />
+ <Param name="VIR_VOIP_HANDSFREE_DMNR_SUPPORT" value="no" />
  <Param name="VIR_NO_SPEECH" value="no" />
  <Param name="VIR_INCALL_NORMAL_DMNR_SUPPORT" value="yes" />
  <Param name="VIR_INCALL_HANDSFREE_DMNR_SUPPORT" value="yes" />
@@ -77,8 +77,6 @@
  <Param name="VIR_MTK_VOIP_IIR_ENH_SUPPORT" value="no" />
  <Param name="VIR_MTK_VOIP_IIR_MIC_SUPPORT" value="no" />
  <Param name="MTK_AUDIO_SPEAKER_PATH" value="int_lo_buf" />
- <Param name="FIX_SWB_ENH" value="yes" />
- <Param name="FIX_SWB_ENH_VOICE" value="yes" />
  <Param name="PHONECALL_ACOUSTIC_SHOCK" value="yes" />
  <Param name="KERNEL_BUFFER_SIZE_NORMAL" value="16384" />
  <Param name="KERNEL_BUFFER_SIZE_DEEP" value="32768" />

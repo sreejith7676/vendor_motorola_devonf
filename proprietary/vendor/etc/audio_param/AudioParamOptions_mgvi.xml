@@ -55,7 +55,7 @@
  <Param name="MTK_VOW_MULTI_KEYPHRASE_SUPPORT" value="" />
  <Param name="MTK_VOW_SINGLE_MIC_SELECT" value="" />
  <Param name="MTK_PHONE_CALL_FIXED_48K_SAMPLERATE" value="" />
- <Param name="MTK_VOIP_SWB_ENHANCEMENT_SUPPORT" value="yes" />
+ <Param name="MTK_VOIP_SWB_ENHANCEMENT_SUPPORT" value="" />
  <Param name="VIR_WIFI_ONLY_SUPPORT" value="no" />
  <Param name="VIR_3G_DATA_ONLY_SUPPORT" value="no" />
  <Param name="VIR_ASR_SUPPORT" value="no" />
@@ -73,8 +73,6 @@
  <Param name="VIR_MTK_RECORD_IIR_ENH_SUPPORT" value="yes" />
  <Param name="VIR_MTK_VOIP_IIR_ENH_SUPPORT" value="yes" />
  <Param name="VIR_MTK_VOIP_IIR_MIC_SUPPORT" value="yes" />
- <Param name="PHONECALL_ACOUSTIC_SHOCK" value="yes" />
- <Param name="FIX_SWB_ENH" value="yes" />
- <Param name="FIX_SWB_ENH_VOICE" value="yes" />
  <Param name="CUST_XML_DIR" value="/data/vendor/audiohal/audio_param/" />
+ <Param name="PHONECALL_ACOUSTIC_SHOCK" value="no" />
 </AudioParamOptions>

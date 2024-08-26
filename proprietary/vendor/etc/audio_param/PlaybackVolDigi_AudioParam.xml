@@ -153,15 +153,6 @@
     <Param path="Default,Ring,HSSPK" param_id="8"/>
     <Param path="Default,Music,HS" param_id="9"/>
     <Param path="Default,Music,USB" param_id="10"/>
-    <Param path="Default,System,HS" param_id="11"/>
-    <Param path="Default,Notification,HS" param_id="12"/>
-    <Param path="Default,System,USB" param_id="13"/>
-    <Param path="Default,Ring,USB" param_id="14"/>
-    <Param path="Default,Alarm,USB" param_id="15"/>
-    <Param path="Default,Notification,USB" param_id="16"/>
-    <Param path="Default,Music,BT_A2DP" param_id="31"/>
-    <Param path="Default,Music,BT_A2DP_HP" param_id="31"/>
-    <Param path="Default,Music,BT_A2DP_SPK" param_id="31"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
@@ -177,7 +168,7 @@
       <Param name="digital_gain" value="-64,-38,-34,-29,-22,-15,-7,0,0,0,0,0,0,0,0,0"/>
     </ParamUnit>
     <ParamUnit param_id="4">
-      <Param name="digital_gain" value="-64,-50,-42,-37,-33,-29,-26,-23,-21,-18,-16,-14,-11,-9,-7,0"/>
+      <Param name="digital_gain" value="-64,-51,-46,-41,-38,-35,-32,-29,-25,-22,-18,-15,-11,-7,-4,0"/>
     </ParamUnit>
     <ParamUnit param_id="5">
       <Param name="digital_gain" value="-64,-64,-38,-31,-24,-16,-8,0,0,0,0,0,0,0,0,0"/>
@@ -192,31 +183,10 @@
       <Param name="digital_gain" value="-64,-38,-31,-25,-19,-14,-9,-4,0,0,0,0,0,0,0,0"/>
     </ParamUnit>
     <ParamUnit param_id="9">
-      <Param name="digital_gain" value="-64,-55,-49,-45,-41,-37,-33,-29,-25,-21,-17,-13,-10,-7,-4,-1"/>
+      <Param name="digital_gain" value="-64,-54,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-9,-6,-3,0"/>
     </ParamUnit>
     <ParamUnit param_id="10">
-      <Param name="digital_gain" value="-64,-52,-49,-46,-43,-40,-37,-34,-31,-28,-25,-22,-18,-14,-10,-6"/>
-    </ParamUnit>
-    <ParamUnit param_id="11">
-      <Param name="digital_gain" value="-64,-30,-25,-20,-15,-10,-5,0,0,0,0,0,0,0,0,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="12">
-      <Param name="digital_gain" value="-64,-30,-25,-20,-15,-10,-5,0,0,0,0,0,0,0,0,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="13">
-      <Param name="digital_gain" value="-64,-30,-25,-20,-15,-10,-5,0,0,0,0,0,0,0,0,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="14">
-      <Param name="digital_gain" value="-64,-30,-25,-20,-15,-10,-5,0,0,0,0,0,0,0,0,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="15">
-      <Param name="digital_gain" value="-64,-64,-30,-24,-18,-12,-6,0,0,0,0,0,0,0,0,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="16">
-      <Param name="digital_gain" value="-64,-30,-25,-20,-15,-10,-5,0,0,0,0,0,0,0,0,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="31">
-      <Param name="digital_gain" value="-64,-48,-45,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6"/>
+      <Param name="digital_gain" value="-64,-54,-48,-44,-40,-36,-32,-28,-24,-20,-16,-12,-9,-6,-3,0"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>
