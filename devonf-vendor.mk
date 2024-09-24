@@ -244,7 +244,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/hw/init.mmi.backup.trustlet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.backup.trustlet.rc \
-    vendor/motorola/devonf/proprietary/vendor/etc/init/init.alpslegacy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.alpslegacy.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
@@ -275,7 +274,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/vendor.mmi.carrier.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.carrier.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/vendor.mmi.cxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.cxp.rc \
-    vendor/motorola/devonf/proprietary/vendor/etc/init/vendor.trustonic.alps.alps_device@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.alps.alps_device@1.1-service.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
@@ -1026,7 +1024,6 @@ PRODUCT_PACKAGES += \
     libBSTbase_share \
     libBasicModule \
     libVkLayer_mtk_rt_sdk \
-    libalps \
     libalsautils-v31 \
     libarcsoft_portrait_distortion_correction \
     libarcsoft_portrait_super_night_se_raw \
@@ -1283,8 +1280,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.radio_op@3.0 \
     vendor.mediatek.hardware.videotelephony@1.0 \
-    vendor.trustonic.alps.alps_device@1.0 \
-    vendor.trustonic.alps.alps_device@1.1 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -1380,7 +1375,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
-    vendor.trustonic.alps.alps_device@1.1-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
     init.insmod \
@@ -1409,7 +1403,6 @@ PRODUCT_PACKAGES += \
     pnscr_cal \
     pstore_annotate \
     rcs_volte_stack \
-    rsudaemon_proxy \
     rt5512_calibration \
     sns_mot_client \
     stp_dump3 \

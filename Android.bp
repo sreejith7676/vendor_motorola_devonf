@@ -12888,23 +12888,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libalps",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libalps.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libalsautils-v31",
 	owner: "motorola",
 	strip: {
@@ -17414,40 +17397,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.trustonic.alps.alps_device@1.0",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.trustonic.alps.alps_device@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.trustonic.alps.alps_device@1.1",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.trustonic.alps.alps_device@1.1.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.trustonic.tee.tui@1.0",
 	owner: "motorola",
 	strip: {
@@ -17777,9 +17726,6 @@ android_app_import {
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk",
 	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
 }
@@ -17789,9 +17735,6 @@ android_app_import {
 	owner: "motorola",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk",
 	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
 }
@@ -17801,9 +17744,6 @@ android_app_import {
 	owner: "motorola",
 	apk: "proprietary/system_ext/priv-app/ImsService/ImsService.apk",
 	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -18821,24 +18761,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "vendor.trustonic.alps.alps_device@1.1-service",
-	owner: "motorola",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.trustonic.alps.alps_device@1.1-service"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.trustonic.tee@1.1-service",
 	owner: "motorola",
 	target: {
@@ -19238,23 +19160,6 @@ cc_prebuilt_binary {
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "rsudaemon_proxy",
-	owner: "motorola",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/rsudaemon_proxy"],
-		},
-	},
-	compile_multilib: "64",
 	check_elf_files: false,
 	strip: {
 		none: true,
