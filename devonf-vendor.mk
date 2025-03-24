@@ -187,7 +187,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/motorola/devonf/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/motorola/devonf/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
-    vendor/motorola/devonf/proprietary/vendor/etc/gbe.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gbe.cfg \
     vendor/motorola/devonf/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/motorola/devonf/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/motorola/devonf/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -240,10 +239,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
-    vendor/motorola/devonf/proprietary/vendor/etc/init/fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fpsgo.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
-    vendor/motorola/devonf/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/hw/init.mmi.backup.trustlet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.backup.trustlet.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
@@ -287,12 +284,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/libnfc-nxp_557.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_557.conf \
     vendor/motorola/devonf/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/motorola/devonf/proprietary/vendor/etc/mot_spn_table:$(TARGET_COPY_OUT_VENDOR)/etc/mot_spn_table \
-    vendor/motorola/devonf/proprietary/vendor/etc/motorola/12m/Factory_SW_Logo.jpg:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/Factory_SW_Logo.jpg \
-    vendor/motorola/devonf/proprietary/vendor/etc/motorola/12m/cqatest_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/cqatest_config.xml \
-    vendor/motorola/devonf/proprietary/vendor/etc/motorola/12m/key_code_map.txt:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/key_code_map.txt \
-    vendor/motorola/devonf/proprietary/vendor/etc/motorola/12m/runin_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/runin_config.xml \
-    vendor/motorola/devonf/proprietary/vendor/etc/motorola/12m/runin_disable_charging.sh:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/runin_disable_charging.sh \
-    vendor/motorola/devonf/proprietary/vendor/etc/motorola/12m/runin_enable_charging.sh:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/12m/runin_enable_charging.sh \
     vendor/motorola/devonf/proprietary/vendor/etc/motorola/sensors/mot_sensor_settings.json:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/sensors/mot_sensor_settings.json \
     vendor/motorola/devonf/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/motorola/devonf/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
@@ -327,7 +318,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/motorola/devonf/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/motorola/devonf/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
-    vendor/motorola/devonf/proprietary/vendor/etc/xgf.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/xgf.cfg \
     vendor/motorola/devonf/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/motorola/devonf/proprietary/vendor/firmware/NT36xxx_MP_Setting_Criteria_6057.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/NT36xxx_MP_Setting_Criteria_6057.csv \
     vendor/motorola/devonf/proprietary/vendor/firmware/WIFI_RAM_CODE_soc2_2_1b_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/WIFI_RAM_CODE_soc2_2_1b_1.bin \
@@ -842,7 +832,6 @@ PRODUCT_PACKAGES += \
     mot_devonf_s5k4h7_mipi_raw_tuning \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
-    sensors.moto \
     vendor.mediatek.hardware.apuware.utils@2.0 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
@@ -1233,6 +1222,7 @@ PRODUCT_PACKAGES += \
     libvainr_model \
     libmtkcam_streaminfo_plugin-p1stt \
     se_extn_client \
+    sensors.moto \
     vendor.fpsensor.hardware.fpsensorhidlsvc@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
@@ -1312,12 +1302,9 @@ PRODUCT_PACKAGES += \
     ccci_rpcd \
     chipinfo \
     conninfra_loader \
-    factory \
     fpc_tee_test \
-    fpsgo \
     fuelgauged \
     fuelgauged_nvram \
-    gbe \
     gsm0710muxd \
     hardware_revisions \
     android.hardware.biometrics.fingerprint@2.1-service-chipone \

@@ -17188,6 +17188,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     relative_install_path: "mt6855",
     prefer: true,
     soc_specific: true,
@@ -17228,6 +17229,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     relative_install_path: "mt6855",
     prefer: true,
     soc_specific: true,
@@ -17504,6 +17506,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     relative_install_path: "mt6855",
     prefer: true,
     soc_specific: true,
@@ -17576,6 +17579,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     relative_install_path: "mt6855",
     prefer: true,
     soc_specific: true,
@@ -18697,66 +18701,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "mt6855",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "sensors.moto",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/sensors.moto.so",
-            ],
-            shared_libs: [
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.sensors@2.1",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "libbase",
-                "liblog",
-                "libpower",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/sensors.moto.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.sensors@2.1",
-                "libcutils",
-                "libfmq",
-                "libhardware",
-                "libhidlbase",
-                "libbase",
-                "liblog",
-                "libpower",
-                "libutils-v32",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
     prefer: true,
     soc_specific: true,
 }
@@ -32061,6 +32005,43 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "sensors.moto",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/sensors.moto.so",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "android.hardware.sensors@1.0",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "android.hardware.sensors@2.1",
+                "libcutils",
+                "libfmq",
+                "libhardware",
+                "libhidlbase",
+                "libbase",
+                "liblog",
+                "libpower",
+                "libutils-v32",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.fpsensor.hardware.fpsensorhidlsvc@2.0",
     owner: "motorola",
     strip: {
@@ -33930,61 +33911,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "factory",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/factory",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libnvram",
-                "libfile_op",
-                "libminiui",
-                "libjpeg",
-                "libbase",
-                "libfft_vendor",
-                "libaudio_param_parser-vnd",
-                "libselinux",
-                "libalsautils",
-                "libhardware_legacy",
-                "libhardware",
-                "libaudioutils",
-                "libtinyalsa",
-                "libtinycompress",
-                "libaudiotoolkit_vendor",
-                "libmedia_helper",
-                "libladder",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "libhfmanagerwrapper",
-                "liblog",
-                "libutils",
-                "android.system.suspend@1.0",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "android.hardware.health@2.0",
-                "android.hardware.light-V1-ndk_platform",
-                "libbinder_ndk",
-                "libbinder",
-                "android.hardware.light@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "fpc_tee_test",
     owner: "motorola",
     target: {
@@ -33998,36 +33924,6 @@ cc_prebuilt_binary {
                 "libMcClient",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "fpsgo",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/fpsgo",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "libui",
-                "libutils",
-                "libexpat",
-                "vendor.mediatek.hardware.power@2.0",
-                "liblog",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -34083,36 +33979,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "gbe",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/gbe",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "libui",
-                "libutils",
-                "libexpat",
-                "vendor.mediatek.hardware.power@2.0",
-                "liblog",
-                "libc++",
                 "libm",
                 "libdl",
             ],
