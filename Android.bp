@@ -33719,14 +33719,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "chipinfo",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/chipinfo",
-    filename: "chipinfo",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "conninfra_loader",
     owner: "motorola",
