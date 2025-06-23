@@ -349,6 +349,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/lib64/super_night_raw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/super_night_raw.bin
 
 PRODUCT_PACKAGES += \
+    libfmjni \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
