@@ -234,7 +234,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/motorola/devonf/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -1279,7 +1278,6 @@ PRODUCT_PACKAGES += \
     ccci_fsd \
     ccci_mdinit \
     ccci_rpcd \
-    chipinfo \
     conninfra_loader \
     fpc_tee_test \
     fuelgauged \
