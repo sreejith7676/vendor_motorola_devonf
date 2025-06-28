@@ -1330,7 +1330,6 @@ PRODUCT_PACKAGES += \
     mtk_agpsd \
     muxreport \
     netdagent \
-    netdc \
     nvram_daemon \
     pnscr \
     pnscr_cal \
@@ -1694,10 +1693,9 @@ PRODUCT_PACKAGES += \
     vendor_lib64_mtk000_mipi_raw_IdxMgr_so \
     vendor_lib64_mtk000_mipi_raw_tuning_so \
     vendor_lib64_mtkcam_libmtkcam_streaminfo_plugin-p1stt_so
-    
+
 PRODUCT_BOOT_JARS += \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
-    mediatek-ims-oem-plugin    
-    
+    mediatek-ims-oem-plugin

@@ -11,6 +11,32 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libfmjni",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libfmjni.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmedia",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "AVCSecureVdecCA",
     owner: "motorola",
     strip: {
@@ -57,22 +83,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libfmjni",
-	owner: "motorola",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary//lib64/libfmjni.so"],
-			shared_libs: ["libcutils", "libmedia", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
 }
 
 cc_prebuilt_library_shared {
@@ -16499,8 +16509,8 @@ cc_prebuilt_library_shared {
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libcameracustom.lens",
-                "mot_devonf_ov50a_mipi_raw_IdxMgr",
                 "mot_devonf_ov50a_mipi_raw_row_IdxMgr",
+                "mot_devonf_ov50a_mipi_raw_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_row_IdxMgr",
                 "mot_devonf_s5k4h7_mipi_raw_IdxMgr",
@@ -16528,8 +16538,8 @@ cc_prebuilt_library_shared {
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libcameracustom.lens",
-                "mot_devonf_ov50a_mipi_raw_IdxMgr",
                 "mot_devonf_ov50a_mipi_raw_row_IdxMgr",
+                "mot_devonf_ov50a_mipi_raw_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_row_IdxMgr",
                 "mot_devonf_s5k4h7_mipi_raw_IdxMgr",
@@ -35124,35 +35134,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhidlbase",
                 "libifcutils_mtk",
-                "vendor.mediatek.hardware.netdagent@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "netdc",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/netdc",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libhidlbase",
                 "vendor.mediatek.hardware.netdagent@1.0",
                 "libc++",
                 "libc",
