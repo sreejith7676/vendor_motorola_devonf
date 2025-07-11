@@ -16483,8 +16483,8 @@ cc_prebuilt_library_shared {
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libcameracustom.lens",
-                "mot_devonf_ov50a_mipi_raw_IdxMgr",
                 "mot_devonf_ov50a_mipi_raw_row_IdxMgr",
+                "mot_devonf_ov50a_mipi_raw_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_row_IdxMgr",
                 "mot_devonf_s5k4h7_mipi_raw_IdxMgr",
@@ -16512,8 +16512,8 @@ cc_prebuilt_library_shared {
                 "libcam.hal3a.log",
                 "libmtkcam_stdutils",
                 "libcameracustom.lens",
-                "mot_devonf_ov50a_mipi_raw_IdxMgr",
                 "mot_devonf_ov50a_mipi_raw_row_IdxMgr",
+                "mot_devonf_ov50a_mipi_raw_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_IdxMgr",
                 "mot_devonf_hi1634q_mipi_raw_row_IdxMgr",
                 "mot_devonf_s5k4h7_mipi_raw_IdxMgr",
@@ -32094,34 +32094,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.atci@1.0",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.atci@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.audio@6.1",
     owner: "motorola",
     strip: {
@@ -32911,10 +32883,31 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/system_ext/lib64/libimsma.so",
             ],
+            shared_libs: [
+                "libbinder",
+                "libcutils",
+                "libgui",
+                "libmedia",
+                "libstagefright",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "libsink-mtk",
+                "libsource",
+                "libvcodec_cap",
+                "libimsma_rtp",
+                "libcomutils",
+                "liblog",
+                "libsignal",
+                "libnetd_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     system_ext_specific: true,
 }
@@ -33126,7 +33119,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsink",
+    name: "libsink-mtk",
     owner: "motorola",
     strip: {
         none: true,
@@ -33134,7 +33127,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/libsink.so",
+                "proprietary/system_ext/lib64/libsink-mtk.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -33552,73 +33545,6 @@ sh_binary {
 }
 
 cc_prebuilt_binary {
-    name: "atcid",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/atcid",
-            ],
-            shared_libs: [
-                "libmtkcutils",
-                "libmtkutils",
-                "libmtkrillog",
-                "libmtkproperty",
-                "vendor.mediatek.hardware.atci@1.0",
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "libnvram",
-                "libfile_op",
-                "libmipc",
-                "libtrm",
-                "libwifitest",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "audiocmdservice_atci",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/audiocmdservice_atci",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libbinder",
-                "liblog",
-                "libaudiocompensationfilter_vendor",
-                "libaudioprimarydevicehalifclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "autobt",
     owner: "motorola",
     target: {
@@ -33631,33 +33557,6 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libbluetooth_hw_test",
                 "libbluetooth_relayer",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "batt_health",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/batt_health",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libz",
                 "libc++",
                 "libc",
                 "libm",
@@ -33812,14 +33711,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "chipinfo",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/chipinfo",
-    filename: "chipinfo",
     soc_specific: true,
 }
 
@@ -34508,6 +34399,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mtkfusionrild",
             ],
             shared_libs: [
+                "libutils-v32",
                 "libmtkrillog",
                 "libmtkproperty",
                 "libmtkcutils",
@@ -35230,35 +35122,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhidlbase",
                 "libifcutils_mtk",
-                "vendor.mediatek.hardware.netdagent@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "netdc",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/netdc",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libhidlbase",
                 "vendor.mediatek.hardware.netdagent@1.0",
                 "libc++",
                 "libc",
