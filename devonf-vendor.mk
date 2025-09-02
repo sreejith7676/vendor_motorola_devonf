@@ -822,6 +822,7 @@ PRODUCT_PACKAGES += \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
     libdlbvol \
+    libspatialaudio \
     libswdap \
     libswgamedap \
     vendor.dolby.hardware.dms@2.0 \
