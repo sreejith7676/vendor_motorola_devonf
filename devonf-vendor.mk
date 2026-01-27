@@ -1042,6 +1042,7 @@ PRODUCT_PACKAGES += \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstfactory-vendor \
+    libtinyxml2-bp2a \
     libtlcWidevineModularDrm \
     libtrm \
     libundistort_impl \
@@ -1710,9 +1711,3 @@ PRODUCT_PACKAGES += \
     vendor_lib64_mtk000_mipi_raw_IdxMgr_so \
     vendor_lib64_mtk000_mipi_raw_tuning_so \
     vendor_lib64_mtkcam_libmtkcam_streaminfo_plugin-p1stt_so
-
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-oem-plugin
