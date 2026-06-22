@@ -30089,7 +30089,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl-mtk",
     owner: "motorola",
     strip: {
         none: true,
@@ -30097,7 +30097,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/mt6855/libmnl.so",
+                "proprietary/vendor/lib64/mt6855/libmnl-mtk.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -37840,7 +37840,7 @@ install_symlink {
     name: "vendor_lib64_libmnl-mtk_so",
     soc_specific: true,
     installed_location: "lib64/libmnl-mtk.so",
-    symlink_target: "/vendor/lib64/mt6855/libmnl.so",
+    symlink_target: "/vendor/lib64/mt6855/libmnl-mtk.so",
 }
 
 install_symlink {

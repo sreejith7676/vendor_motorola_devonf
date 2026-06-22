@@ -1142,7 +1142,7 @@ PRODUCT_PACKAGES += \
     libimageio_plat_pipe \
     liblpcnr \
     libmfllcore \
-    libmnl \
+    libmnl-mtk \
     libmsnr \
     libmtkcam.debugwrapper \
     libmtkcam.featurepipe.capture \
