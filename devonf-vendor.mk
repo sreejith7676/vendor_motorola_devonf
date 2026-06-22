@@ -1596,7 +1596,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libimageio_plat_pipe_so \
     vendor_lib64_liblpcnr_so \
     vendor_lib64_libmfllcore_so \
-    vendor_lib64_libmnl_so \
+    vendor_lib64_libmnl-mtk_so \
     vendor_lib64_libmpvr_so \
     vendor_lib64_libmsnr_so \
     vendor_lib64_libmtk_drvb_so \
