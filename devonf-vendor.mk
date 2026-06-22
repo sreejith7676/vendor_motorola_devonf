@@ -880,6 +880,7 @@ PRODUCT_PACKAGES += \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
+    android.frameworks.displayservice@1.0 \
     com.fingerprints.extension@1.0 \
     com.motorola.hardware.biometric.fingerprint@1.0 \
     ese_client \
