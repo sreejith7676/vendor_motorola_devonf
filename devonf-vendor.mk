@@ -658,7 +658,7 @@ PRODUCT_PACKAGES += \
     libdre \
     libdynamiclog \
     libfile_op \
-    libformatter \
+    libformatter-v34 \
     libged \
     libgpu_aux \
     libgpud \
