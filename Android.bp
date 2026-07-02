@@ -11419,7 +11419,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter-v34",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11455,7 +11455,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter-v34",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11504,7 +11504,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter-v34",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11538,7 +11538,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter-v34",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -11955,7 +11955,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter-v34",
     owner: "motorola",
     strip: {
         none: true,
@@ -11963,7 +11963,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libformatter.so",
+                "proprietary/vendor/lib/libformatter-v34.so",
             ],
             shared_libs: [
                 "libion_mtk",
@@ -11982,7 +11982,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libformatter.so",
+                "proprietary/vendor/lib64/libformatter-v34.so",
             ],
             shared_libs: [
                 "libion_mtk",
@@ -21779,6 +21779,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.frameworks.displayservice@1.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.frameworks.displayservice@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.fingerprints.extension@1.0",
     owner: "motorola",
     strip: {
@@ -29988,7 +30016,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl-mtk",
     owner: "motorola",
     strip: {
         none: true,
@@ -29996,18 +30024,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/mt6855/libmnl.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
+                "proprietary/vendor/lib64/mt6855/libmnl-mtk.so",
             ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "mt6855",
     prefer: true,
     soc_specific: true,
@@ -37335,7 +37357,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "android.hardware.sensors@1.0-convert-shared",
-                "libmnl",
+                "libmnl-mtk",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -39729,10 +39751,10 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libmnl_so",
+    name: "vendor_lib64_libmnl-mtk_so",
     soc_specific: true,
-    installed_location: "lib64/libmnl.so",
-    symlink_target: "/vendor/lib64/mt6855/libmnl.so",
+    installed_location: "lib64/libmnl-mtk.so",
+    symlink_target: "/vendor/lib64/mt6855/libmnl-mtk.so",
 }
 
 install_symlink {

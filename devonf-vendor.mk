@@ -656,7 +656,7 @@ PRODUCT_PACKAGES += \
     libdre \
     libdynamiclog \
     libfile_op \
-    libformatter \
+    libformatter-v34 \
     libged \
     libgpu_aux \
     libgpud \
@@ -878,6 +878,7 @@ PRODUCT_PACKAGES += \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
+    android.frameworks.displayservice@1.0 \
     com.fingerprints.extension@1.0 \
     com.motorola.hardware.biometric.fingerprint@1.0 \
     ese_client \
@@ -1138,7 +1139,7 @@ PRODUCT_PACKAGES += \
     libimageio_plat_pipe \
     liblpcnr \
     libmfllcore \
-    libmnl \
+    libmnl-mtk \
     libmsnr \
     libmtkcam.debugwrapper \
     libmtkcam.featurepipe.capture \
@@ -1634,7 +1635,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libimageio_plat_pipe_so \
     vendor_lib64_liblpcnr_so \
     vendor_lib64_libmfllcore_so \
-    vendor_lib64_libmnl_so \
+    vendor_lib64_libmnl-mtk_so \
     vendor_lib64_libmpvr_so \
     vendor_lib64_libmsnr_so \
     vendor_lib64_libmtk_drvb_so \
