@@ -226,6 +226,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_nTelos.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_nTelos.xml \
     vendor/motorola/devonf/proprietary/vendor/etc/init.insmod.mt6855.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6855.cfg \
     vendor/motorola/devonf/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc \
+    vendor/motorola/devonf/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -267,7 +268,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/devonf/proprietary/vendor/etc/init/vendor.mmi.carrier.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.carrier.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/vendor.mmi.cxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.cxp.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/motorola/devonf/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/motorola/devonf/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/motorola/devonf/proprietary/vendor/etc/libnfc-nci_100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_100.conf \
@@ -656,7 +656,7 @@ PRODUCT_PACKAGES += \
     libdre \
     libdynamiclog \
     libfile_op \
-    libformatter \
+    libformatter-v34 \
     libged \
     libgpu_aux \
     libgpud \
@@ -878,6 +878,7 @@ PRODUCT_PACKAGES += \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
+    android.frameworks.displayservice@1.0 \
     com.fingerprints.extension@1.0 \
     com.motorola.hardware.biometric.fingerprint@1.0 \
     ese_client \
@@ -974,6 +975,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libforkexecwrap \
     libfp_ext_svc2 \
+    libfpc.sensortest.hal \
     libgwsd-ril \
     libgwsdv2-ril \
     libgwsdv3-ril \
@@ -1138,7 +1140,7 @@ PRODUCT_PACKAGES += \
     libimageio_plat_pipe \
     liblpcnr \
     libmfllcore \
-    libmnl \
+    libmnl-mtk \
     libmsnr \
     libmtkcam.debugwrapper \
     libmtkcam.featurepipe.capture \
@@ -1214,7 +1216,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0 \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
-    vendor.mediatek.hardware.clientapi@1.0 \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
@@ -1296,6 +1297,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0 \
     ImsService \
     MtkGbaService \
+    MtkTelephonyAssist \
     moto-telephony \
     com.fingerprints.extension \
     mediatek-ims-base \
@@ -1329,6 +1331,7 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     hardware_revisions \
     android.hardware.biometrics.fingerprint@2.1-service-chipone \
+    android.hardware.biometrics.fingerprint@2.1-service-fpc \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
@@ -1336,6 +1339,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustonic \
     chipone_ident \
+    fpc_ident \
     motorola.hardware.camera.imgtuner@2.0-service \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6855 \
     camerahalserver \
@@ -1377,7 +1381,6 @@ PRODUCT_PACKAGES += \
     sns_mot_client \
     stp_dump3 \
     vendor.mmi.cxp \
-    volte_clientapi_ua \
     volte_rcs_ua \
     vpud \
     wifi_dump \
@@ -1635,7 +1638,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libimageio_plat_pipe_so \
     vendor_lib64_liblpcnr_so \
     vendor_lib64_libmfllcore_so \
-    vendor_lib64_libmnl_so \
+    vendor_lib64_libmnl-mtk_so \
     vendor_lib64_libmpvr_so \
     vendor_lib64_libmsnr_so \
     vendor_lib64_libmtk_drvb_so \
